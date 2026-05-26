@@ -1,0 +1,525 @@
+{
+  "buildings": [
+    {
+      "id": "town_hall",
+      "name": "Town Hall",
+      "type": "utility_culture",
+      "resource": null,
+      "category": null,
+      "size": { "w": 5, "h": 5 },
+      "configurable": true,
+      "configurable_fields": ["radius", "happiness_given"],
+      "radius_range": { "min": 1, "max": 4 },
+      "levels": []
+    },
+    {
+      "id": "small_home",
+      "name": "Small Home",
+      "type": "production",
+      "resource": "coins",
+      "category": "coins",
+      "size": { "w": 2, "h": 2 },
+      "levels": [
+        {
+          "level": 1,
+          "coins_per_hour": 300,
+          "happiness_thresholds": [
+            { "min": 0, "max": 69, "bonus": 0.0 },
+            { "min": 70, "max": 149, "bonus": 0.25 },
+            { "min": 150, "max": 299, "bonus": 0.5 },
+            { "min": 300, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 2,
+          "coins_per_hour": 583,
+          "happiness_thresholds": [
+            { "min": 0, "max": 69, "bonus": 0.0 },
+            { "min": 70, "max": 149, "bonus": 0.25 },
+            { "min": 150, "max": 299, "bonus": 0.5 },
+            { "min": 300, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 3,
+          "coins_per_hour": 883,
+          "happiness_thresholds": [
+            { "min": 0, "max": 69, "bonus": 0.0 },
+            { "min": 70, "max": 149, "bonus": 0.25 },
+            { "min": 150, "max": 299, "bonus": 0.5 },
+            { "min": 300, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 4,
+          "coins_per_hour": 1016,
+          "happiness_thresholds": [
+            { "min": 0, "max": 101, "bonus": 0.0 },
+            { "min": 110, "max": 219, "bonus": 0.25 },
+            { "min": 220, "max": 439, "bonus": 0.5 },
+            { "min": 440, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 5,
+          "coins_per_hour": 1116,
+          "happiness_thresholds": [
+            { "min": 0, "max": 101, "bonus": 0.0 },
+            { "min": 110, "max": 219, "bonus": 0.25 },
+            { "min": 220, "max": 439, "bonus": 0.5 },
+            { "min": 440, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 6,
+          "coins_per_hour": 1173,
+          "happiness_thresholds": [
+            { "min": 0, "max": 101, "bonus": 0.0 },
+            { "min": 110, "max": 219, "bonus": 0.25 },
+            { "min": 220, "max": 439, "bonus": 0.5 },
+            { "min": 440, "max": null, "bonus": 1.0 }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "average_house",
+      "name": "Average House",
+      "type": "production",
+      "resource": "coins",
+      "category": "coins",
+      "size": { "w": 3, "h": 3 },
+      "levels": [
+        {
+          "level": 4,
+          "coins_per_hour": 1083,
+          "happiness_thresholds": [
+            { "min": 0, "max": 129, "bonus": 0.0 },
+            { "min": 130, "max": 249, "bonus": 0.25 },
+            { "min": 250, "max": 499, "bonus": 0.5 },
+            { "min": 500, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 5,
+          "coins_per_hour": 1141,
+          "happiness_thresholds": [
+            { "min": 0, "max": 129, "bonus": 0.0 },
+            { "min": 130, "max": 249, "bonus": 0.25 },
+            { "min": 250, "max": 499, "bonus": 0.5 },
+            { "min": 500, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 6,
+          "coins_per_hour": 1200,
+          "happiness_thresholds": [
+            { "min": 0, "max": 129, "bonus": 0.0 },
+            { "min": 130, "max": 249, "bonus": 0.25 },
+            { "min": 250, "max": 499, "bonus": 0.5 },
+            { "min": 500, "max": null, "bonus": 1.0 }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "luxurious_house",
+      "name": "Luxurious House",
+      "type": "production",
+      "resource": "coins",
+      "category": "coins",
+      "size": { "w": 4, "h": 4 },
+      "levels": [
+        {
+          "level": 3,
+          "coins_per_hour": 916,
+          "happiness_thresholds": [
+            { "min": 0, "max": 79, "bonus": 0.0 },
+            { "min": 80, "max": 159, "bonus": 0.25 },
+            { "min": 160, "max": 309, "bonus": 0.5 },
+            { "min": 310, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 6,
+          "coins_per_hour": 1112,
+          "happiness_thresholds": [
+            { "min": 0, "max": 119, "bonus": 0.0 },
+            { "min": 120, "max": 239, "bonus": 0.25 },
+            { "min": 240, "max": 469, "bonus": 0.5 },
+            { "min": 470, "max": null, "bonus": 1.0 }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rural_farm",
+      "name": "Rural Farm",
+      "type": "production",
+      "resource": "food",
+      "category": "fast_food",
+      "size": { "w": 3, "h": 4 },
+      "levels": [
+        {
+          "level": 1,
+          "harvests": [
+            { "duration_minutes": 2, "amount": 20 }
+          ],
+          "happiness_thresholds": [
+            { "min": 0, "max": 89, "bonus": 0.0 },
+            { "min": 90, "max": 179, "bonus": 0.25 },
+            { "min": 180, "max": 359, "bonus": 0.5 },
+            { "min": 360, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 2,
+          "harvests": [
+            { "duration_minutes": 2, "amount": 90 },
+            { "duration_minutes": 10, "amount": 400 }
+          ],
+          "happiness_thresholds": [
+            { "min": 0, "max": 89, "bonus": 0.0 },
+            { "min": 90, "max": 179, "bonus": 0.25 },
+            { "min": 180, "max": 359, "bonus": 0.5 },
+            { "min": 360, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 3,
+          "harvests": [
+            { "duration_minutes": 2, "amount": 100 },
+            { "duration_minutes": 10, "amount": 420 }
+          ],
+          "happiness_thresholds": [
+            { "min": 0, "max": 89, "bonus": 0.0 },
+            { "min": 90, "max": 179, "bonus": 0.25 },
+            { "min": 180, "max": 359, "bonus": 0.5 },
+            { "min": 360, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 4,
+          "harvests": [
+            { "duration_minutes": 2, "amount": 140 },
+            { "duration_minutes": 10, "amount": 580 },
+            { "duration_minutes": 60, "amount": 2300 }
+          ],
+          "happiness_thresholds": [
+            { "min": 0, "max": 139, "bonus": 0.0 },
+            { "min": 140, "max": 269, "bonus": 0.25 },
+            { "min": 270, "max": 539, "bonus": 0.5 },
+            { "min": 540, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 5,
+          "harvests": [
+            { "duration_minutes": 2, "amount": 150 },
+            { "duration_minutes": 10, "amount": 610 },
+            { "duration_minutes": 60, "amount": 2400 }
+          ],
+          "happiness_thresholds": [
+            { "min": 0, "max": 139, "bonus": 0.0 },
+            { "min": 140, "max": 269, "bonus": 0.25 },
+            { "min": 270, "max": 539, "bonus": 0.5 },
+            { "min": 540, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 6,
+          "harvests": [
+            { "duration_minutes": 2, "amount": 200 },
+            { "duration_minutes": 10, "amount": 810 },
+            { "duration_minutes": 60, "amount": 3200 }
+          ],
+          "happiness_thresholds": [
+            { "min": 0, "max": 139, "bonus": 0.0 },
+            { "min": 140, "max": 269, "bonus": 0.25 },
+            { "min": 270, "max": 539, "bonus": 0.5 },
+            { "min": 540, "max": null, "bonus": 1.0 }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "domestic_farm",
+      "name": "Domestic Farm",
+      "type": "production",
+      "resource": "food",
+      "category": "slow_food",
+      "size": { "w": 4, "h": 4 },
+      "levels": [
+        {
+          "level": 1,
+          "harvests": [
+            { "duration_minutes": 120, "amount": 2300 }
+          ],
+          "happiness_thresholds": [
+            { "min": 0, "max": 119, "bonus": 0.0 },
+            { "min": 120, "max": 239, "bonus": 0.25 },
+            { "min": 240, "max": 479, "bonus": 0.5 },
+            { "min": 480, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 2,
+          "harvests": [
+            { "duration_minutes": 120, "amount": 2400 },
+            { "duration_minutes": 240, "amount": 4100 }
+          ],
+          "happiness_thresholds": [
+            { "min": 0, "max": 119, "bonus": 0.0 },
+            { "min": 120, "max": 239, "bonus": 0.25 },
+            { "min": 240, "max": 479, "bonus": 0.5 },
+            { "min": 480, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 3,
+          "harvests": [
+            { "duration_minutes": 120, "amount": 3300 },
+            { "duration_minutes": 240, "amount": 5300 }
+          ],
+          "happiness_thresholds": [
+            { "min": 0, "max": 119, "bonus": 0.0 },
+            { "min": 120, "max": 239, "bonus": 0.25 },
+            { "min": 240, "max": 479, "bonus": 0.5 },
+            { "min": 480, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 4,
+          "harvests": [
+            { "duration_minutes": 120, "amount": 3900 },
+            { "duration_minutes": 240, "amount": 5900 },
+            { "duration_minutes": 720, "amount": 7000 }
+          ],
+          "happiness_thresholds": [
+            { "min": 0, "max": 179, "bonus": 0.0 },
+            { "min": 180, "max": 359, "bonus": 0.25 },
+            { "min": 360, "max": 719, "bonus": 0.5 },
+            { "min": 720, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 5,
+          "harvests": [
+            { "duration_minutes": 120, "amount": 5000 },
+            { "duration_minutes": 240, "amount": 7300 },
+            { "duration_minutes": 720, "amount": 8300 }
+          ],
+          "happiness_thresholds": [
+            { "min": 0, "max": 179, "bonus": 0.0 },
+            { "min": 180, "max": 359, "bonus": 0.25 },
+            { "min": 360, "max": 719, "bonus": 0.5 },
+            { "min": 720, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 6,
+          "harvests": [
+            { "duration_minutes": 120, "amount": 5800 },
+            { "duration_minutes": 240, "amount": 9600 },
+            { "duration_minutes": 720, "amount": 11000 }
+          ],
+          "happiness_thresholds": [
+            { "min": 0, "max": 179, "bonus": 0.0 },
+            { "min": 180, "max": 359, "bonus": 0.25 },
+            { "min": 360, "max": 719, "bonus": 0.5 },
+            { "min": 720, "max": null, "bonus": 1.0 }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "luxurious_farm",
+      "name": "Luxurious Farm",
+      "type": "production",
+      "resource": "food",
+      "category": "special_food",
+      "size": { "w": 3, "h": 3 },
+      "levels": [
+        {
+          "level": 3,
+          "harvests": [
+            { "duration_minutes": 30, "amount": 1700 }
+          ],
+          "happiness_thresholds": [
+            { "min": 0, "max": 79, "bonus": 0.0 },
+            { "min": 80, "max": 169, "bonus": 0.25 },
+            { "min": 170, "max": 329, "bonus": 0.5 },
+            { "min": 330, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 6,
+          "harvests": [
+            { "duration_minutes": 30, "amount": 2200 },
+            { "duration_minutes": 60, "amount": 3000 },
+            { "duration_minutes": 120, "amount": 4100 }
+          ],
+          "happiness_thresholds": [
+            { "min": 0, "max": 129, "bonus": 0.0 },
+            { "min": 130, "max": 249, "bonus": 0.25 },
+            { "min": 250, "max": 499, "bonus": 0.5 },
+            { "min": 500, "max": null, "bonus": 1.0 }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "infantry_barracks",
+      "name": "Infantry Barracks",
+      "type": "military",
+      "size": { "w": 4, "h": 4 },
+      "levels": []
+    },
+    {
+      "id": "ranged_barracks",
+      "name": "Ranged Barracks",
+      "type": "military",
+      "size": { "w": 3, "h": 5 },
+      "levels": []
+    },
+    {
+      "id": "cavalry_barracks",
+      "name": "Cavalry Barracks",
+      "type": "military",
+      "size": { "w": 4, "h": 5 },
+      "levels": []
+    },
+    {
+      "id": "metal_workshop",
+      "name": "Artisan",
+      "type": "production",
+      "resource": "goods",
+      "category": "goods",
+      "size": { "w": 4, "h": 3 },
+      "levels": [
+        {
+          "level": 1,
+          "harvests": [{ "duration_minutes": 10, "amount": 10 }],
+          "happiness_thresholds": [
+            { "min": 0, "max": 139, "bonus": 0.0 },
+            { "min": 140, "max": 269, "bonus": 0.25 },
+            { "min": 270, "max": 539, "bonus": 0.5 },
+            { "min": 540, "max": null, "bonus": 1.0 }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "stone_workshop",
+      "name": "Stone Mason",
+      "type": "production",
+      "resource": "goods",
+      "category": "goods",
+      "size": { "w": 4, "h": 3 },
+      "levels": [
+        {
+          "level": 1,
+          "harvests": [{ "duration_minutes": 10, "amount": 10 }],
+          "happiness_thresholds": [
+            { "min": 0, "max": 139, "bonus": 0.0 },
+            { "min": 140, "max": 269, "bonus": 0.25 },
+            { "min": 270, "max": 539, "bonus": 0.5 },
+            { "min": 540, "max": null, "bonus": 1.0 }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fabric_workshop",
+      "name": "Tailor",
+      "type": "production",
+      "resource": "goods",
+      "category": "goods",
+      "size": { "w": 4, "h": 3 },
+      "levels": [
+        {
+          "level": 1,
+          "harvests": [{ "duration_minutes": 10, "amount": 10 }],
+          "happiness_thresholds": [
+            { "min": 0, "max": 139, "bonus": 0.0 },
+            { "min": 140, "max": 269, "bonus": 0.25 },
+            { "min": 270, "max": 539, "bonus": 0.5 },
+            { "min": 540, "max": null, "bonus": 1.0 }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "small_culture_site",
+      "name": "Little Culture Site",
+      "type": "culture",
+      "resource": null,
+      "category": null,
+      "size": { "w": 1, "h": 1 },
+      "radius": 1,
+      "levels": [
+        {
+          "level": 2,
+          "happiness_given": 70
+        }
+      ]
+    },
+    {
+      "id": "compact_culture_site",
+      "name": "Compact Culture Site",
+      "type": "culture",
+      "resource": null,
+      "category": null,
+      "size": { "w": 2, "h": 1 },
+      "radius": 1,
+      "levels": [
+        {
+          "level": 1,
+          "happiness_given": 100
+        },
+        {
+          "level": 2,
+          "happiness_given": 120
+        }
+      ]
+    },
+    {
+      "id": "medium_culture_site",
+      "name": "Moderate Culture Site",
+      "type": "culture",
+      "resource": null,
+      "category": null,
+      "size": { "w": 2, "h": 2 },
+      "radius": 2,
+      "levels": [
+        {
+          "level": 1,
+          "happiness_given": 160
+        },
+        {
+          "level": 2,
+          "happiness_given": 200
+        }
+      ]
+    },
+    {
+      "id": "luxurious_culture_site",
+      "name": "Luxurious Culture Site",
+      "type": "culture",
+      "resource": null,
+      "category": null,
+      "size": { "w": 3, "h": 2 },
+      "radius": 2,
+      "levels": [
+        {
+          "level": 1,
+          "happiness_given": 360
+        },
+        {
+          "level": 2,
+          "happiness_given": 420
+        }
+      ]
+    }
+  ]
+}

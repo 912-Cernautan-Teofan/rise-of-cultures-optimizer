@@ -18,7 +18,7 @@ function abbreviate(name) {
   return name.split(' ').map(w => w[0].toUpperCase() + '.').join('');
 }
 
-function renderResultGrid(placement, buildingsData, unlockedTiles) {
+function renderResultGrid(placement, instances, buildingsData, unlockedTiles) {
   const container = document.getElementById('result-grid');
   container.innerHTML = '';
   if (!placement || placement.length === 0) return;
@@ -109,11 +109,10 @@ function renderResultGrid(placement, buildingsData, unlockedTiles) {
     drawn.add(p.uid);
 
     const b = buildingsData.find(bd => bd.id === p.buildingId);
+    const inst = instances.find(i => i.uid === p.uid);
+    const level = inst ? inst.level : null;
     const color = buildingColor(b);
 
-    // tileX gives the x of the LEFT edge of logicalCol's visual position.
-    // Since cols are flipped, a building at logicalCol spanning w cols
-    // starts visually at tileX(logicalCol + w - 1) (the leftmost visual col)
     const x = tileX(p.col + p.w - 1);
     const y = tileY(p.row);
     const w = buildingW(p.col, p.w);
@@ -129,22 +128,39 @@ function renderResultGrid(placement, buildingsData, unlockedTiles) {
     rect.setAttribute('rx', '2');
 
     const title = document.createElementNS('http://www.w3.org/2000/svg', 'title');
-    title.textContent = b ? `${b.name} (${p.w}×${p.h})` : p.buildingId;
+    title.textContent = b ? `${b.name}${level ? ` Lv${level}` : ''} (${p.w}×${p.h})` : p.buildingId;
     rect.appendChild(title);
     svg.appendChild(rect);
 
     if (w >= 20 && h >= 12) {
+      // Abbreviation centered
       const text = document.createElementNS('http://www.w3.org/2000/svg', 'text');
       text.setAttribute('x', x + w / 2);
-      text.setAttribute('y', y + h / 2 + 3);
+      text.setAttribute('y', y + h / 2 + (h >= 22 ? 1 : 3));
       text.setAttribute('text-anchor', 'middle');
       text.setAttribute('font-family', 'monospace');
-      text.setAttribute('font-size', Math.min(9, h * 0.5));
+      text.setAttribute('font-size', Math.min(11, h * 0.5));
       text.setAttribute('fill', '#000');
       text.setAttribute('fill-opacity', '0.7');
       text.setAttribute('pointer-events', 'none');
       text.textContent = b ? abbreviate(b.name) : '?';
       svg.appendChild(text);
+
+      // Level badge top-left
+      if (level && h >= 18) {
+        const lvlText = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+        lvlText.setAttribute('x', x + 3);
+        lvlText.setAttribute('y', y + 9);
+        lvlText.setAttribute('text-anchor', 'start');
+        lvlText.setAttribute('font-family', 'monospace');
+        lvlText.setAttribute('font-size', '9');
+        lvlText.setAttribute('font-weight', 'bold');
+        lvlText.setAttribute('fill', '#000');
+        lvlText.setAttribute('fill-opacity', '0.65');
+        lvlText.setAttribute('pointer-events', 'none');
+        lvlText.textContent = `${level}`;
+        svg.appendChild(lvlText);
+      }
     }
   }
 

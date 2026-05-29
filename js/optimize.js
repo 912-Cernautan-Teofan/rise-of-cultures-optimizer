@@ -99,7 +99,7 @@ function setProgress(pct, label) {
 // instances is now passed back from the worker so UIDs match exactly
 function showResults(placement, instances, unlockedTiles, prio) {
   document.getElementById('optimize-results').style.display = 'block';
-  renderResultGrid(placement, buildingsData, unlockedTiles);
+  renderResultGrid(placement, instances, buildingsData, unlockedTiles);
 
   const totalTiles = unlockedTiles.length;
   let usedTiles = 0;
@@ -155,7 +155,7 @@ function showResults(placement, instances, unlockedTiles, prio) {
   }
 
   // ── Production totals and happiness tier counts ───────────────────────────
-  let foodPerHr = 0, coinsPerHr = 0, goodsPerHr = 0;
+  let foodActive = 0, foodCasual = 0, foodIdle = 0, coinsPerHr = 0, goodsPerHr = 0;
   let h0 = 0, h25 = 0, h50 = 0, h100 = 0;
 
   for (const p of placement) {
@@ -181,25 +181,33 @@ function showResults(placement, instances, unlockedTiles, prio) {
     else if (bonus === 0.50) h50++;
     else if (bonus === 1.00) h100++;
 
-    const prodBase = lvlData.coins_per_hour !== undefined
-      ? lvlData.coins_per_hour
-      : bestHarvestPerHourUI(lvlData.harvests || [], prio.playstyle);
+    const mult = 1 + bonus;
 
-    const total = prodBase * (1 + bonus);
-    if (b.resource === 'food')  foodPerHr  += total;
-    if (b.resource === 'coins') coinsPerHr += total;
-    if (b.resource === 'goods') goodsPerHr += total;
+    if (b.resource === 'food') {
+      foodActive += bestHarvestPerHourUI(lvlData.harvests || [], 'active') * mult;
+      foodCasual += bestHarvestPerHourUI(lvlData.harvests || [], 'casual') * mult;
+      foodIdle   += bestHarvestPerHourUI(lvlData.harvests || [], 'idle')   * mult;
+    }
+    if (b.resource === 'coins') {
+      const prodBase = lvlData.coins_per_hour !== undefined ? lvlData.coins_per_hour : bestHarvestPerHourUI(lvlData.harvests || [], prio.playstyle);
+      coinsPerHr += prodBase * mult;
+    }
+    if (b.resource === 'goods') {
+      goodsPerHr += bestHarvestPerHourUI(lvlData.harvests || [], 'active') * mult;
+    }
   }
 
-  document.getElementById('stat-food').textContent        = Math.round(foodPerHr).toLocaleString();
-  document.getElementById('stat-coins').textContent       = Math.round(coinsPerHr).toLocaleString();
-  document.getElementById('stat-goods').textContent       = Math.round(goodsPerHr).toLocaleString();
-  document.getElementById('stat-tiles-used').textContent  = usedTiles;
-  document.getElementById('stat-tiles-avail').textContent = totalTiles;
-  document.getElementById('stat-h0').textContent          = h0;
-  document.getElementById('stat-h25').textContent         = h25;
-  document.getElementById('stat-h50').textContent         = h50;
-  document.getElementById('stat-h100').textContent        = h100;
+  document.getElementById('stat-food-active').textContent  = Math.round(foodActive).toLocaleString();
+  document.getElementById('stat-food-casual').textContent  = Math.round(foodCasual).toLocaleString();
+  document.getElementById('stat-food-idle').textContent    = Math.round(foodIdle).toLocaleString();
+  document.getElementById('stat-coins').textContent        = Math.round(coinsPerHr).toLocaleString();
+  document.getElementById('stat-goods').textContent        = Math.round(goodsPerHr).toLocaleString();
+  document.getElementById('stat-tiles-used').textContent   = usedTiles;
+  document.getElementById('stat-tiles-avail').textContent  = totalTiles;
+  document.getElementById('stat-h0').textContent           = h0;
+  document.getElementById('stat-h25').textContent          = h25;
+  document.getElementById('stat-h50').textContent          = h50;
+  document.getElementById('stat-h100').textContent         = h100;
 }
 
 function bestHarvestPerHourUI(harvests, playstyle) {

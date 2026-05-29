@@ -3,237 +3,231 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Rise of Cultures — Layout Optimizer</title>
+  <title>Rise of Cultures — City Helper</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Crimson+Pro:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,300&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg:       #0f0e0c;
+      --bg-card:  #161512;
+      --border:   #2e2b24;
+      --border-lit: #4a4535;
+      --gold:     #c9a84c;
+      --gold-dim: #7a6430;
+      --gold-glow:rgba(201, 168, 76, 0.15);
+      --text:     #e8e0cc;
+      --text-dim: #7a7260;
+      --text-muted: #3d3a30;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html, body {
+      min-height: 100vh;
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Crimson Pro', Georgia, serif;
+      font-size: 18px;
+    }
+
+    /* ── Subtle background texture ── */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 80% 50% at 50% -10%, rgba(201,168,76,0.07) 0%, transparent 70%),
+        radial-gradient(ellipse 40% 30% at 80% 80%, rgba(201,168,76,0.04) 0%, transparent 60%);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    /* ── Layout ── */
+    .page {
+      position: relative;
+      z-index: 1;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 60px 24px 80px;
+      gap: 64px;
+    }
+
+    /* ── Hero ── */
+    .hero {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+      animation: fadeUp 0.8s ease both;
+    }
+
+    .hero-eyebrow {
+      font-family: 'Cinzel', serif;
+      font-size: 0.7rem;
+      letter-spacing: 0.35em;
+      text-transform: uppercase;
+      color: var(--gold-dim);
+    }
+
+    .hero-title {
+      font-family: 'Cinzel', serif;
+      font-size: clamp(2.4rem, 6vw, 4rem);
+      font-weight: 700;
+      color: var(--gold);
+      letter-spacing: 0.06em;
+      line-height: 1.1;
+      text-shadow:
+        0 0 60px rgba(201,168,76,0.3),
+        0 0 120px rgba(201,168,76,0.1);
+    }
+
+    .hero-divider {
+      width: 60px;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--gold-dim), transparent);
+      margin: 4px auto;
+    }
+
+    .hero-subtitle {
+      font-size: 1.1rem;
+      color: var(--text-dim);
+      font-weight: 300;
+      letter-spacing: 0.04em;
+      font-style: italic;
+    }
+
+    /* ── Cards ── */
+    .cards {
+      display: flex;
+      gap: 24px;
+      flex-wrap: wrap;
+      justify-content: center;
+      animation: fadeUp 0.8s 0.15s ease both;
+    }
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 36px 32px 28px;
+      width: 280px;
+      text-decoration: none;
+      color: inherit;
+      position: relative;
+      overflow: hidden;
+      transition: border-color 0.25s, transform 0.25s, box-shadow 0.25s;
+    }
+
+    .card::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse 80% 60% at 50% 0%, var(--gold-glow), transparent 70%);
+      opacity: 0;
+      transition: opacity 0.3s;
+      pointer-events: none;
+    }
+
+    .card:hover {
+      border-color: var(--gold-dim);
+      transform: translateY(-4px);
+      box-shadow: 0 12px 40px rgba(0,0,0,0.4), 0 0 0 1px rgba(201,168,76,0.1);
+    }
+
+    .card:hover::before { opacity: 1; }
+
+    .card-icon {
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+      line-height: 1;
+    }
+
+    .card-title {
+      font-family: 'Cinzel', serif;
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--gold);
+      letter-spacing: 0.06em;
+      margin-bottom: 10px;
+    }
+
+    .card-desc {
+      font-size: 0.88rem;
+      color: var(--text-dim);
+      line-height: 1.6;
+      flex: 1;
+    }
+
+    .card-arrow {
+      margin-top: 24px;
+      font-size: 0.75rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--gold-dim);
+      font-family: 'Cinzel', serif;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: color 0.2s, gap 0.2s;
+    }
+
+    .card:hover .card-arrow {
+      color: var(--gold);
+      gap: 12px;
+    }
+
+    /* ── Footer ── */
+    .footer {
+      font-size: 0.72rem;
+      color: var(--text-muted);
+      letter-spacing: 0.1em;
+      text-align: center;
+      animation: fadeUp 0.8s 0.3s ease both;
+    }
+
+    /* ── Animation ── */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(16px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+  </style>
 </head>
 <body>
+  <div class="page">
 
-  <header>
-    <h1>Rise of Cultures</h1>
-    <p class="subtitle">Layout Optimizer</p>
-  </header>
+    <div class="hero">
+      <div class="hero-eyebrow">Community Toolkit</div>
+      <h1 class="hero-title">Rise of Cultures</h1>
+      <div class="hero-divider"></div>
+      <p class="hero-subtitle">Your city, your strategy</p>
+    </div>
 
-  <main>
+    <div class="cards">
 
-    <!-- STEP 1: GRID SETUP -->
-    <section class="step" id="step-grid">
-      <div class="step-header">
-        <span class="step-number">01</span>
-        <div class="step-title-group">
-          <h2>Territory</h2>
-          <p class="step-desc">Click <span class="highlight">+</span> to expand your land. Click a chunk to remove it.</p>
-        </div>
-        <div class="grid-controls">
-          <input type="number" id="quick-rows" min="3" max="10" value="3" />
-          <span class="dim-sep">×</span>
-          <input type="number" id="quick-cols" min="3" max="12" value="3" />
-          <button id="quick-expand-btn">Fill</button>
-        </div>
-      </div>
-      <div class="chunk-grid-wrapper">
-        <div id="chunk-grid"></div>
-      </div>
-      <div class="grid-stats">
-        <span id="chunk-count">9 chunks</span>
-        <span class="stat-sep">·</span>
-        <span id="tile-count">144 tiles</span>
-      </div>
-    </section>
+      <a class="card" href="optimizer.html">
+        <div class="card-icon">⚙️</div>
+        <div class="card-title">Layout Optimizer</div>
+        <p class="card-desc">Tell the optimizer which buildings you have, set your priorities, and let it try it's best to find the best placement for your city automatically.</p>
+        <div class="card-arrow">Open <span>→</span></div>
+      </a>
 
-    <!-- STEP 2: BUILDING SELECTION -->
-    <section class="step" id="step-buildings">
-      <div class="step-header">
-        <span class="step-number">02</span>
-        <div class="step-title-group">
-          <h2>Buildings</h2>
-          <p class="step-desc">Click a building to add it to your city. Adjust levels and quantities in the list.</p>
-        </div>
-      </div>
-      <div class="buildings-layout">
-        <div class="building-picker">
-          <div class="picker-group" id="picker-production">
-            <div class="picker-group-label">Production</div>
-          </div>
-          <div class="picker-group" id="picker-culture">
-            <div class="picker-group-label">Culture</div>
-          </div>
-          <div class="picker-group" id="picker-military">
-            <div class="picker-group-label">Military</div>
-          </div>
-          <div class="picker-group" id="picker-other">
-            <div class="picker-group-label">Other</div>
-          </div>
-        </div>
-        <div class="building-list-panel">
-          <div class="building-list-header">
-            <span class="building-list-title">Your City</span>
-            <span id="building-tile-usage" class="building-tile-usage">0 tiles used</span>
-          </div>
-          <div id="building-list"></div>
-        </div>
-      </div>
-    </section>
+      <a class="card" href="editor.html">
+        <div class="card-icon">🗺️</div>
+        <div class="card-title">Map Editor</div>
+        <p class="card-desc">Place buildings freely on a grid, see culture site coverage in real time, and track your production across all playstyles.</p>
+        <div class="card-arrow">Open <span>→</span></div>
+      </a>
 
-    <!-- STEP 3: PRIORITIES -->
-    <section class="step" id="step-settings">
-      <div class="step-header">
-        <span class="step-number">03</span>
-        <div class="step-title-group">
-          <h2>Priorities</h2>
-          <p class="step-desc">Tell the optimizer what matters most to your city.</p>
-        </div>
-      </div>
+    </div>
 
-      <div class="priorities-layout">
+    <div class="footer">An unofficial fan-made tool · Not affiliated with Goodgame Studios</div>
 
-        <!-- Playstyle -->
-        <div class="prio-block">
-          <div class="prio-label">Playstyle</div>
-          <div class="prio-desc">How often do you collect from your buildings?</div>
-          <div class="toggle-group" id="playstyle-group">
-            <button class="toggle-btn active" data-value="active">
-              <span class="toggle-btn-name">Active</span>
-              <span class="toggle-btn-sub">2 – 10 min harvests</span>
-            </button>
-            <button class="toggle-btn" data-value="casual">
-              <span class="toggle-btn-name">Casual</span>
-              <span class="toggle-btn-sub">30 min – 2 hr harvests</span>
-            </button>
-            <button class="toggle-btn" data-value="idle">
-              <span class="toggle-btn-name">Idle</span>
-              <span class="toggle-btn-sub">4 hr+ harvests</span>
-            </button>
-          </div>
-        </div>
-
-        <div class="prio-divider"></div>
-
-        <!-- Primary resource -->
-        <div class="prio-block">
-          <div class="prio-label">Primary Resource</div>
-          <div class="prio-desc">What do you want to maximize above all else?</div>
-          <div class="toggle-group" id="primary-group">
-            <button class="toggle-btn active" data-value="food">
-              <span class="toggle-btn-name">Food</span>
-            </button>
-            <button class="toggle-btn" data-value="coins">
-              <span class="toggle-btn-name">Coins</span>
-            </button>
-            <button class="toggle-btn" data-value="goods">
-              <span class="toggle-btn-name">Goods</span>
-            </button>
-          </div>
-        </div>
-
-        <div class="prio-divider"></div>
-
-        <!-- Secondary ranking -->
-        <div class="prio-block">
-          <div class="prio-label">Secondary Priorities</div>
-          <div class="prio-desc">Rank the remaining resources. Top gets more weight. Toggle off to ignore.</div>
-
-          <div class="secondary-list" id="secondary-list">
-            <!-- injected by JS -->
-          </div>
-        </div>
-
-        <div class="prio-divider"></div>
-
-        <!-- Extra options -->
-        <div class="prio-block" id="extra-options">
-          <!-- Goods count — shown when goods not ignored -->
-          <div class="extra-row" id="goods-count-row">
-            <div class="extra-row-info">
-              <span class="extra-row-label">Goods buildings to prioritize</span>
-              <span class="extra-row-desc">How many of your goods buildings should be fully buffed?</span>
-            </div>
-            <input type="number" class="entry-input-small" id="goods-count-input" min="1" max="20" value="1" />
-          </div>
-
-          <!-- Luxurious farm toggle — shown only if lux farm in list -->
-          <div class="extra-row" id="lux-farm-row" style="display:none">
-            <div class="extra-row-info">
-              <span class="extra-row-label">Favor Luxurious Farm</span>
-              <span class="extra-row-desc">Boost happiness priority for your Luxurious Farm.</span>
-            </div>
-            <button class="extra-toggle" id="lux-farm-toggle" data-active="false">Off</button>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- STEP 4: OPTIMIZE -->
-    <section class="step" id="step-generate">
-      <div class="step-header">
-        <span class="step-number">04</span>
-        <div class="step-title-group">
-          <h2>Optimize</h2>
-          <p class="step-desc">Find the best layout for your city.</p>
-        </div>
-        <button id="optimize-btn">Generate</button>
-      </div>
-
-      <!-- Progress -->
-      <div id="optimize-progress" style="display:none">
-        <div class="progress-bar"><div class="progress-fill" id="progress-fill"></div></div>
-        <div class="progress-label" id="progress-label">Initializing...</div>
-      </div>
-
-      <!-- Results -->
-      <div id="optimize-results" style="display:none">
-        <div class="results-layout">
-
-          <!-- Grid visualization -->
-          <div class="result-grid-wrapper">
-            <div id="result-grid"></div>
-          </div>
-
-          <!-- Stats panel -->
-          <div class="result-stats">
-            <div class="stat-block">
-              <div class="stat-block-label">Production / hour</div>
-              <div class="stat-row"><span class="stat-name">Food</span><span class="stat-value" id="stat-food">—</span></div>
-              <div class="stat-row"><span class="stat-name">Coins</span><span class="stat-value" id="stat-coins">—</span></div>
-              <div class="stat-row"><span class="stat-name">Goods</span><span class="stat-value" id="stat-goods">—</span></div>
-            </div>
-            <div class="stat-block">
-              <div class="stat-block-label">Tiles</div>
-              <div class="stat-row"><span class="stat-name">Used</span><span class="stat-value" id="stat-tiles-used">—</span></div>
-              <div class="stat-row"><span class="stat-name">Available</span><span class="stat-value" id="stat-tiles-avail">—</span></div>
-            </div>
-            <div class="stat-block">
-              <div class="stat-block-label">Happiness tiers</div>
-              <div class="stat-row"><span class="stat-name happiness-0">0% boost</span><span class="stat-value" id="stat-h0">—</span></div>
-              <div class="stat-row"><span class="stat-name happiness-25">25% boost</span><span class="stat-value" id="stat-h25">—</span></div>
-              <div class="stat-row"><span class="stat-name happiness-50">50% boost</span><span class="stat-value" id="stat-h50">—</span></div>
-              <div class="stat-row"><span class="stat-name happiness-100">100% boost</span><span class="stat-value" id="stat-h100">—</span></div>
-            </div>
-            <div class="stat-block">
-              <div class="stat-block-label">Legend</div>
-              <div class="legend-row"><span class="legend-swatch" style="background:#c9a84c"></span><span>Town Hall</span></div>
-              <div class="legend-row"><span class="legend-swatch" style="background:#e8a04a"></span><span>Farm</span></div>
-              <div class="legend-row"><span class="legend-swatch" style="background:#e8d44a"></span><span>House</span></div>
-              <div class="legend-row"><span class="legend-swatch" style="background:#6aaa64"></span><span>Culture</span></div>
-              <div class="legend-row"><span class="legend-swatch" style="background:#9b59b6"></span><span>Workshop</span></div>
-              <div class="legend-row"><span class="legend-swatch" style="background:#c0392b"></span><span>Military</span></div>
-              <div class="legend-row"><span class="legend-swatch" style="background:#4a90a4"></span><span>Other</span></div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-    </section>
-
-  </main>
-
-  <script src="js/main.js"></script>
-  <script src="js/buildings.js"></script>
-  <script src="js/priorities.js"></script>
-  <script src="js/renderer.js"></script>
-  <script src="js/optimize.js"></script>
+  </div>
 </body>
 </html>

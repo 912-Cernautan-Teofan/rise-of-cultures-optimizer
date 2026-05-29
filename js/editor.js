@@ -262,7 +262,7 @@ canvas.addEventListener('mousemove', e => {
         const lvlData = b.levels.find(l => l.level === hit.level) || b.levels[0];
         const thresholds = lvlData?.happiness_thresholds || [];
 
-        let tipHtml = `<strong>${b.name}</strong><br>`;
+        let tipHtml = `<strong>${b.name}</strong>${hit.level ? ` <span style="color:var(--gold-dim)">Lv${hit.level}</span>` : ''}<br>`;
         tipHtml += `Happiness: <span style="color:${tierColor(pct)}">${pts} pts → ${pct}% boost</span><br><br>`;
         tipHtml += `<span style="color:#555;font-size:0.72rem">Thresholds:</span><br>`;
         for (const t of thresholds) {
@@ -580,9 +580,16 @@ function drawBuilding(p, happiness, alpha) {
 
   if (w >= 24 && h >= 16 && b) {
     ctx.fillStyle = 'rgba(0,0,0,0.55)';
-    ctx.font = `${Math.min(9, h * 0.35)}px monospace`;
+    ctx.font = `bold ${Math.min(12, h * 0.4)}px monospace`;
     ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
     ctx.fillText(abbreviate(b.name), x + w / 2, y + h / 2);
+  }
+  // Level badge top-left
+  if (p.level && w >= 24 && h >= 24) {
+    ctx.fillStyle = 'rgba(0,0,0,0.6)';
+    ctx.font = 'bold 10px monospace';
+    ctx.textAlign = 'left'; ctx.textBaseline = 'top';
+    ctx.fillText(`${p.level}`, x + 3, y + 3);
   }
   ctx.globalAlpha = 1.0;
 }

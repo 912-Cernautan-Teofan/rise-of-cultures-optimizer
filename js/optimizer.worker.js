@@ -329,69 +329,93 @@ self.onmessage = function(e) {
     occupyTiles(b.row, b.col, b.w, b.h, occupiedSet);
   }
 
-  // ── Main SA loop ──────────────────────────────────────────────────────────
-  const MAX_ATTEMPTS = 30;
-  let placement = null;
-
-  for (let attempt = 0; attempt < MAX_ATTEMPTS; attempt++) {
-    placement = randomPlacement(instances);
-    if (placement) break;
+  // ── Overlap validator ────────────────────────────────────────────────────
+  function hasOverlaps(placement) {
+    const seen = new Set();
+    for (const p of placement) {
+      for (let dr = 0; dr < p.h; dr++) {
+        for (let dc = 0; dc < p.w; dc++) {
+          const k = tileKey(p.row + dr, p.col + dc);
+          if (seen.has(k)) return true;
+          seen.add(k);
+        }
+      }
+    }
+    return false;
   }
 
-  if (!placement) {
-    self.postMessage({ type: 'error', message: 'Could not fit all buildings on the map. Try adding more chunks or removing some buildings.' });
+  // ── Main SA loop — retry up to 5 times if overlaps detected ───────────────
+  const MAX_SA_RETRIES = 5;
+  let finalPlacement = null;
+  let finalScore = -Infinity;
+
+  for (let saAttempt = 0; saAttempt < MAX_SA_RETRIES; saAttempt++) {
+    // Initial placement
+    const MAX_ATTEMPTS = 30;
+    let placement = null;
+    for (let attempt = 0; attempt < MAX_ATTEMPTS; attempt++) {
+      placement = randomPlacement(instances);
+      if (placement) break;
+    }
+    if (!placement) continue;
+
+    // Build occupied set
+    const occupied = new Set();
+    for (const p of placement) occupyTiles(p.row, p.col, p.w, p.h, occupied);
+
+    let currentScore = scorePlacement(placement);
+    let bestScore = currentScore;
+    let bestPlacement = placement.map(p => ({ ...p }));
+
+    const ITERATIONS   = 80000;
+    const T_START      = 5.0;
+    const T_END        = 0.01;
+    const PROGRESS_EVERY = 2000;
+
+    for (let iter = 0; iter < ITERATIONS; iter++) {
+      const temp = T_START * Math.pow(T_END / T_START, iter / ITERATIONS);
+      const useSwap = Math.random() < 0.4;
+      let move = null;
+
+      if (useSwap) move = trySwap(placement, occupied);
+      else         move = tryMove(placement, occupied);
+
+      if (!move) continue;
+
+      const newScore = scorePlacement(placement);
+      const delta = newScore - currentScore;
+
+      if (delta > 0 || Math.random() < Math.exp(delta / temp)) {
+        currentScore = newScore;
+        if (newScore > bestScore) {
+          bestScore = newScore;
+          bestPlacement = placement.map(p => ({ ...p }));
+        }
+      } else {
+        if (useSwap) undoSwap(placement, occupied, move);
+        else         undoMove(placement, occupied, move);
+      }
+
+      if (iter % PROGRESS_EVERY === 0) {
+        self.postMessage({ type: 'progress', pct: Math.round((iter / ITERATIONS) * 100), score: bestScore });
+      }
+    }
+
+    // Validate — if no overlaps, accept this result
+    if (!hasOverlaps(bestPlacement)) {
+      finalPlacement = bestPlacement;
+      finalScore = bestScore;
+      break;
+    }
+
+    // Overlaps found — retry (progress bar will restart but that's fine)
+    console.warn(`SA attempt ${saAttempt + 1} had overlaps, retrying...`);
+  }
+
+  if (!finalPlacement) {
+    self.postMessage({ type: 'error', message: 'Could not produce a valid layout after several attempts. It may not be possible to fit all buildings in the given space — try adding more chunks or adjusting your building list.' });
     return;
   }
 
-  // Build occupied set from initial placement
-  const occupied = new Set();
-  for (const p of placement) occupyTiles(p.row, p.col, p.w, p.h, occupied);
-
-  let currentScore = scorePlacement(placement);
-  let bestScore = currentScore;
-  let bestPlacement = placement.map(p => ({ ...p }));
-
-  // SA parameters
-  const ITERATIONS = 80000;
-  const T_START = 5.0;
-  const T_END = 0.01;
-  const PROGRESS_EVERY = 2000;
-
-  for (let iter = 0; iter < ITERATIONS; iter++) {
-    const temp = T_START * Math.pow(T_END / T_START, iter / ITERATIONS);
-
-    // Pick move type
-    const useSwap = Math.random() < 0.4;
-    let move = null;
-
-    if (useSwap) {
-      move = trySwap(placement, occupied);
-    } else {
-      move = tryMove(placement, occupied);
-    }
-
-    if (!move) continue;
-
-    const newScore = scorePlacement(placement);
-    const delta = newScore - currentScore;
-
-    if (delta > 0 || Math.random() < Math.exp(delta / temp)) {
-      currentScore = newScore;
-      if (newScore > bestScore) {
-        bestScore = newScore;
-        bestPlacement = placement.map(p => ({ ...p }));
-      }
-    } else {
-      // Undo
-      if (useSwap) undoSwap(placement, occupied, move);
-      else undoMove(placement, occupied, move);
-    }
-
-    // Report progress
-    if (iter % PROGRESS_EVERY === 0) {
-      self.postMessage({ type: 'progress', pct: Math.round((iter / ITERATIONS) * 100), score: bestScore });
-    }
-  }
-
-  self.postMessage({ type: 'result', placement: bestPlacement, score: bestScore, instances });
+  self.postMessage({ type: 'result', placement: finalPlacement, score: finalScore, instances });
 };

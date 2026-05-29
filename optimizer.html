@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rise of Cultures — Layout Optimizer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Crimson+Pro:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Rise of Cultures</h1>
+    <p class="subtitle">Layout Optimizer</p>
+  </header>
+
+  <main>
+
+    <!-- STEP 1: GRID SETUP -->
+    <section class="step" id="step-grid">
+      <div class="step-header">
+        <span class="step-number">01</span>
+        <div class="step-title-group">
+          <h2>Territory</h2>
+          <p class="step-desc">Click <span class="highlight">+</span> to expand your land. Click a chunk to remove it.</p>
+        </div>
+        <div class="grid-controls">
+          <input type="number" id="quick-rows" min="3" max="10" value="3" />
+          <span class="dim-sep">×</span>
+          <input type="number" id="quick-cols" min="3" max="12" value="3" />
+          <button id="quick-expand-btn">Fill</button>
+        </div>
+      </div>
+      <div class="chunk-grid-wrapper">
+        <div id="chunk-grid"></div>
+      </div>
+      <div class="grid-stats">
+        <span id="chunk-count">9 chunks</span>
+        <span class="stat-sep">·</span>
+        <span id="tile-count">144 tiles</span>
+      </div>
+    </section>
+
+    <!-- STEP 2: BUILDING SELECTION -->
+    <section class="step" id="step-buildings">
+      <div class="step-header">
+        <span class="step-number">02</span>
+        <div class="step-title-group">
+          <h2>Buildings</h2>
+          <p class="step-desc">Click a building to add it to your city. Adjust levels and quantities in the list.</p>
+        </div>
+      </div>
+      <div class="buildings-layout">
+        <div class="building-picker">
+          <div class="picker-group" id="picker-production">
+            <div class="picker-group-label">Production</div>
+          </div>
+          <div class="picker-group" id="picker-culture">
+            <div class="picker-group-label">Culture</div>
+          </div>
+          <div class="picker-group" id="picker-military">
+            <div class="picker-group-label">Military</div>
+          </div>
+          <div class="picker-group" id="picker-other">
+            <div class="picker-group-label">Other</div>
+          </div>
+        </div>
+        <div class="building-list-panel">
+          <div class="building-list-header">
+            <span class="building-list-title">Your City</span>
+            <span id="building-tile-usage" class="building-tile-usage">0 tiles used</span>
+          </div>
+          <div id="building-list"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STEP 3: PRIORITIES -->
+    <section class="step" id="step-settings">
+      <div class="step-header">
+        <span class="step-number">03</span>
+        <div class="step-title-group">
+          <h2>Priorities</h2>
+          <p class="step-desc">Tell the optimizer what matters most to your city.</p>
+        </div>
+      </div>
+
+      <div class="priorities-layout">
+
+        <!-- Playstyle -->
+        <div class="prio-block">
+          <div class="prio-label">Playstyle</div>
+          <div class="prio-desc">How often do you collect from your buildings?</div>
+          <div class="toggle-group" id="playstyle-group">
+            <button class="toggle-btn active" data-value="active">
+              <span class="toggle-btn-name">Active</span>
+              <span class="toggle-btn-sub">2 – 10 min harvests</span>
+            </button>
+            <button class="toggle-btn" data-value="casual">
+              <span class="toggle-btn-name">Casual</span>
+              <span class="toggle-btn-sub">30 min – 2 hr harvests</span>
+            </button>
+            <button class="toggle-btn" data-value="idle">
+              <span class="toggle-btn-name">Idle</span>
+              <span class="toggle-btn-sub">4 hr+ harvests</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="prio-divider"></div>
+
+        <!-- Primary resource -->
+        <div class="prio-block">
+          <div class="prio-label">Primary Resource</div>
+          <div class="prio-desc">What do you want to maximize above all else?</div>
+          <div class="toggle-group" id="primary-group">
+            <button class="toggle-btn active" data-value="food">
+              <span class="toggle-btn-name">Food</span>
+            </button>
+            <button class="toggle-btn" data-value="coins">
+              <span class="toggle-btn-name">Coins</span>
+            </button>
+            <button class="toggle-btn" data-value="goods">
+              <span class="toggle-btn-name">Goods</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="prio-divider"></div>
+
+        <!-- Secondary ranking -->
+        <div class="prio-block">
+          <div class="prio-label">Secondary Priorities</div>
+          <div class="prio-desc">Rank the remaining resources. Top gets more weight. Toggle off to ignore.</div>
+
+          <div class="secondary-list" id="secondary-list">
+            <!-- injected by JS -->
+          </div>
+        </div>
+
+        <div class="prio-divider"></div>
+
+        <!-- Extra options -->
+        <div class="prio-block" id="extra-options">
+          <!-- Goods count — shown when goods not ignored -->
+          <div class="extra-row" id="goods-count-row">
+            <div class="extra-row-info">
+              <span class="extra-row-label">Goods buildings to prioritize</span>
+              <span class="extra-row-desc">How many of your goods buildings should be fully buffed?</span>
+            </div>
+            <input type="number" class="entry-input-small" id="goods-count-input" min="1" max="20" value="1" />
+          </div>
+
+          <!-- Luxurious farm toggle — shown only if lux farm in list -->
+          <div class="extra-row" id="lux-farm-row" style="display:none">
+            <div class="extra-row-info">
+              <span class="extra-row-label">Favor Luxurious Farm</span>
+              <span class="extra-row-desc">Boost happiness priority for your Luxurious Farm.</span>
+            </div>
+            <button class="extra-toggle" id="lux-farm-toggle" data-active="false">Off</button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- STEP 4: OPTIMIZE -->
+    <section class="step" id="step-generate">
+      <div class="step-header">
+        <span class="step-number">04</span>
+        <div class="step-title-group">
+          <h2>Optimize</h2>
+          <p class="step-desc">Find the best layout for your city.</p>
+        </div>
+        <button id="optimize-btn">Generate</button>
+      </div>
+
+      <!-- Progress -->
+      <div id="optimize-progress" style="display:none">
+        <div class="progress-bar"><div class="progress-fill" id="progress-fill"></div></div>
+        <div class="progress-label" id="progress-label">Initializing...</div>
+      </div>
+
+      <!-- Results -->
+      <div id="optimize-results" style="display:none">
+        <div class="results-layout">
+
+          <!-- Grid visualization -->
+          <div class="result-grid-wrapper">
+            <div id="result-grid"></div>
+          </div>
+
+          <!-- Stats panel -->
+          <div class="result-stats">
+            <div class="stat-block">
+              <div class="stat-block-label">Production / hour</div>
+              <div class="stat-row"><span class="stat-name">Food (active)</span><span class="stat-value" id="stat-food-active">—</span></div>
+              <div class="stat-row"><span class="stat-name">Food (casual)</span><span class="stat-value" id="stat-food-casual">—</span></div>
+              <div class="stat-row"><span class="stat-name">Food (idle)</span><span class="stat-value" id="stat-food-idle">—</span></div>
+              <div class="stat-row"><span class="stat-name">Coins</span><span class="stat-value" id="stat-coins">—</span></div>
+              <div class="stat-row"><span class="stat-name">Goods</span><span class="stat-value" id="stat-goods">—</span></div>
+            </div>
+            <div class="stat-block">
+              <div class="stat-block-label">Tiles</div>
+              <div class="stat-row"><span class="stat-name">Used</span><span class="stat-value" id="stat-tiles-used">—</span></div>
+              <div class="stat-row"><span class="stat-name">Available</span><span class="stat-value" id="stat-tiles-avail">—</span></div>
+            </div>
+            <div class="stat-block">
+              <div class="stat-block-label">Happiness tiers</div>
+              <div class="stat-row"><span class="stat-name happiness-0">0% boost</span><span class="stat-value" id="stat-h0">—</span></div>
+              <div class="stat-row"><span class="stat-name happiness-25">25% boost</span><span class="stat-value" id="stat-h25">—</span></div>
+              <div class="stat-row"><span class="stat-name happiness-50">50% boost</span><span class="stat-value" id="stat-h50">—</span></div>
+              <div class="stat-row"><span class="stat-name happiness-100">100% boost</span><span class="stat-value" id="stat-h100">—</span></div>
+            </div>
+            <div class="stat-block">
+              <div class="stat-block-label">Legend</div>
+              <div class="legend-row"><span class="legend-swatch" style="background:#c9a84c"></span><span>Town Hall</span></div>
+              <div class="legend-row"><span class="legend-swatch" style="background:#e8a04a"></span><span>Farm</span></div>
+              <div class="legend-row"><span class="legend-swatch" style="background:#e8d44a"></span><span>House</span></div>
+              <div class="legend-row"><span class="legend-swatch" style="background:#6aaa64"></span><span>Culture</span></div>
+              <div class="legend-row"><span class="legend-swatch" style="background:#9b59b6"></span><span>Workshop</span></div>
+              <div class="legend-row"><span class="legend-swatch" style="background:#c0392b"></span><span>Military</span></div>
+              <div class="legend-row"><span class="legend-swatch" style="background:#4a90a4"></span><span>Other</span></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+  <script src="js/main.js"></script>
+  <script src="js/buildings.js"></script>
+  <script src="js/priorities.js"></script>
+  <script src="js/renderer.js"></script>
+  <script src="js/optimize.js"></script>
+</body>
+</html>

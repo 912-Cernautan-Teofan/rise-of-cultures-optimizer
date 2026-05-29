@@ -26,7 +26,7 @@ html, body {
   background: var(--bg);
   color: var(--text);
   font-family: 'Crimson Pro', Georgia, serif;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 /* ── Header ────────────────────────────────────────────── */
@@ -44,7 +44,7 @@ html, body {
 .header-back {
   color: var(--text-muted);
   text-decoration: none;
-  font-size: 0.8rem;
+  font-size: 0.95rem;
   letter-spacing: 0.05em;
   transition: color 0.12s;
   white-space: nowrap;
@@ -61,7 +61,7 @@ html, body {
 
 .header-game {
   font-family: 'Cinzel', serif;
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   color: var(--gold);
   letter-spacing: 0.06em;
 }
@@ -69,7 +69,7 @@ html, body {
 .header-sep { color: var(--border-lit); }
 
 .header-page {
-  font-size: 0.8rem;
+  font-size: 0.95rem;
   color: var(--text-dim);
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -86,8 +86,8 @@ html, body {
   border-radius: var(--radius);
   color: var(--text-muted);
   font-family: 'Crimson Pro', serif;
-  font-size: 0.8rem;
-  padding: 4px 12px;
+  font-size: 0.95rem;
+  padding: 6px 16px;
   cursor: pointer;
   transition: border-color 0.12s, color 0.12s, background 0.12s;
   white-space: nowrap;
@@ -151,8 +151,8 @@ html, body {
   border-radius: var(--radius);
   color: var(--text);
   font-family: 'Crimson Pro', serif;
-  font-size: 0.82rem;
-  padding: 5px 8px;
+  font-size: 0.98rem;
+  padding: 7px 10px;
 }
 
 .sidebar-search input:focus {
@@ -188,7 +188,7 @@ html, body {
 }
 
 .selected-card-name {
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   color: var(--text);
 }
 
@@ -256,8 +256,8 @@ html, body {
   border-radius: 0;
   color: var(--text-dim);
   font-family: 'Crimson Pro', serif;
-  font-size: 0.85rem;
-  padding: 5px 12px;
+  font-size: 1rem;
+  padding: 7px 12px;
   cursor: pointer;
   text-align: left;
   gap: 6px;
@@ -313,11 +313,11 @@ html, body {
 
 .stats-title {
   font-family: 'Cinzel', serif;
-  font-size: 0.8rem;
+  font-size: 0.95rem;
   letter-spacing: 0.1em;
   color: var(--gold-dim);
   text-transform: uppercase;
-  padding-bottom: 8px;
+  padding-bottom: 10px;
   border-bottom: 1px solid var(--border);
 }
 
@@ -345,8 +345,8 @@ html, body {
   gap: 6px;
 }
 
-.stat-name { font-size: 0.8rem; color: var(--text-dim); }
-.stat-value { font-size: 0.85rem; color: var(--text); font-variant-numeric: tabular-nums; }
+.stat-name { font-size: 0.95rem; color: var(--text-dim); }
+.stat-value { font-size: 1rem; color: var(--text); font-variant-numeric: tabular-nums; }
 
 .happiness-0   { color: var(--text-muted); }
 .happiness-25  { color: #a0866a; }
@@ -356,8 +356,8 @@ html, body {
 .legend-row {
   display: flex;
   align-items: center;
-  gap: 6px;
-  font-size: 0.78rem;
+  gap: 8px;
+  font-size: 0.95rem;
   color: var(--text-dim);
 }
 
@@ -384,7 +384,7 @@ html, body {
   background: var(--bg-section);
   border: 1px solid var(--border-lit);
   border-radius: 6px;
-  width: 420px;
+  width: 520px;
   max-width: 90vw;
   max-height: 80vh;
   display: flex;
@@ -446,8 +446,8 @@ html, body {
 .tip-row {
   display: flex;
   align-items: baseline;
-  gap: 10px;
-  font-size: 0.82rem;
+  gap: 12px;
+  font-size: 1rem;
   color: var(--text-dim);
 }
 
@@ -472,12 +472,12 @@ html, body {
   background: var(--bg-section);
   border: 1px solid var(--border-lit);
   border-radius: 4px;
-  padding: 8px 12px;
-  font-size: 0.78rem;
+  padding: 10px 14px;
+  font-size: 0.95rem;
   color: var(--text);
   pointer-events: none;
   z-index: 50;
-  max-width: 200px;
+  max-width: 240px;
   line-height: 1.6;
   box-shadow: 0 4px 16px rgba(0,0,0,0.4);
 }

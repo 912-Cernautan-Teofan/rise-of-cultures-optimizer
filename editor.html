@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rise of Cultures — Map Editor</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Crimson+Pro:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="editor.css" />
+</head>
+<body>
+
+  <!-- Top bar -->
+  <header class="editor-header">
+    <a href="index.html" class="header-back">← Optimizer</a>
+    <div class="header-title">
+      <span class="header-game">Rise of Cultures</span>
+      <span class="header-sep">·</span>
+      <span class="header-page">Map Editor</span>
+    </div>
+    <div class="header-toggles">
+      <button class="hdr-toggle" id="toggle-chunks">Chunk grid</button>
+      <button class="hdr-toggle" id="toggle-happiness">😊 Happiness</button>
+      <button class="hdr-toggle" id="btn-tips">Tips</button>
+    </div>
+  </header>
+
+  <div class="editor-layout">
+
+    <!-- LEFT: building picker panel -->
+    <aside class="editor-sidebar" id="editor-sidebar">
+      <div class="sidebar-drag-handle" id="sidebar-handle"></div>
+
+      <div class="sidebar-search">
+        <input type="text" id="building-search" placeholder="Search buildings..." />
+      </div>
+
+      <div class="sidebar-section">
+        <div class="sidebar-label">Selected</div>
+        <div class="sidebar-selected-info" id="selected-info">Click a building below to place it</div>
+        <div class="selected-building-card" id="selected-card" style="display:none">
+          <div class="selected-card-name" id="selected-card-name"></div>
+          <div class="selected-card-meta" id="selected-card-meta"></div>
+          <div class="selected-card-controls">
+            <label class="entry-label">Lv</label>
+            <select class="entry-select" id="selected-level"></select>
+            <button class="hdr-toggle" id="selected-rotate">↻ Rotate</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="sidebar-groups" id="sidebar-groups">
+        <!-- injected by JS -->
+      </div>
+    </aside>
+
+    <!-- MIDDLE: canvas -->
+    <main class="editor-canvas-wrapper">
+      <canvas id="editor-canvas"></canvas>
+    </main>
+
+    <!-- RIGHT: production stats -->
+    <aside class="editor-stats">
+      <div class="stats-title">Production</div>
+
+      <div class="stat-block">
+        <div class="stat-block-label">Food / hour</div>
+        <div class="stat-row">
+          <span class="stat-name">Active</span>
+          <span class="stat-value" id="e-food-active">—</span>
+        </div>
+        <div class="stat-row">
+          <span class="stat-name">Casual</span>
+          <span class="stat-value" id="e-food-casual">—</span>
+        </div>
+        <div class="stat-row">
+          <span class="stat-name">Idle</span>
+          <span class="stat-value" id="e-food-idle">—</span>
+        </div>
+      </div>
+
+      <div class="stat-block">
+        <div class="stat-block-label">Coins / hour</div>
+        <div class="stat-row">
+          <span class="stat-name">Total</span>
+          <span class="stat-value" id="e-coins">—</span>
+        </div>
+      </div>
+
+      <div class="stat-block">
+        <div class="stat-block-label">Goods / hour</div>
+        <div class="stat-row">
+          <span class="stat-name">Total</span>
+          <span class="stat-value" id="e-goods">—</span>
+        </div>
+      </div>
+
+      <div class="stat-block">
+        <div class="stat-block-label">Happiness tiers</div>
+        <div class="stat-row">
+          <span class="stat-name happiness-0">0%</span>
+          <span class="stat-value" id="e-h0">—</span>
+        </div>
+        <div class="stat-row">
+          <span class="stat-name happiness-25">25%</span>
+          <span class="stat-value" id="e-h25">—</span>
+        </div>
+        <div class="stat-row">
+          <span class="stat-name happiness-50">50%</span>
+          <span class="stat-value" id="e-h50">—</span>
+        </div>
+        <div class="stat-row">
+          <span class="stat-name happiness-100">100%</span>
+          <span class="stat-value" id="e-h100">—</span>
+        </div>
+      </div>
+
+      <div class="stat-block">
+        <div class="stat-block-label">Tiles</div>
+        <div class="stat-row">
+          <span class="stat-name">Used</span>
+          <span class="stat-value" id="e-tiles-used">—</span>
+        </div>
+      </div>
+
+      <div class="stat-block">
+        <div class="stat-block-label">Legend</div>
+        <div class="legend-row"><span class="legend-swatch" style="background:#c9a84c"></span><span>Town Hall</span></div>
+        <div class="legend-row"><span class="legend-swatch" style="background:#e8a04a"></span><span>Farm</span></div>
+        <div class="legend-row"><span class="legend-swatch" style="background:#e8d44a"></span><span>House</span></div>
+        <div class="legend-row"><span class="legend-swatch" style="background:#6aaa64"></span><span>Culture</span></div>
+        <div class="legend-row"><span class="legend-swatch" style="background:#9b59b6"></span><span>Workshop</span></div>
+        <div class="legend-row"><span class="legend-swatch" style="background:#c0392b"></span><span>Military</span></div>
+        <div class="legend-row"><span class="legend-swatch" style="background:#4a90a4"></span><span>Other</span></div>
+      </div>
+
+    </aside>
+
+  </div>
+
+  <!-- Tips modal -->
+  <div class="modal-backdrop" id="tips-backdrop" style="display:none">
+    <div class="modal">
+      <div class="modal-header">
+        <span class="modal-title">How to use the Map Editor</span>
+        <button class="modal-close" id="tips-close">✕</button>
+      </div>
+      <div class="modal-body">
+        <div class="tip-group">
+          <div class="tip-group-label">Placing buildings</div>
+          <div class="tip-row"><span class="tip-key">Click</span><span>a building in the left panel to select it</span></div>
+          <div class="tip-row"><span class="tip-key">Click canvas</span><span>to place the selected building</span></div>
+          <div class="tip-row"><span class="tip-key">R</span><span>rotate the selected building before placing</span></div>
+          <div class="tip-row"><span class="tip-key">Esc</span><span>deselect the current building</span></div>
+        </div>
+        <div class="tip-group">
+          <div class="tip-group-label">Moving &amp; editing</div>
+          <div class="tip-row"><span class="tip-key">Drag</span><span>a placed building to move it</span></div>
+          <div class="tip-row"><span class="tip-key">Click</span><span>a placed building (without dragging) to rotate it</span></div>
+          <div class="tip-row"><span class="tip-key">Right-click</span><span>a placed building to delete it</span></div>
+        </div>
+        <div class="tip-group">
+          <div class="tip-group-label">Happiness</div>
+          <div class="tip-row"><span class="tip-key">Toggle</span><span>Happiness in the header to show culture site ranges and boost %</span></div>
+          <div class="tip-row"><span class="tip-key">Hover</span><span>a production building to see its happiness details</span></div>
+        </div>
+        <div class="tip-group">
+          <div class="tip-group-label">Town Hall</div>
+          <div class="tip-row"><span class="tip-key">Range &amp; pts</span><span>Set the Town Hall radius and culture points manually after placing</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Happiness hover tooltip -->
+  <div class="hap-tooltip" id="hap-tooltip" style="display:none"></div>
+
+  <script src="js/editor.js"></script>
+</body>
+</html>

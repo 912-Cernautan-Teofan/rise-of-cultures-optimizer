@@ -86,7 +86,7 @@
           "happiness_thresholds": [
             { "min": 0, "max": 149, "bonus": 0.0 },
             { "min": 150, "max": 299, "bonus": 0.25 },
-            { "min": 300, "max": 549, "bonus": 0.5 },
+            { "min": 300, "max": 589, "bonus": 0.5 },
             { "min": 590, "max": null, "bonus": 1.0 }
           ]
         },
@@ -96,7 +96,7 @@
           "happiness_thresholds": [
             { "min": 0, "max": 149, "bonus": 0.0 },
             { "min": 150, "max": 299, "bonus": 0.25 },
-            { "min": 300, "max": 549, "bonus": 0.5 },
+            { "min": 300, "max": 589, "bonus": 0.5 },
             { "min": 590, "max": null, "bonus": 1.0 }
           ]
         },
@@ -106,8 +106,338 @@
           "happiness_thresholds": [
             { "min": 0, "max": 149, "bonus": 0.0 },
             { "min": 150, "max": 299, "bonus": 0.25 },
-            { "min": 300, "max": 549, "bonus": 0.5 },
+            { "min": 300, "max": 589, "bonus": 0.5 },
             { "min": 590, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 10,
+          "coins_per_hour": 1565,
+          "happiness_thresholds": [
+            { "min": 0, "max": 199, "bonus": 0.0 },
+            { "min": 200, "max": 389, "bonus": 0.25 },
+            { "min": 390, "max": 789, "bonus": 0.5 },
+            { "min": 790, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 11,
+          "coins_per_hour": 1643,
+          "happiness_thresholds": [
+            { "min": 0, "max": 199, "bonus": 0.0 },
+            { "min": 200, "max": 389, "bonus": 0.25 },
+            { "min": 390, "max": 789, "bonus": 0.5 },
+            { "min": 790, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 12,
+          "coins_per_hour": 1733,
+          "happiness_thresholds": [
+            { "min": 0, "max": 199, "bonus": 0.0 },
+            { "min": 200, "max": 389, "bonus": 0.25 },
+            { "min": 390, "max": 789, "bonus": 0.5 },
+            { "min": 790, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 13,
+          "coins_per_hour": 1866,
+          "happiness_thresholds": [
+            { "min": 0, "max": 249, "bonus": 0.0 },
+            { "min": 250, "max": 489, "bonus": 0.25 },
+            { "min": 490, "max": 979, "bonus": 0.5 },
+            { "min": 980, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 14,
+          "coins_per_hour": 1933,
+          "happiness_thresholds": [
+            { "min": 0, "max": 249, "bonus": 0.0 },
+            { "min": 250, "max": 489, "bonus": 0.25 },
+            { "min": 490, "max": 979, "bonus": 0.5 },
+            { "min": 980, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 15,
+          "coins_per_hour": 2016,
+          "happiness_thresholds": [
+            { "min": 0, "max": 249, "bonus": 0.0 },
+            { "min": 250, "max": 489, "bonus": 0.25 },
+            { "min": 490, "max": 979, "bonus": 0.5 },
+            { "min": 980, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 16,
+          "coins_per_hour": 2183,
+          "happiness_thresholds": [
+            { "min": 0, "max": 299, "bonus": 0.0 },
+            { "min": 300, "max": 589, "bonus": 0.25 },
+            { "min": 590, "max": 1179, "bonus": 0.5 },
+            { "min": 1180, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 17,
+          "coins_per_hour": 2266,
+          "happiness_thresholds": [
+            { "min": 0, "max": 299, "bonus": 0.0 },
+            { "min": 300, "max": 589, "bonus": 0.25 },
+            { "min": 590, "max": 1179, "bonus": 0.5 },
+            { "min": 1180, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 18,
+          "coins_per_hour": 2350,
+          "happiness_thresholds": [
+            { "min": 0, "max": 299, "bonus": 0.0 },
+            { "min": 300, "max": 589, "bonus": 0.25 },
+            { "min": 590, "max": 1179, "bonus": 0.5 },
+            { "min": 1180, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 19,
+          "coins_per_hour": 2533,
+          "happiness_thresholds": [
+            { "min": 0, "max": 339, "bonus": 0.0 },
+            { "min": 340, "max": 689, "bonus": 0.25 },
+            { "min": 690, "max": 1379, "bonus": 0.5 },
+            { "min": 1380, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 20,
+          "coins_per_hour": 2633,
+          "happiness_thresholds": [
+            { "min": 0, "max": 339, "bonus": 0.0 },
+            { "min": 340, "max": 689, "bonus": 0.25 },
+            { "min": 690, "max": 1379, "bonus": 0.5 },
+            { "min": 1380, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 21,
+          "coins_per_hour": 2733,
+          "happiness_thresholds": [
+            { "min": 0, "max": 339, "bonus": 0.0 },
+            { "min": 340, "max": 689, "bonus": 0.25 },
+            { "min": 690, "max": 1379, "bonus": 0.5 },
+            { "min": 1380, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 22,
+          "coins_per_hour": 2916,
+          "happiness_thresholds": [
+            { "min": 0, "max": 419, "bonus": 0.0 },
+            { "min": 420, "max": 839, "bonus": 0.25 },
+            { "min": 840, "max": 1669, "bonus": 0.5 },
+            { "min": 1670, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 23,
+          "coins_per_hour": 3000,
+          "happiness_thresholds": [
+            { "min": 0, "max": 419, "bonus": 0.0 },
+            { "min": 420, "max": 839, "bonus": 0.25 },
+            { "min": 840, "max": 1669, "bonus": 0.5 },
+            { "min": 1670, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 24,
+          "coins_per_hour": 3083,
+          "happiness_thresholds": [
+            { "min": 0, "max": 419, "bonus": 0.0 },
+            { "min": 420, "max": 839, "bonus": 0.25 },
+            { "min": 840, "max": 1669, "bonus": 0.5 },
+            { "min": 1670, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 25,
+          "coins_per_hour": 3300,
+          "happiness_thresholds": [
+            { "min": 0, "max": 489, "bonus": 0.0 },
+            { "min": 490, "max": 979, "bonus": 0.25 },
+            { "min": 980, "max": 1969, "bonus": 0.5 },
+            { "min": 1970, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 26,
+          "coins_per_hour": 3400,
+          "happiness_thresholds": [
+            { "min": 0, "max": 489, "bonus": 0.0 },
+            { "min": 490, "max": 979, "bonus": 0.25 },
+            { "min": 980, "max": 1969, "bonus": 0.5 },
+            { "min": 1970, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 27,
+          "coins_per_hour": 3500,
+          "happiness_thresholds": [
+            { "min": 0, "max": 489, "bonus": 0.0 },
+            { "min": 490, "max": 979, "bonus": 0.25 },
+            { "min": 980, "max": 1969, "bonus": 0.5 },
+            { "min": 1970, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 28,
+          "coins_per_hour": 3750,
+          "happiness_thresholds": [
+            { "min": 0, "max": 589, "bonus": 0.0 },
+            { "min": 590, "max": 1179, "bonus": 0.25 },
+            { "min": 1180, "max": 2359, "bonus": 0.5 },
+            { "min": 2360, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 29,
+          "coins_per_hour": 3866,
+          "happiness_thresholds": [
+            { "min": 0, "max": 589, "bonus": 0.0 },
+            { "min": 590, "max": 1179, "bonus": 0.25 },
+            { "min": 1180, "max": 2359, "bonus": 0.5 },
+            { "min": 2360, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 30,
+          "coins_per_hour": 3983,
+          "happiness_thresholds": [
+            { "min": 0, "max": 589, "bonus": 0.0 },
+            { "min": 590, "max": 1179, "bonus": 0.25 },
+            { "min": 1180, "max": 2359, "bonus": 0.5 },
+            { "min": 2360, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 31,
+          "coins_per_hour": 4266,
+          "happiness_thresholds": [
+            { "min": 0, "max": 709, "bonus": 0.0 },
+            { "min": 710, "max": 1429, "bonus": 0.25 },
+            { "min": 1430, "max": 2849, "bonus": 0.5 },
+            { "min": 2850, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 32,
+          "coins_per_hour": 4400,
+          "happiness_thresholds": [
+            { "min": 0, "max": 709, "bonus": 0.0 },
+            { "min": 710, "max": 1429, "bonus": 0.25 },
+            { "min": 1430, "max": 2849, "bonus": 0.5 },
+            { "min": 2850, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 33,
+          "coins_per_hour": 4533,
+          "happiness_thresholds": [
+            { "min": 0, "max": 709, "bonus": 0.0 },
+            { "min": 710, "max": 1429, "bonus": 0.25 },
+            { "min": 1430, "max": 2849, "bonus": 0.5 },
+            { "min": 2850, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 34,
+          "coins_per_hour": 4850,
+          "happiness_thresholds": [
+            { "min": 0, "max": 859, "bonus": 0.0 },
+            { "min": 860, "max": 1719, "bonus": 0.25 },
+            { "min": 1720, "max": 3439, "bonus": 0.5 },
+            { "min": 3440, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 35,
+          "coins_per_hour": 5000,
+          "happiness_thresholds": [
+            { "min": 0, "max": 859, "bonus": 0.0 },
+            { "min": 860, "max": 1719, "bonus": 0.25 },
+            { "min": 1720, "max": 3439, "bonus": 0.5 },
+            { "min": 3440, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 36,
+          "coins_per_hour": 5150,
+          "happiness_thresholds": [
+            { "min": 0, "max": 859, "bonus": 0.0 },
+            { "min": 860, "max": 1719, "bonus": 0.25 },
+            { "min": 1720, "max": 3439, "bonus": 0.5 },
+            { "min": 3440, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 37,
+          "coins_per_hour": 5333,
+          "happiness_thresholds": [
+            { "min": 0, "max": 1029, "bonus": 0.0 },
+            { "min": 1030, "max": 2069, "bonus": 0.25 },
+            { "min": 2070, "max": 4129, "bonus": 0.5 },
+            { "min": 4130, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 38,
+          "coins_per_hour": 5583,
+          "happiness_thresholds": [
+            { "min": 0, "max": 1029, "bonus": 0.0 },
+            { "min": 1030, "max": 2069, "bonus": 0.25 },
+            { "min": 2070, "max": 4129, "bonus": 0.5 },
+            { "min": 4130, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 39,
+          "coins_per_hour": 5833,
+          "happiness_thresholds": [
+            { "min": 0, "max": 1029, "bonus": 0.0 },
+            { "min": 1030, "max": 2069, "bonus": 0.25 },
+            { "min": 2070, "max": 4129, "bonus": 0.5 },
+            { "min": 4130, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 40,
+          "coins_per_hour": 6083,
+          "happiness_thresholds": [
+            { "min": 0, "max": 1199, "bonus": 0.0 },
+            { "min": 1200, "max": 2419, "bonus": 0.25 },
+            { "min": 2420, "max": 4819, "bonus": 0.5 },
+            { "min": 4820, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 41,
+          "coins_per_hour": 6333,
+          "happiness_thresholds": [
+            { "min": 0, "max": 1199, "bonus": 0.0 },
+            { "min": 1200, "max": 2419, "bonus": 0.25 },
+            { "min": 2420, "max": 4819, "bonus": 0.5 },
+            { "min": 4820, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 42,
+          "coins_per_hour": 6583,
+          "happiness_thresholds": [
+            { "min": 0, "max": 1199, "bonus": 0.0 },
+            { "min": 1200, "max": 2419, "bonus": 0.25 },
+            { "min": 2420, "max": 4819, "bonus": 0.5 },
+            { "min": 4820, "max": null, "bonus": 1.0 }
           ]
         }
       ]
@@ -179,6 +509,336 @@
             { "min": 330, "max": 669, "bonus": 0.5 },
             { "min": 670, "max": null, "bonus": 1.0 }
           ]
+        },
+        {
+          "level": 10,
+          "coins_per_hour": 1591,
+          "happiness_thresholds": [
+            { "min": 0, "max": 219, "bonus": 0.0 },
+            { "min": 220, "max": 449, "bonus": 0.25 },
+            { "min": 450, "max": 889, "bonus": 0.5 },
+            { "min": 890, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 11,
+          "coins_per_hour": 1675,
+          "happiness_thresholds": [
+            { "min": 0, "max": 219, "bonus": 0.0 },
+            { "min": 220, "max": 449, "bonus": 0.25 },
+            { "min": 450, "max": 889, "bonus": 0.5 },
+            { "min": 890, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 12,
+          "coins_per_hour": 1758,
+          "happiness_thresholds": [
+            { "min": 0, "max": 219, "bonus": 0.0 },
+            { "min": 220, "max": 449, "bonus": 0.25 },
+            { "min": 450, "max": 889, "bonus": 0.5 },
+            { "min": 890, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 13,
+          "coins_per_hour": 1900,
+          "happiness_thresholds": [
+            { "min": 0, "max": 279, "bonus": 0.0 },
+            { "min": 280, "max": 559, "bonus": 0.25 },
+            { "min": 560, "max": 1119, "bonus": 0.5 },
+            { "min": 1120, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 14,
+          "coins_per_hour": 1975,
+          "happiness_thresholds": [
+            { "min": 0, "max": 279, "bonus": 0.0 },
+            { "min": 280, "max": 559, "bonus": 0.25 },
+            { "min": 560, "max": 1119, "bonus": 0.5 },
+            { "min": 1120, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 15,
+          "coins_per_hour": 2050,
+          "happiness_thresholds": [
+            { "min": 0, "max": 279, "bonus": 0.0 },
+            { "min": 280, "max": 559, "bonus": 0.25 },
+            { "min": 560, "max": 1119, "bonus": 0.5 },
+            { "min": 1120, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 16,
+          "coins_per_hour": 2216,
+          "happiness_thresholds": [
+            { "min": 0, "max": 329, "bonus": 0.0 },
+            { "min": 330, "max": 669, "bonus": 0.25 },
+            { "min": 670, "max": 1339, "bonus": 0.5 },
+            { "min": 1340, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 17,
+          "coins_per_hour": 2308,
+          "happiness_thresholds": [
+            { "min": 0, "max": 329, "bonus": 0.0 },
+            { "min": 330, "max": 669, "bonus": 0.25 },
+            { "min": 670, "max": 1339, "bonus": 0.5 },
+            { "min": 1340, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 18,
+          "coins_per_hour": 2400,
+          "happiness_thresholds": [
+            { "min": 0, "max": 329, "bonus": 0.0 },
+            { "min": 330, "max": 669, "bonus": 0.25 },
+            { "min": 670, "max": 1339, "bonus": 0.5 },
+            { "min": 1340, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 19,
+          "coins_per_hour": 2591,
+          "happiness_thresholds": [
+            { "min": 0, "max": 389, "bonus": 0.0 },
+            { "min": 390, "max": 779, "bonus": 0.25 },
+            { "min": 780, "max": 1559, "bonus": 0.5 },
+            { "min": 1560, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 20,
+          "coins_per_hour": 2691,
+          "happiness_thresholds": [
+            { "min": 0, "max": 389, "bonus": 0.0 },
+            { "min": 390, "max": 779, "bonus": 0.25 },
+            { "min": 780, "max": 1559, "bonus": 0.5 },
+            { "min": 1560, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 21,
+          "coins_per_hour": 2800,
+          "happiness_thresholds": [
+            { "min": 0, "max": 389, "bonus": 0.0 },
+            { "min": 390, "max": 779, "bonus": 0.25 },
+            { "min": 780, "max": 1559, "bonus": 0.5 },
+            { "min": 1560, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 22,
+          "coins_per_hour": 3000,
+          "happiness_thresholds": [
+            { "min": 0, "max": 469, "bonus": 0.0 },
+            { "min": 470, "max": 949, "bonus": 0.25 },
+            { "min": 950, "max": 1899, "bonus": 0.5 },
+            { "min": 1900, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 23,
+          "coins_per_hour": 3091,
+          "happiness_thresholds": [
+            { "min": 0, "max": 469, "bonus": 0.0 },
+            { "min": 470, "max": 949, "bonus": 0.25 },
+            { "min": 950, "max": 1899, "bonus": 0.5 },
+            { "min": 1900, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 24,
+          "coins_per_hour": 3183,
+          "happiness_thresholds": [
+            { "min": 0, "max": 469, "bonus": 0.0 },
+            { "min": 470, "max": 949, "bonus": 0.25 },
+            { "min": 950, "max": 1899, "bonus": 0.5 },
+            { "min": 1900, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 25,
+          "coins_per_hour": 3408,
+          "happiness_thresholds": [
+            { "min": 0, "max": 559, "bonus": 0.0 },
+            { "min": 560, "max": 1119, "bonus": 0.25 },
+            { "min": 1120, "max": 2229, "bonus": 0.5 },
+            { "min": 2230, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 26,
+          "coins_per_hour": 3508,
+          "happiness_thresholds": [
+            { "min": 0, "max": 559, "bonus": 0.0 },
+            { "min": 560, "max": 1119, "bonus": 0.25 },
+            { "min": 1120, "max": 2229, "bonus": 0.5 },
+            { "min": 2230, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 27,
+          "coins_per_hour": 3616,
+          "happiness_thresholds": [
+            { "min": 0, "max": 559, "bonus": 0.0 },
+            { "min": 560, "max": 1119, "bonus": 0.25 },
+            { "min": 1120, "max": 2229, "bonus": 0.5 },
+            { "min": 2230, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 28,
+          "coins_per_hour": 3866,
+          "happiness_thresholds": [
+            { "min": 0, "max": 669, "bonus": 0.0 },
+            { "min": 670, "max": 1339, "bonus": 0.25 },
+            { "min": 1340, "max": 2679, "bonus": 0.5 },
+            { "min": 2680, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 29,
+          "coins_per_hour": 3983,
+          "happiness_thresholds": [
+            { "min": 0, "max": 669, "bonus": 0.0 },
+            { "min": 670, "max": 1339, "bonus": 0.25 },
+            { "min": 1340, "max": 2679, "bonus": 0.5 },
+            { "min": 2680, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 30,
+          "coins_per_hour": 4100,
+          "happiness_thresholds": [
+            { "min": 0, "max": 669, "bonus": 0.0 },
+            { "min": 670, "max": 1339, "bonus": 0.25 },
+            { "min": 1340, "max": 2679, "bonus": 0.5 },
+            { "min": 2680, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 31,
+          "coins_per_hour": 4383,
+          "happiness_thresholds": [
+            { "min": 0, "max": 809, "bonus": 0.0 },
+            { "min": 810, "max": 1619, "bonus": 0.25 },
+            { "min": 1620, "max": 3229, "bonus": 0.5 },
+            { "min": 3230, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 32,
+          "coins_per_hour": 4516,
+          "happiness_thresholds": [
+            { "min": 0, "max": 809, "bonus": 0.0 },
+            { "min": 810, "max": 1619, "bonus": 0.25 },
+            { "min": 1620, "max": 3229, "bonus": 0.5 },
+            { "min": 3230, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 33,
+          "coins_per_hour": 4650,
+          "happiness_thresholds": [
+            { "min": 0, "max": 809, "bonus": 0.0 },
+            { "min": 810, "max": 1619, "bonus": 0.25 },
+            { "min": 1620, "max": 3229, "bonus": 0.5 },
+            { "min": 3230, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 34,
+          "coins_per_hour": 4975,
+          "happiness_thresholds": [
+            { "min": 0, "max": 979, "bonus": 0.0 },
+            { "min": 980, "max": 1949, "bonus": 0.25 },
+            { "min": 1950, "max": 3899, "bonus": 0.5 },
+            { "min": 3900, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 35,
+          "coins_per_hour": 5125,
+          "happiness_thresholds": [
+            { "min": 0, "max": 979, "bonus": 0.0 },
+            { "min": 980, "max": 1949, "bonus": 0.25 },
+            { "min": 1950, "max": 3899, "bonus": 0.5 },
+            { "min": 3900, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 36,
+          "coins_per_hour": 5275,
+          "happiness_thresholds": [
+            { "min": 0, "max": 979, "bonus": 0.0 },
+            { "min": 980, "max": 1949, "bonus": 0.25 },
+            { "min": 1950, "max": 3899, "bonus": 0.5 },
+            { "min": 3900, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 37,
+          "coins_per_hour": 5500,
+          "happiness_thresholds": [
+            { "min": 0, "max": 1169, "bonus": 0.0 },
+            { "min": 1170, "max": 2339, "bonus": 0.25 },
+            { "min": 2340, "max": 4679, "bonus": 0.5 },
+            { "min": 4680, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 38,
+          "coins_per_hour": 5833,
+          "happiness_thresholds": [
+            { "min": 0, "max": 1169, "bonus": 0.0 },
+            { "min": 1170, "max": 2339, "bonus": 0.25 },
+            { "min": 2340, "max": 4679, "bonus": 0.5 },
+            { "min": 4680, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 39,
+          "coins_per_hour": 6250,
+          "happiness_thresholds": [
+            { "min": 0, "max": 1169, "bonus": 0.0 },
+            { "min": 1170, "max": 2339, "bonus": 0.25 },
+            { "min": 2340, "max": 4679, "bonus": 0.5 },
+            { "min": 4680, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 40,
+          "coins_per_hour": 6666,
+          "happiness_thresholds": [
+            { "min": 0, "max": 1359, "bonus": 0.0 },
+            { "min": 1360, "max": 2729, "bonus": 0.25 },
+            { "min": 2730, "max": 5459, "bonus": 0.5 },
+            { "min": 5460, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 41,
+          "coins_per_hour": 7083,
+          "happiness_thresholds": [
+            { "min": 0, "max": 1359, "bonus": 0.0 },
+            { "min": 1360, "max": 2729, "bonus": 0.25 },
+            { "min": 2730, "max": 5459, "bonus": 0.5 },
+            { "min": 5460, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 42,
+          "coins_per_hour": 7500,
+          "happiness_thresholds": [
+            { "min": 0, "max": 1359, "bonus": 0.0 },
+            { "min": 1360, "max": 2729, "bonus": 0.25 },
+            { "min": 2730, "max": 5459, "bonus": 0.5 },
+            { "min": 5460, "max": null, "bonus": 1.0 }
+          ]
         }
       ]
     },
@@ -218,6 +878,116 @@
             { "min": 160, "max": 309, "bonus": 0.25 },
             { "min": 310, "max": 629, "bonus": 0.5 },
             { "min": 630, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 12,
+          "coins_per_hour": 1633,
+          "happiness_thresholds": [
+            { "min": 0, "max": 209, "bonus": 0.0 },
+            { "min": 210, "max": 419, "bonus": 0.25 },
+            { "min": 420, "max": 839, "bonus": 0.5 },
+            { "min": 840, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 15,
+          "coins_per_hour": 1950,
+          "happiness_thresholds": [
+            { "min": 0, "max": 259, "bonus": 0.0 },
+            { "min": 260, "max": 519, "bonus": 0.25 },
+            { "min": 520, "max": 1049, "bonus": 0.5 },
+            { "min": 1050, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 18,
+          "coins_per_hour": 2275,
+          "happiness_thresholds": [
+            { "min": 0, "max": 309, "bonus": 0.0 },
+            { "min": 310, "max": 629, "bonus": 0.25 },
+            { "min": 630, "max": 1259, "bonus": 0.5 },
+            { "min": 1260, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 21,
+          "coins_per_hour": 2658,
+          "happiness_thresholds": [
+            { "min": 0, "max": 369, "bonus": 0.0 },
+            { "min": 370, "max": 729, "bonus": 0.25 },
+            { "min": 730, "max": 1469, "bonus": 0.5 },
+            { "min": 1470, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 24,
+          "coins_per_hour": 3079,
+          "happiness_thresholds": [
+            { "min": 0, "max": 449, "bonus": 0.0 },
+            { "min": 450, "max": 889, "bonus": 0.25 },
+            { "min": 890, "max": 1779, "bonus": 0.5 },
+            { "min": 1780, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 27,
+          "coins_per_hour": 3495,
+          "happiness_thresholds": [
+            { "min": 0, "max": 519, "bonus": 0.0 },
+            { "min": 520, "max": 1049, "bonus": 0.25 },
+            { "min": 1050, "max": 2099, "bonus": 0.5 },
+            { "min": 2100, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 30,
+          "coins_per_hour": 3966,
+          "happiness_thresholds": [
+            { "min": 0, "max": 629, "bonus": 0.0 },
+            { "min": 630, "max": 1259, "bonus": 0.25 },
+            { "min": 1260, "max": 2509, "bonus": 0.5 },
+            { "min": 2510, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 33,
+          "coins_per_hour": 4500,
+          "happiness_thresholds": [
+            { "min": 0, "max": 759, "bonus": 0.0 },
+            { "min": 760, "max": 1519, "bonus": 0.25 },
+            { "min": 1520, "max": 3039, "bonus": 0.5 },
+            { "min": 3040, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 36,
+          "coins_per_hour": 5000,
+          "happiness_thresholds": [
+            { "min": 0, "max": 919, "bonus": 0.0 },
+            { "min": 920, "max": 1829, "bonus": 0.25 },
+            { "min": 1830, "max": 3669, "bonus": 0.5 },
+            { "min": 3670, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 39,
+          "coins_per_hour": 6250,
+          "happiness_thresholds": [
+            { "min": 0, "max": 1099, "bonus": 0.0 },
+            { "min": 1100, "max": 2199, "bonus": 0.25 },
+            { "min": 2200, "max": 4399, "bonus": 0.5 },
+            { "min": 4400, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 42,
+          "coins_per_hour": 10000,
+          "happiness_thresholds": [
+            { "min": 0, "max": 1279, "bonus": 0.0 },
+            { "min": 1280, "max": 2569, "bonus": 0.25 },
+            { "min": 2570, "max": 5129, "bonus": 0.5 },
+            { "min": 5130, "max": null, "bonus": 1.0 }
           ]
         }
       ]
@@ -351,6 +1121,468 @@
             { "min": 360, "max": 719, "bonus": 0.5 },
             { "min": 720, "max": null, "bonus": 1.0 }
           ]
+        },
+        {
+          "level": 10,
+          "harvests": [
+            { "duration_minutes": 2, "amount": 290 },
+            { "duration_minutes": 10, "amount": 1210 },
+            { "duration_minutes": 60, "amount": 5580 }
+          ],
+          "happiness_thresholds": [
+            { "min": 0, "max": 239, "bonus": 0.0 },
+            { "min": 240, "max": 479, "bonus": 0.25 },
+            { "min": 480, "max": 959, "bonus": 0.5 },
+            { "min": 960, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 11,
+          "harvests": [
+            { "duration_minutes": 2, "amount": 300 },
+            { "duration_minutes": 10, "amount": 1270 },
+            { "duration_minutes": 60, "amount": 5860 }
+          ],
+          "happiness_thresholds": [
+            { "min": 0, "max": 239, "bonus": 0.0 },
+            { "min": 240, "max": 479, "bonus": 0.25 },
+            { "min": 480, "max": 959, "bonus": 0.5 },
+            { "min": 960, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 12,
+          "harvests": [
+            { "duration_minutes": 2, "amount": 320 },
+            { "duration_minutes": 10, "amount": 1330 },
+            { "duration_minutes": 60, "amount": 6150 }
+          ],
+          "happiness_thresholds": [
+            { "min": 0, "max": 239, "bonus": 0.0 },
+            { "min": 240, "max": 479, "bonus": 0.25 },
+            { "min": 480, "max": 959, "bonus": 0.5 },
+            { "min": 960, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 13,
+          "harvests": [
+            { "duration_minutes": 2, "amount": 350 },
+            { "duration_minutes": 10, "amount": 1440 },
+            { "duration_minutes": 60, "amount": 6640 }
+          ],
+          "happiness_thresholds": [
+            { "min": 0, "max": 299, "bonus": 0.0 },
+            { "min": 300, "max": 599, "bonus": 0.25 },
+            { "min": 600, "max": 1199, "bonus": 0.5 },
+            { "min": 1200, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 14,
+          "harvests": [
+            { "duration_minutes": 2, "amount": 360 },
+            { "duration_minutes": 10, "amount": 1500 },
+            { "duration_minutes": 60, "amount": 6910 }
+          ],
+          "happiness_thresholds": [
+            { "min": 0, "max": 299, "bonus": 0.0 },
+            { "min": 300, "max": 599, "bonus": 0.25 },
+            { "min": 600, "max": 1199, "bonus": 0.5 },
+            { "min": 1200, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 15,
+          "harvests": [
+            { "duration_minutes": 2, "amount": 370 },
+            { "duration_minutes": 10, "amount": 1560 },
+            { "duration_minutes": 60, "amount": 7190 }
+          ],
+          "happiness_thresholds": [
+            { "min": 0, "max": 299, "bonus": 0.0 },
+            { "min": 300, "max": 599, "bonus": 0.25 },
+            { "min": 600, "max": 1199, "bonus": 0.5 },
+            { "min": 1200, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 16,
+          "harvests": [
+            { "duration_minutes": 2, "amount": 400 },
+            { "duration_minutes": 10, "amount": 1680 },
+            { "duration_minutes": 60, "amount": 7770 }
+          ],
+          "happiness_thresholds": [
+            { "min": 0, "max": 359, "bonus": 0.0 },
+            { "min": 360, "max": 719, "bonus": 0.25 },
+            { "min": 720, "max": 1439, "bonus": 0.5 },
+            { "min": 1440, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 17,
+          "harvests": [
+            { "duration_minutes": 2, "amount": 420 },
+            { "duration_minutes": 10, "amount": 1750 },
+            { "duration_minutes": 60, "amount": 8080 }
+          ],
+          "happiness_thresholds": [
+            { "min": 0, "max": 359, "bonus": 0.0 },
+            { "min": 360, "max": 719, "bonus": 0.25 },
+            { "min": 720, "max": 1439, "bonus": 0.5 },
+            { "min": 1440, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 18,
+          "harvests": [
+            { "duration_minutes": 2, "amount": 440 },
+            { "duration_minutes": 10, "amount": 1820 },
+            { "duration_minutes": 60, "amount": 8400 }
+          ],
+          "happiness_thresholds": [
+            { "min": 0, "max": 359, "bonus": 0.0 },
+            { "min": 360, "max": 719, "bonus": 0.25 },
+            { "min": 720, "max": 1439, "bonus": 0.5 },
+            { "min": 1440, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 19,
+          "harvests": [
+            { "duration_minutes": 2, "amount": 480 },
+            { "duration_minutes": 10, "amount": 1970 },
+            { "duration_minutes": 60, "amount": 9070 }
+          ],
+          "happiness_thresholds": [
+            { "min": 0, "max": 419, "bonus": 0.0 },
+            { "min": 420, "max": 839, "bonus": 0.25 },
+            { "min": 840, "max": 1679, "bonus": 0.5 },
+            { "min": 1680, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 20,
+          "harvests": [
+            { "duration_minutes": 2, "amount": 500 },
+            { "duration_minutes": 10, "amount": 2050 },
+            { "duration_minutes": 60, "amount": 9430 }
+          ],
+          "happiness_thresholds": [
+            { "min": 0, "max": 419, "bonus": 0.0 },
+            { "min": 420, "max": 839, "bonus": 0.25 },
+            { "min": 840, "max": 1679, "bonus": 0.5 },
+            { "min": 1680, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 21,
+          "harvests": [
+            { "duration_minutes": 2, "amount": 520 },
+            { "duration_minutes": 10, "amount": 2130 },
+            { "duration_minutes": 60, "amount": 9810 }
+          ],
+          "happiness_thresholds": [
+            { "min": 0, "max": 419, "bonus": 0.0 },
+            { "min": 420, "max": 839, "bonus": 0.25 },
+            { "min": 840, "max": 1679, "bonus": 0.5 },
+            { "min": 1680, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 22,
+          "harvests": [
+            { "duration_minutes": 2, "amount": 560 },
+            { "duration_minutes": 10, "amount": 2280 },
+            { "duration_minutes": 60, "amount": 10500 }
+          ],
+          "happiness_thresholds": [
+            { "min": 0, "max": 509, "bonus": 0.0 },
+            { "min": 510, "max": 1019, "bonus": 0.25 },
+            { "min": 1020, "max": 2039, "bonus": 0.5 },
+            { "min": 2040, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 23,
+          "harvests": [
+            { "duration_minutes": 2, "amount": 580 },
+            { "duration_minutes": 10, "amount": 2350 },
+            { "duration_minutes": 60, "amount": 10800 }
+          ],
+          "happiness_thresholds": [
+            { "min": 0, "max": 509, "bonus": 0.0 },
+            { "min": 510, "max": 1019, "bonus": 0.25 },
+            { "min": 1020, "max": 2039, "bonus": 0.5 },
+            { "min": 2040, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 24,
+          "harvests": [
+            { "duration_minutes": 2, "amount": 600 },
+            { "duration_minutes": 10, "amount": 2420 },
+            { "duration_minutes": 60, "amount": 11100 }
+          ],
+          "happiness_thresholds": [
+            { "min": 0, "max": 509, "bonus": 0.0 },
+            { "min": 510, "max": 1019, "bonus": 0.25 },
+            { "min": 1020, "max": 2039, "bonus": 0.5 },
+            { "min": 2040, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 25,
+          "harvests": [
+            { "duration_minutes": 2, "amount": 640 },
+            { "duration_minutes": 10, "amount": 2590 },
+            { "duration_minutes": 60, "amount": 11900 }
+          ],
+          "happiness_thresholds": [
+            { "min": 0, "max": 599, "bonus": 0.0 },
+            { "min": 600, "max": 1199, "bonus": 0.25 },
+            { "min": 1200, "max": 2399, "bonus": 0.5 },
+            { "min": 2400, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 26,
+          "harvests": [
+            { "duration_minutes": 2, "amount": 660 },
+            { "duration_minutes": 10, "amount": 2670 },
+            { "duration_minutes": 60, "amount": 12300 }
+          ],
+          "happiness_thresholds": [
+            { "min": 0, "max": 599, "bonus": 0.0 },
+            { "min": 600, "max": 1199, "bonus": 0.25 },
+            { "min": 1200, "max": 2399, "bonus": 0.5 },
+            { "min": 2400, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 27,
+          "harvests": [
+            { "duration_minutes": 2, "amount": 680 },
+            { "duration_minutes": 10, "amount": 2750 },
+            { "duration_minutes": 60, "amount": 12700 }
+          ],
+          "happiness_thresholds": [
+            { "min": 0, "max": 599, "bonus": 0.0 },
+            { "min": 600, "max": 1199, "bonus": 0.25 },
+            { "min": 1200, "max": 2399, "bonus": 0.5 },
+            { "min": 2400, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 28,
+          "harvests": [
+            { "duration_minutes": 2, "amount": 730 },
+            { "duration_minutes": 10, "amount": 2940 },
+            { "duration_minutes": 60, "amount": 13600 }
+          ],
+          "happiness_thresholds": [
+            { "min": 0, "max": 719, "bonus": 0.0 },
+            { "min": 720, "max": 1439, "bonus": 0.25 },
+            { "min": 1440, "max": 2879, "bonus": 0.5 },
+            { "min": 2880, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 29,
+          "harvests": [
+            { "duration_minutes": 2, "amount": 750 },
+            { "duration_minutes": 10, "amount": 3030 },
+            { "duration_minutes": 60, "amount": 14000 }
+          ],
+          "happiness_thresholds": [
+            { "min": 0, "max": 719, "bonus": 0.0 },
+            { "min": 720, "max": 1439, "bonus": 0.25 },
+            { "min": 1440, "max": 2879, "bonus": 0.5 },
+            { "min": 2880, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 30,
+          "harvests": [
+            { "duration_minutes": 2, "amount": 770 },
+            { "duration_minutes": 10, "amount": 3120 },
+            { "duration_minutes": 60, "amount": 14400 }
+          ],
+          "happiness_thresholds": [
+            { "min": 0, "max": 719, "bonus": 0.0 },
+            { "min": 720, "max": 1439, "bonus": 0.25 },
+            { "min": 1440, "max": 2879, "bonus": 0.5 },
+            { "min": 2880, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 31,
+          "harvests": [
+            { "duration_minutes": 2, "amount": 820 },
+            { "duration_minutes": 10, "amount": 3340 },
+            { "duration_minutes": 60, "amount": 15400 }
+          ],
+          "happiness_thresholds": [
+            { "min": 0, "max": 869, "bonus": 0.0 },
+            { "min": 870, "max": 1739, "bonus": 0.25 },
+            { "min": 1740, "max": 3479, "bonus": 0.5 },
+            { "min": 3480, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 32,
+          "harvests": [
+            { "duration_minutes": 2, "amount": 840 },
+            { "duration_minutes": 10, "amount": 3440 },
+            { "duration_minutes": 60, "amount": 15900 }
+          ],
+          "happiness_thresholds": [
+            { "min": 0, "max": 869, "bonus": 0.0 },
+            { "min": 870, "max": 1739, "bonus": 0.25 },
+            { "min": 1740, "max": 3479, "bonus": 0.5 },
+            { "min": 3480, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 33,
+          "harvests": [
+            { "duration_minutes": 2, "amount": 870 },
+            { "duration_minutes": 10, "amount": 3540 },
+            { "duration_minutes": 60, "amount": 16400 }
+          ],
+          "happiness_thresholds": [
+            { "min": 0, "max": 869, "bonus": 0.0 },
+            { "min": 870, "max": 1739, "bonus": 0.25 },
+            { "min": 1740, "max": 3479, "bonus": 0.5 },
+            { "min": 3480, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 34,
+          "harvests": [
+            { "duration_minutes": 2, "amount": 930 },
+            { "duration_minutes": 10, "amount": 3790 },
+            { "duration_minutes": 60, "amount": 17500 }
+          ],
+          "happiness_thresholds": [
+            { "min": 0, "max": 1049, "bonus": 0.0 },
+            { "min": 1050, "max": 2099, "bonus": 0.25 },
+            { "min": 2100, "max": 4199, "bonus": 0.5 },
+            { "min": 4200, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 35,
+          "harvests": [
+            { "duration_minutes": 2, "amount": 960 },
+            { "duration_minutes": 10, "amount": 3900 },
+            { "duration_minutes": 60, "amount": 18000 }
+          ],
+          "happiness_thresholds": [
+            { "min": 0, "max": 1049, "bonus": 0.0 },
+            { "min": 1050, "max": 2099, "bonus": 0.25 },
+            { "min": 2100, "max": 4199, "bonus": 0.5 },
+            { "min": 4200, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 36,
+          "harvests": [
+            { "duration_minutes": 2, "amount": 990 },
+            { "duration_minutes": 10, "amount": 4020 },
+            { "duration_minutes": 60, "amount": 18500 }
+          ],
+          "happiness_thresholds": [
+            { "min": 0, "max": 1049, "bonus": 0.0 },
+            { "min": 1050, "max": 2099, "bonus": 0.25 },
+            { "min": 2100, "max": 4199, "bonus": 0.5 },
+            { "min": 4200, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 37,
+          "harvests": [
+            { "duration_minutes": 2, "amount": 1050 },
+            { "duration_minutes": 10, "amount": 4200 },
+            { "duration_minutes": 60, "amount": 19320 }
+          ],
+          "happiness_thresholds": [
+            { "min": 0, "max": 1259, "bonus": 0.0 },
+            { "min": 1260, "max": 2519, "bonus": 0.25 },
+            { "min": 2520, "max": 5039, "bonus": 0.5 },
+            { "min": 5040, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 38,
+          "harvests": [
+            { "duration_minutes": 2, "amount": 1100 },
+            { "duration_minutes": 10, "amount": 4400 },
+            { "duration_minutes": 60, "amount": 20240 }
+          ],
+          "happiness_thresholds": [
+            { "min": 0, "max": 1259, "bonus": 0.0 },
+            { "min": 1260, "max": 2519, "bonus": 0.25 },
+            { "min": 2520, "max": 5039, "bonus": 0.5 },
+            { "min": 5040, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 39,
+          "harvests": [
+            { "duration_minutes": 2, "amount": 1150 },
+            { "duration_minutes": 10, "amount": 4600 },
+            { "duration_minutes": 60, "amount": 21160 }
+          ],
+          "happiness_thresholds": [
+            { "min": 0, "max": 1259, "bonus": 0.0 },
+            { "min": 1260, "max": 2519, "bonus": 0.25 },
+            { "min": 2520, "max": 5039, "bonus": 0.5 },
+            { "min": 5040, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 40,
+          "harvests": [
+            { "duration_minutes": 2, "amount": 1200 },
+            { "duration_minutes": 10, "amount": 4800 },
+            { "duration_minutes": 60, "amount": 22080 }
+          ],
+          "happiness_thresholds": [
+            { "min": 0, "max": 1469, "bonus": 0.0 },
+            { "min": 1470, "max": 2939, "bonus": 0.25 },
+            { "min": 2940, "max": 5879, "bonus": 0.5 },
+            { "min": 5880, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 41,
+          "harvests": [
+            { "duration_minutes": 2, "amount": 1250 },
+            { "duration_minutes": 10, "amount": 5000 },
+            { "duration_minutes": 60, "amount": 23000 }
+          ],
+          "happiness_thresholds": [
+            { "min": 0, "max": 1469, "bonus": 0.0 },
+            { "min": 1470, "max": 2939, "bonus": 0.25 },
+            { "min": 2940, "max": 5879, "bonus": 0.5 },
+            { "min": 5880, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 42,
+          "harvests": [
+            { "duration_minutes": 2, "amount": 1300 },
+            { "duration_minutes": 10, "amount": 5200 },
+            { "duration_minutes": 60, "amount": 23920 }
+          ],
+          "happiness_thresholds": [
+            { "min": 0, "max": 1469, "bonus": 0.0 },
+            { "min": 1470, "max": 2939, "bonus": 0.25 },
+            { "min": 2940, "max": 5879, "bonus": 0.5 },
+            { "min": 5880, "max": null, "bonus": 1.0 }
+          ]
         }
       ]
     },
@@ -483,6 +1715,468 @@
             { "min": 480, "max": 959, "bonus": 0.5 },
             { "min": 960, "max": null, "bonus": 1.0 }
           ]
+        },
+        {
+          "level": 10,
+          "harvests": [
+            { "duration_minutes": 120, "amount": 8680 },
+            { "duration_minutes": 240, "amount": 14300 },
+            { "duration_minutes": 720, "amount": 16600 }
+          ],
+          "happiness_thresholds": [
+            { "min": 0, "max": 319, "bonus": 0.0 },
+            { "min": 320, "max": 639, "bonus": 0.25 },
+            { "min": 640, "max": 1279, "bonus": 0.5 },
+            { "min": 1280, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 11,
+          "harvests": [
+            { "duration_minutes": 120, "amount": 9110 },
+            { "duration_minutes": 240, "amount": 15000 },
+            { "duration_minutes": 720, "amount": 17400 }
+          ],
+          "happiness_thresholds": [
+            { "min": 0, "max": 319, "bonus": 0.0 },
+            { "min": 320, "max": 639, "bonus": 0.25 },
+            { "min": 640, "max": 1279, "bonus": 0.5 },
+            { "min": 1280, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 12,
+          "harvests": [
+            { "duration_minutes": 120, "amount": 9570 },
+            { "duration_minutes": 240, "amount": 15800 },
+            { "duration_minutes": 720, "amount": 18300 }
+          ],
+          "happiness_thresholds": [
+            { "min": 0, "max": 319, "bonus": 0.0 },
+            { "min": 320, "max": 639, "bonus": 0.25 },
+            { "min": 640, "max": 1279, "bonus": 0.5 },
+            { "min": 1280, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 13,
+          "harvests": [
+            { "duration_minutes": 120, "amount": 10300 },
+            { "duration_minutes": 240, "amount": 17100 },
+            { "duration_minutes": 720, "amount": 19800 }
+          ],
+          "happiness_thresholds": [
+            { "min": 0, "max": 399, "bonus": 0.0 },
+            { "min": 400, "max": 799, "bonus": 0.25 },
+            { "min": 800, "max": 1599, "bonus": 0.5 },
+            { "min": 1600, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 14,
+          "harvests": [
+            { "duration_minutes": 120, "amount": 10700 },
+            { "duration_minutes": 240, "amount": 17800 },
+            { "duration_minutes": 720, "amount": 20600 }
+          ],
+          "happiness_thresholds": [
+            { "min": 0, "max": 399, "bonus": 0.0 },
+            { "min": 400, "max": 799, "bonus": 0.25 },
+            { "min": 800, "max": 1599, "bonus": 0.5 },
+            { "min": 1600, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 15,
+          "harvests": [
+            { "duration_minutes": 120, "amount": 11100 },
+            { "duration_minutes": 240, "amount": 18500 },
+            { "duration_minutes": 720, "amount": 21400 }
+          ],
+          "happiness_thresholds": [
+            { "min": 0, "max": 399, "bonus": 0.0 },
+            { "min": 400, "max": 799, "bonus": 0.25 },
+            { "min": 800, "max": 1599, "bonus": 0.5 },
+            { "min": 1600, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 16,
+          "harvests": [
+            { "duration_minutes": 120, "amount": 12000 },
+            { "duration_minutes": 240, "amount": 20000 },
+            { "duration_minutes": 720, "amount": 23100 }
+          ],
+          "happiness_thresholds": [
+            { "min": 0, "max": 479, "bonus": 0.0 },
+            { "min": 480, "max": 959, "bonus": 0.25 },
+            { "min": 960, "max": 1919, "bonus": 0.5 },
+            { "min": 1920, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 17,
+          "harvests": [
+            { "duration_minutes": 120, "amount": 12500 },
+            { "duration_minutes": 240, "amount": 20800 },
+            { "duration_minutes": 720, "amount": 24000 }
+          ],
+          "happiness_thresholds": [
+            { "min": 0, "max": 479, "bonus": 0.0 },
+            { "min": 480, "max": 959, "bonus": 0.25 },
+            { "min": 960, "max": 1919, "bonus": 0.5 },
+            { "min": 1920, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 18,
+          "harvests": [
+            { "duration_minutes": 120, "amount": 13000 },
+            { "duration_minutes": 240, "amount": 21600 },
+            { "duration_minutes": 720, "amount": 25000 }
+          ],
+          "happiness_thresholds": [
+            { "min": 0, "max": 479, "bonus": 0.0 },
+            { "min": 480, "max": 959, "bonus": 0.25 },
+            { "min": 960, "max": 1919, "bonus": 0.5 },
+            { "min": 1920, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 19,
+          "harvests": [
+            { "duration_minutes": 120, "amount": 14000 },
+            { "duration_minutes": 240, "amount": 23300 },
+            { "duration_minutes": 720, "amount": 27000 }
+          ],
+          "happiness_thresholds": [
+            { "min": 0, "max": 559, "bonus": 0.0 },
+            { "min": 560, "max": 1119, "bonus": 0.25 },
+            { "min": 1120, "max": 2239, "bonus": 0.5 },
+            { "min": 2240, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 20,
+          "harvests": [
+            { "duration_minutes": 120, "amount": 14600 },
+            { "duration_minutes": 240, "amount": 24200 },
+            { "duration_minutes": 720, "amount": 28100 }
+          ],
+          "happiness_thresholds": [
+            { "min": 0, "max": 559, "bonus": 0.0 },
+            { "min": 560, "max": 1119, "bonus": 0.25 },
+            { "min": 1120, "max": 2239, "bonus": 0.5 },
+            { "min": 2240, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 21,
+          "harvests": [
+            { "duration_minutes": 120, "amount": 15200 },
+            { "duration_minutes": 240, "amount": 25200 },
+            { "duration_minutes": 720, "amount": 29200 }
+          ],
+          "happiness_thresholds": [
+            { "min": 0, "max": 559, "bonus": 0.0 },
+            { "min": 560, "max": 1119, "bonus": 0.25 },
+            { "min": 1120, "max": 2239, "bonus": 0.5 },
+            { "min": 2240, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 22,
+          "harvests": [
+            { "duration_minutes": 120, "amount": 16300 },
+            { "duration_minutes": 240, "amount": 27000 },
+            { "duration_minutes": 720, "amount": 31200 }
+          ],
+          "happiness_thresholds": [
+            { "min": 0, "max": 679, "bonus": 0.0 },
+            { "min": 680, "max": 1359, "bonus": 0.25 },
+            { "min": 1360, "max": 2719, "bonus": 0.5 },
+            { "min": 2720, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 23,
+          "harvests": [
+            { "duration_minutes": 120, "amount": 16800 },
+            { "duration_minutes": 240, "amount": 27800 },
+            { "duration_minutes": 720, "amount": 32100 }
+          ],
+          "happiness_thresholds": [
+            { "min": 0, "max": 679, "bonus": 0.0 },
+            { "min": 680, "max": 1359, "bonus": 0.25 },
+            { "min": 1360, "max": 2719, "bonus": 0.5 },
+            { "min": 2720, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 24,
+          "harvests": [
+            { "duration_minutes": 120, "amount": 17300 },
+            { "duration_minutes": 240, "amount": 28600 },
+            { "duration_minutes": 720, "amount": 33100 }
+          ],
+          "happiness_thresholds": [
+            { "min": 0, "max": 679, "bonus": 0.0 },
+            { "min": 680, "max": 1359, "bonus": 0.25 },
+            { "min": 1360, "max": 2719, "bonus": 0.5 },
+            { "min": 2720, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 25,
+          "harvests": [
+            { "duration_minutes": 120, "amount": 18500 },
+            { "duration_minutes": 240, "amount": 30600 },
+            { "duration_minutes": 720, "amount": 35400 }
+          ],
+          "happiness_thresholds": [
+            { "min": 0, "max": 799, "bonus": 0.0 },
+            { "min": 800, "max": 1599, "bonus": 0.25 },
+            { "min": 1600, "max": 3199, "bonus": 0.5 },
+            { "min": 3200, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 26,
+          "harvests": [
+            { "duration_minutes": 120, "amount": 19100 },
+            { "duration_minutes": 240, "amount": 31500 },
+            { "duration_minutes": 720, "amount": 36500 }
+          ],
+          "happiness_thresholds": [
+            { "min": 0, "max": 799, "bonus": 0.0 },
+            { "min": 800, "max": 1599, "bonus": 0.25 },
+            { "min": 1600, "max": 3199, "bonus": 0.5 },
+            { "min": 3200, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 27,
+          "harvests": [
+            { "duration_minutes": 120, "amount": 19700 },
+            { "duration_minutes": 240, "amount": 32400 },
+            { "duration_minutes": 720, "amount": 37600 }
+          ],
+          "happiness_thresholds": [
+            { "min": 0, "max": 799, "bonus": 0.0 },
+            { "min": 800, "max": 1599, "bonus": 0.25 },
+            { "min": 1600, "max": 3199, "bonus": 0.5 },
+            { "min": 3200, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 28,
+          "harvests": [
+            { "duration_minutes": 120, "amount": 21100 },
+            { "duration_minutes": 240, "amount": 34700 },
+            { "duration_minutes": 720, "amount": 40200 }
+          ],
+          "happiness_thresholds": [
+            { "min": 0, "max": 959, "bonus": 0.0 },
+            { "min": 960, "max": 1919, "bonus": 0.25 },
+            { "min": 1920, "max": 3839, "bonus": 0.5 },
+            { "min": 3840, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 29,
+          "harvests": [
+            { "duration_minutes": 120, "amount": 21700 },
+            { "duration_minutes": 240, "amount": 35700 },
+            { "duration_minutes": 720, "amount": 41400 }
+          ],
+          "happiness_thresholds": [
+            { "min": 0, "max": 959, "bonus": 0.0 },
+            { "min": 960, "max": 1919, "bonus": 0.25 },
+            { "min": 1920, "max": 3839, "bonus": 0.5 },
+            { "min": 3840, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 30,
+          "harvests": [
+            { "duration_minutes": 120, "amount": 22400 },
+            { "duration_minutes": 240, "amount": 36800 },
+            { "duration_minutes": 720, "amount": 42600 }
+          ],
+          "happiness_thresholds": [
+            { "min": 0, "max": 959, "bonus": 0.0 },
+            { "min": 960, "max": 1919, "bonus": 0.25 },
+            { "min": 1920, "max": 3839, "bonus": 0.5 },
+            { "min": 3840, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 31,
+          "harvests": [
+            { "duration_minutes": 120, "amount": 24000 },
+            { "duration_minutes": 240, "amount": 39400 },
+            { "duration_minutes": 720, "amount": 45600 }
+          ],
+          "happiness_thresholds": [
+            { "min": 0, "max": 1159, "bonus": 0.0 },
+            { "min": 1160, "max": 2319, "bonus": 0.25 },
+            { "min": 2320, "max": 4639, "bonus": 0.5 },
+            { "min": 4640, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 32,
+          "harvests": [
+            { "duration_minutes": 120, "amount": 24700 },
+            { "duration_minutes": 240, "amount": 40600 },
+            { "duration_minutes": 720, "amount": 47000 }
+          ],
+          "happiness_thresholds": [
+            { "min": 0, "max": 1159, "bonus": 0.0 },
+            { "min": 1160, "max": 2319, "bonus": 0.25 },
+            { "min": 2320, "max": 4639, "bonus": 0.5 },
+            { "min": 4640, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 33,
+          "harvests": [
+            { "duration_minutes": 120, "amount": 25400 },
+            { "duration_minutes": 240, "amount": 41800 },
+            { "duration_minutes": 720, "amount": 48400 }
+          ],
+          "happiness_thresholds": [
+            { "min": 0, "max": 1159, "bonus": 0.0 },
+            { "min": 1160, "max": 2319, "bonus": 0.25 },
+            { "min": 2320, "max": 4639, "bonus": 0.5 },
+            { "min": 4640, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 34,
+          "harvests": [
+            { "duration_minutes": 120, "amount": 27200 },
+            { "duration_minutes": 240, "amount": 44700 },
+            { "duration_minutes": 720, "amount": 51800 }
+          ],
+          "happiness_thresholds": [
+            { "min": 0, "max": 1399, "bonus": 0.0 },
+            { "min": 1400, "max": 2799, "bonus": 0.25 },
+            { "min": 2800, "max": 5599, "bonus": 0.5 },
+            { "min": 5600, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 35,
+          "harvests": [
+            { "duration_minutes": 120, "amount": 28000 },
+            { "duration_minutes": 240, "amount": 46000 },
+            { "duration_minutes": 720, "amount": 53400 }
+          ],
+          "happiness_thresholds": [
+            { "min": 0, "max": 1399, "bonus": 0.0 },
+            { "min": 1400, "max": 2799, "bonus": 0.25 },
+            { "min": 2800, "max": 5599, "bonus": 0.5 },
+            { "min": 5600, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 36,
+          "harvests": [
+            { "duration_minutes": 120, "amount": 28800 },
+            { "duration_minutes": 240, "amount": 47400 },
+            { "duration_minutes": 720, "amount": 55000 }
+          ],
+          "happiness_thresholds": [
+            { "min": 0, "max": 1399, "bonus": 0.0 },
+            { "min": 1400, "max": 2799, "bonus": 0.25 },
+            { "min": 2800, "max": 5599, "bonus": 0.5 },
+            { "min": 5600, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 37,
+          "harvests": [
+            { "duration_minutes": 120, "amount": 31000 },
+            { "duration_minutes": 240, "amount": 49600 },
+            { "duration_minutes": 720, "amount": 59520 }
+          ],
+          "happiness_thresholds": [
+            { "min": 0, "max": 1679, "bonus": 0.0 },
+            { "min": 1680, "max": 3359, "bonus": 0.25 },
+            { "min": 3360, "max": 6719, "bonus": 0.5 },
+            { "min": 6720, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 38,
+          "harvests": [
+            { "duration_minutes": 120, "amount": 32500 },
+            { "duration_minutes": 240, "amount": 52000 },
+            { "duration_minutes": 720, "amount": 62400 }
+          ],
+          "happiness_thresholds": [
+            { "min": 0, "max": 1679, "bonus": 0.0 },
+            { "min": 1680, "max": 3359, "bonus": 0.25 },
+            { "min": 3360, "max": 6719, "bonus": 0.5 },
+            { "min": 6720, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 39,
+          "harvests": [
+            { "duration_minutes": 120, "amount": 34000 },
+            { "duration_minutes": 240, "amount": 54400 },
+            { "duration_minutes": 720, "amount": 65280 }
+          ],
+          "happiness_thresholds": [
+            { "min": 0, "max": 1679, "bonus": 0.0 },
+            { "min": 1680, "max": 3359, "bonus": 0.25 },
+            { "min": 3360, "max": 6719, "bonus": 0.5 },
+            { "min": 6720, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 40,
+          "harvests": [
+            { "duration_minutes": 120, "amount": 35500 },
+            { "duration_minutes": 240, "amount": 56800 },
+            { "duration_minutes": 720, "amount": 68160 }
+          ],
+          "happiness_thresholds": [
+            { "min": 0, "max": 1959, "bonus": 0.0 },
+            { "min": 1960, "max": 3919, "bonus": 0.25 },
+            { "min": 3920, "max": 7739, "bonus": 0.5 },
+            { "min": 7740, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 41,
+          "harvests": [
+            { "duration_minutes": 120, "amount": 37000 },
+            { "duration_minutes": 240, "amount": 59200 },
+            { "duration_minutes": 720, "amount": 71040 }
+          ],
+          "happiness_thresholds": [
+            { "min": 0, "max": 1959, "bonus": 0.0 },
+            { "min": 1960, "max": 3919, "bonus": 0.25 },
+            { "min": 3920, "max": 7739, "bonus": 0.5 },
+            { "min": 7740, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 42,
+          "harvests": [
+            { "duration_minutes": 120, "amount": 38500 },
+            { "duration_minutes": 240, "amount": 61200 },
+            { "duration_minutes": 720, "amount": 73920 }
+          ],
+          "happiness_thresholds": [
+            { "min": 0, "max": 1959, "bonus": 0.0 },
+            { "min": 1960, "max": 3919, "bonus": 0.25 },
+            { "min": 3920, "max": 7739, "bonus": 0.5 },
+            { "min": 7740, "max": null, "bonus": 1.0 }
+          ]
         }
       ]
     },
@@ -521,18 +2215,172 @@
           ]
         },
         {
-            "level": 9,
-            "harvests": [
-              { "duration_minutes": 30, "amount": 3800 },
-              { "duration_minutes": 60, "amount": 5200 },
-              { "duration_minutes": 120, "amount": 7200 }
-            ],
-            "happiness_thresholds": [
-              { "min": 0, "max": 169, "bonus": 0.0 },
-              { "min": 170, "max": 329, "bonus": 0.25 },
-              { "min": 330, "max": 669, "bonus": 0.5 },
-              { "min": 670, "max": null, "bonus": 1.0 }
-            ]
+          "level": 9,
+          "harvests": [
+            { "duration_minutes": 30, "amount": 3800 },
+            { "duration_minutes": 60, "amount": 5200 },
+            { "duration_minutes": 120, "amount": 7200 }
+          ],
+          "happiness_thresholds": [
+            { "min": 0, "max": 169, "bonus": 0.0 },
+            { "min": 170, "max": 329, "bonus": 0.25 },
+            { "min": 330, "max": 669, "bonus": 0.5 },
+            { "min": 670, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 12,
+          "harvests": [
+            { "duration_minutes": 30, "amount": 5600 },
+            { "duration_minutes": 60, "amount": 7700 },
+            { "duration_minutes": 120, "amount": 10600 }
+          ],
+          "happiness_thresholds": [
+            { "min": 0, "max": 219, "bonus": 0.0 },
+            { "min": 220, "max": 449, "bonus": 0.25 },
+            { "min": 450, "max": 889, "bonus": 0.5 },
+            { "min": 890, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 15,
+          "harvests": [
+            { "duration_minutes": 30, "amount": 6660 },
+            { "duration_minutes": 60, "amount": 9170 },
+            { "duration_minutes": 120, "amount": 12600 }
+          ],
+          "happiness_thresholds": [
+            { "min": 0, "max": 279, "bonus": 0.0 },
+            { "min": 280, "max": 559, "bonus": 0.25 },
+            { "min": 560, "max": 1119, "bonus": 0.5 },
+            { "min": 1120, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 18,
+          "harvests": [
+            { "duration_minutes": 30, "amount": 7790 },
+            { "duration_minutes": 60, "amount": 10700 },
+            { "duration_minutes": 120, "amount": 14700 }
+          ],
+          "happiness_thresholds": [
+            { "min": 0, "max": 329, "bonus": 0.0 },
+            { "min": 330, "max": 669, "bonus": 0.25 },
+            { "min": 670, "max": 1339, "bonus": 0.5 },
+            { "min": 1340, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 21,
+          "harvests": [
+            { "duration_minutes": 30, "amount": 9090 },
+            { "duration_minutes": 60, "amount": 12400 },
+            { "duration_minutes": 120, "amount": 17200 }
+          ],
+          "happiness_thresholds": [
+            { "min": 0, "max": 389, "bonus": 0.0 },
+            { "min": 390, "max": 779, "bonus": 0.25 },
+            { "min": 780, "max": 1559, "bonus": 0.5 },
+            { "min": 1560, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 24,
+          "harvests": [
+            { "duration_minutes": 30, "amount": 10500 },
+            { "duration_minutes": 60, "amount": 14300 },
+            { "duration_minutes": 120, "amount": 19900 }
+          ],
+          "happiness_thresholds": [
+            { "min": 0, "max": 469, "bonus": 0.0 },
+            { "min": 470, "max": 949, "bonus": 0.25 },
+            { "min": 950, "max": 1899, "bonus": 0.5 },
+            { "min": 1900, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 27,
+          "harvests": [
+            { "duration_minutes": 30, "amount": 11900 },
+            { "duration_minutes": 60, "amount": 16200 },
+            { "duration_minutes": 120, "amount": 22600 }
+          ],
+          "happiness_thresholds": [
+            { "min": 0, "max": 559, "bonus": 0.0 },
+            { "min": 560, "max": 1119, "bonus": 0.25 },
+            { "min": 1120, "max": 2229, "bonus": 0.5 },
+            { "min": 2230, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 30,
+          "harvests": [
+            { "duration_minutes": 30, "amount": 13600 },
+            { "duration_minutes": 60, "amount": 18400 },
+            { "duration_minutes": 120, "amount": 25700 }
+          ],
+          "happiness_thresholds": [
+            { "min": 0, "max": 669, "bonus": 0.0 },
+            { "min": 670, "max": 1339, "bonus": 0.25 },
+            { "min": 1340, "max": 2679, "bonus": 0.5 },
+            { "min": 2680, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 33,
+          "harvests": [
+            { "duration_minutes": 30, "amount": 15400 },
+            { "duration_minutes": 60, "amount": 21000 },
+            { "duration_minutes": 120, "amount": 29200 }
+          ],
+          "happiness_thresholds": [
+            { "min": 0, "max": 809, "bonus": 0.0 },
+            { "min": 810, "max": 1619, "bonus": 0.25 },
+            { "min": 1620, "max": 3229, "bonus": 0.5 },
+            { "min": 3230, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 36,
+          "harvests": [
+            { "duration_minutes": 30, "amount": 17500 },
+            { "duration_minutes": 60, "amount": 23800 },
+            { "duration_minutes": 120, "amount": 33200 }
+          ],
+          "happiness_thresholds": [
+            { "min": 0, "max": 979, "bonus": 0.0 },
+            { "min": 980, "max": 1949, "bonus": 0.25 },
+            { "min": 1950, "max": 3899, "bonus": 0.5 },
+            { "min": 3900, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 39,
+          "harvests": [
+            { "duration_minutes": 30, "amount": 20000 },
+            { "duration_minutes": 60, "amount": 28000 },
+            { "duration_minutes": 120, "amount": 39200 }
+          ],
+          "happiness_thresholds": [
+            { "min": 0, "max": 1169, "bonus": 0.0 },
+            { "min": 1170, "max": 2339, "bonus": 0.25 },
+            { "min": 2340, "max": 4679, "bonus": 0.5 },
+            { "min": 4680, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 42,
+          "harvests": [
+            { "duration_minutes": 30, "amount": 27500 },
+            { "duration_minutes": 60, "amount": 40600 },
+            { "duration_minutes": 120, "amount": 60200 }
+          ],
+          "happiness_thresholds": [
+            { "min": 0, "max": 1359, "bonus": 0.0 },
+            { "min": 1360, "max": 2729, "bonus": 0.25 },
+            { "min": 2730, "max": 5459, "bonus": 0.5 },
+            { "min": 5460, "max": null, "bonus": 1.0 }
+          ]
         }
       ]
     },
@@ -541,21 +2389,650 @@
       "name": "Infantry Barracks",
       "type": "military",
       "size": { "w": 4, "h": 4 },
-      "levels": []
+      "levels": [
+        {
+          "level": 1,
+          "duration_minutes": 0.5,
+          "happiness_thresholds": [
+            { "min": 0, "max": 99, "bonus": 0.0 },
+            { "min": 100, "max": 189, "bonus": 0.1 },
+            { "min": 190, "max": 379, "bonus": 0.25 },
+            { "min": 380, "max": null, "bonus": 0.5 }
+          ]
+        },
+        {
+          "level": 2,
+          "duration_minutes": 2,
+          "happiness_thresholds": [
+            { "min": 0, "max": 139, "bonus": 0.0 },
+            { "min": 140, "max": 289, "bonus": 0.1 },
+            { "min": 290, "max": 579, "bonus": 0.25 },
+            { "min": 580, "max": null, "bonus": 0.5 }
+          ]
+        },
+        {
+          "level": 3,
+          "duration_minutes": 5,
+          "happiness_thresholds": [
+            { "min": 0, "max": 189, "bonus": 0.0 },
+            { "min": 190, "max": 379, "bonus": 0.1 },
+            { "min": 380, "max": 769, "bonus": 0.25 },
+            { "min": 770, "max": null, "bonus": 0.5 }
+          ]
+        },
+        {
+          "level": 4,
+          "duration_minutes": 10,
+          "happiness_thresholds": [
+            { "min": 0, "max": 259, "bonus": 0.0 },
+            { "min": 260, "max": 509, "bonus": 0.1 },
+            { "min": 510, "max": 1019, "bonus": 0.25 },
+            { "min": 1020, "max": null, "bonus": 0.5 }
+          ]
+        },
+        {
+          "level": 5,
+          "duration_minutes": 10,
+          "happiness_thresholds": [
+            { "min": 0, "max": 319, "bonus": 0.0 },
+            { "min": 320, "max": 639, "bonus": 0.1 },
+            { "min": 640, "max": 1279, "bonus": 0.25 },
+            { "min": 1280, "max": null, "bonus": 0.5 }
+          ]
+        },
+        {
+          "level": 6,
+          "duration_minutes": 10,
+          "happiness_thresholds": [
+            { "min": 0, "max": 379, "bonus": 0.0 },
+            { "min": 380, "max": 769, "bonus": 0.1 },
+            { "min": 770, "max": 1539, "bonus": 0.25 },
+            { "min": 1540, "max": null, "bonus": 0.5 }
+          ]
+        },
+        {
+          "level": 7,
+          "duration_minutes": 10,
+          "happiness_thresholds": [
+            { "min": 0, "max": 449, "bonus": 0.0 },
+            { "min": 450, "max": 899, "bonus": 0.1 },
+            { "min": 900, "max": 1789, "bonus": 0.25 },
+            { "min": 1790, "max": null, "bonus": 0.5 }
+          ]
+        },
+        {
+          "level": 8,
+          "duration_minutes": 10,
+          "happiness_thresholds": [
+            { "min": 0, "max": 539, "bonus": 0.0 },
+            { "min": 540, "max": 1089, "bonus": 0.1 },
+            { "min": 1090, "max": 2179, "bonus": 0.25 },
+            { "min": 2180, "max": null, "bonus": 0.5 }
+          ]
+        },
+        {
+          "level": 9,
+          "duration_minutes": 10,
+          "happiness_thresholds": [
+            { "min": 0, "max": 639, "bonus": 0.0 },
+            { "min": 640, "max": 1279, "bonus": 0.1 },
+            { "min": 1280, "max": 2559, "bonus": 0.25 },
+            { "min": 2560, "max": null, "bonus": 0.5 }
+          ]
+        },
+        {
+          "level": 10,
+          "duration_minutes": 10,
+          "happiness_thresholds": [
+            { "min": 0, "max": 769, "bonus": 0.0 },
+            { "min": 770, "max": 1539, "bonus": 0.1 },
+            { "min": 1540, "max": 3069, "bonus": 0.25 },
+            { "min": 3070, "max": null, "bonus": 0.5 }
+          ]
+        },
+        {
+          "level": 11,
+          "duration_minutes": 10,
+          "happiness_thresholds": [
+            { "min": 0, "max": 929, "bonus": 0.0 },
+            { "min": 930, "max": 1859, "bonus": 0.1 },
+            { "min": 1860, "max": 3709, "bonus": 0.25 },
+            { "min": 3710, "max": null, "bonus": 0.5 }
+          ]
+        },
+        {
+          "level": 12,
+          "duration_minutes": 10,
+          "happiness_thresholds": [
+            { "min": 0, "max": 1119, "bonus": 0.0 },
+            { "min": 1120, "max": 2239, "bonus": 0.1 },
+            { "min": 2240, "max": 4479, "bonus": 0.25 },
+            { "min": 4480, "max": null, "bonus": 0.5 }
+          ]
+        },
+        {
+          "level": 13,
+          "duration_minutes": 10,
+          "happiness_thresholds": [
+            { "min": 0, "max": 1339, "bonus": 0.0 },
+            { "min": 1340, "max": 2689, "bonus": 0.1 },
+            { "min": 2690, "max": 5379, "bonus": 0.25 },
+            { "min": 5380, "max": null, "bonus": 0.5 }
+          ]
+        },
+        {
+          "level": 14,
+          "duration_minutes": 10,
+          "happiness_thresholds": [
+            { "min": 0, "max": 1599, "bonus": 0.0 },
+            { "min": 1600, "max": 3199, "bonus": 0.1 },
+            { "min": 3200, "max": 6399, "bonus": 0.25 },
+            { "min": 6400, "max": null, "bonus": 0.5 }
+          ]
+        }
+      ]
     },
     {
       "id": "ranged_barracks",
       "name": "Ranged Barracks",
       "type": "military",
       "size": { "w": 3, "h": 5 },
-      "levels": []
+      "levels": [
+        {
+          "level": 1,
+          "duration_minutes": 0.5,
+          "happiness_thresholds": [
+            { "min": 0, "max": 89, "bonus": 0.0 },
+            { "min": 90, "max": 179, "bonus": 0.1 },
+            { "min": 180, "max": 359, "bonus": 0.25 },
+            { "min": 360, "max": null, "bonus": 0.5 }
+          ]
+        },
+        {
+          "level": 2,
+          "duration_minutes": 5,
+          "happiness_thresholds": [
+            { "min": 0, "max": 139, "bonus": 0.0 },
+            { "min": 140, "max": 269, "bonus": 0.1 },
+            { "min": 270, "max": 539, "bonus": 0.25 },
+            { "min": 540, "max": null, "bonus": 0.5 }
+          ]
+        },
+        {
+          "level": 3,
+          "duration_minutes": 10,
+          "happiness_thresholds": [
+            { "min": 0, "max": 179, "bonus": 0.0 },
+            { "min": 180, "max": 359, "bonus": 0.1 },
+            { "min": 360, "max": 719, "bonus": 0.25 },
+            { "min": 720, "max": null, "bonus": 0.5 }
+          ]
+        },
+        {
+          "level": 4,
+          "duration_minutes": 20,
+          "happiness_thresholds": [
+            { "min": 0, "max": 239, "bonus": 0.0 },
+            { "min": 240, "max": 479, "bonus": 0.1 },
+            { "min": 480, "max": 959, "bonus": 0.25 },
+            { "min": 960, "max": null, "bonus": 0.5 }
+          ]
+        },
+        {
+          "level": 5,
+          "duration_minutes": 20,
+          "happiness_thresholds": [
+            { "min": 0, "max": 299, "bonus": 0.0 },
+            { "min": 300, "max": 599, "bonus": 0.1 },
+            { "min": 600, "max": 1199, "bonus": 0.25 },
+            { "min": 1200, "max": null, "bonus": 0.5 }
+          ]
+        },
+        {
+          "level": 6,
+          "duration_minutes": 20,
+          "happiness_thresholds": [
+            { "min": 0, "max": 359, "bonus": 0.0 },
+            { "min": 360, "max": 719, "bonus": 0.1 },
+            { "min": 720, "max": 1439, "bonus": 0.25 },
+            { "min": 1440, "max": null, "bonus": 0.5 }
+          ]
+        },
+        {
+          "level": 7,
+          "duration_minutes": 20,
+          "happiness_thresholds": [
+            { "min": 0, "max": 419, "bonus": 0.0 },
+            { "min": 420, "max": 839, "bonus": 0.1 },
+            { "min": 840, "max": 1679, "bonus": 0.25 },
+            { "min": 1680, "max": null, "bonus": 0.5 }
+          ]
+        },
+        {
+          "level": 8,
+          "duration_minutes": 20,
+          "happiness_thresholds": [
+            { "min": 0, "max": 509, "bonus": 0.0 },
+            { "min": 510, "max": 1019, "bonus": 0.1 },
+            { "min": 1020, "max": 2039, "bonus": 0.25 },
+            { "min": 2040, "max": null, "bonus": 0.5 }
+          ]
+        },
+        {
+          "level": 9,
+          "duration_minutes": 20,
+          "happiness_thresholds": [
+            { "min": 0, "max": 599, "bonus": 0.0 },
+            { "min": 600, "max": 1199, "bonus": 0.1 },
+            { "min": 1200, "max": 2399, "bonus": 0.25 },
+            { "min": 2400, "max": null, "bonus": 0.5 }
+          ]
+        },
+        {
+          "level": 10,
+          "duration_minutes": 20,
+          "happiness_thresholds": [
+            { "min": 0, "max": 719, "bonus": 0.0 },
+            { "min": 720, "max": 1439, "bonus": 0.1 },
+            { "min": 1440, "max": 2879, "bonus": 0.25 },
+            { "min": 2880, "max": null, "bonus": 0.5 }
+          ]
+        },
+        {
+          "level": 11,
+          "duration_minutes": 20,
+          "happiness_thresholds": [
+            { "min": 0, "max": 869, "bonus": 0.0 },
+            { "min": 870, "max": 1739, "bonus": 0.1 },
+            { "min": 1740, "max": 3479, "bonus": 0.25 },
+            { "min": 3480, "max": null, "bonus": 0.5 }
+          ]
+        },
+        {
+          "level": 12,
+          "duration_minutes": 20,
+          "happiness_thresholds": [
+            { "min": 0, "max": 1049, "bonus": 0.0 },
+            { "min": 1050, "max": 2099, "bonus": 0.1 },
+            { "min": 2100, "max": 4199, "bonus": 0.25 },
+            { "min": 4200, "max": null, "bonus": 0.5 }
+          ]
+        },
+        {
+          "level": 13,
+          "duration_minutes": 20,
+          "happiness_thresholds": [
+            { "min": 0, "max": 1259, "bonus": 0.0 },
+            { "min": 1260, "max": 2519, "bonus": 0.1 },
+            { "min": 2520, "max": 5039, "bonus": 0.25 },
+            { "min": 5040, "max": null, "bonus": 0.5 }
+          ]
+        },
+        {
+          "level": 14,
+          "duration_minutes": 20,
+          "happiness_thresholds": [
+            { "min": 0, "max": 1499, "bonus": 0.0 },
+            { "min": 1500, "max": 2999, "bonus": 0.1 },
+            { "min": 3000, "max": 5999, "bonus": 0.25 },
+            { "min": 6000, "max": null, "bonus": 0.5 }
+          ]
+        }
+      ]
     },
     {
       "id": "cavalry_barracks",
       "name": "Cavalry Barracks",
       "type": "military",
       "size": { "w": 4, "h": 5 },
-      "levels": []
+      "levels": [
+        {
+          "level": 2,
+          "duration_minutes": 10,
+          "happiness_thresholds": [
+            { "min": 0, "max": 179, "bonus": 0.0 },
+            { "min": 180, "max": 359, "bonus": 0.1 },
+            { "min": 360, "max": 719, "bonus": 0.25 },
+            { "min": 720, "max": null, "bonus": 0.5 }
+          ]
+        },
+        {
+          "level": 3,
+          "duration_minutes": 20,
+          "happiness_thresholds": [
+            { "min": 0, "max": 239, "bonus": 0.0 },
+            { "min": 240, "max": 479, "bonus": 0.1 },
+            { "min": 480, "max": 959, "bonus": 0.25 },
+            { "min": 960, "max": null, "bonus": 0.5 }
+          ]
+        },
+        {
+          "level": 4,
+          "duration_minutes": 30,
+          "happiness_thresholds": [
+            { "min": 0, "max": 319, "bonus": 0.0 },
+            { "min": 320, "max": 639, "bonus": 0.1 },
+            { "min": 640, "max": 1279, "bonus": 0.25 },
+            { "min": 1280, "max": null, "bonus": 0.5 }
+          ]
+        },
+        {
+          "level": 5,
+          "duration_minutes": 30,
+          "happiness_thresholds": [
+            { "min": 0, "max": 399, "bonus": 0.0 },
+            { "min": 400, "max": 799, "bonus": 0.1 },
+            { "min": 800, "max": 1599, "bonus": 0.25 },
+            { "min": 1600, "max": null, "bonus": 0.5 }
+          ]
+        },
+        {
+          "level": 6,
+          "duration_minutes": 30,
+          "happiness_thresholds": [
+            { "min": 0, "max": 479, "bonus": 0.0 },
+            { "min": 480, "max": 959, "bonus": 0.1 },
+            { "min": 960, "max": 1919, "bonus": 0.25 },
+            { "min": 1920, "max": null, "bonus": 0.5 }
+          ]
+        },
+        {
+          "level": 7,
+          "duration_minutes": 30,
+          "happiness_thresholds": [
+            { "min": 0, "max": 559, "bonus": 0.0 },
+            { "min": 560, "max": 1119, "bonus": 0.1 },
+            { "min": 1120, "max": 2239, "bonus": 0.25 },
+            { "min": 2240, "max": null, "bonus": 0.5 }
+          ]
+        },
+        {
+          "level": 8,
+          "duration_minutes": 30,
+          "happiness_thresholds": [
+            { "min": 0, "max": 679, "bonus": 0.0 },
+            { "min": 680, "max": 1359, "bonus": 0.1 },
+            { "min": 1360, "max": 2719, "bonus": 0.25 },
+            { "min": 2720, "max": null, "bonus": 0.5 }
+          ]
+        },
+        {
+          "level": 9,
+          "duration_minutes": 30,
+          "happiness_thresholds": [
+            { "min": 0, "max": 799, "bonus": 0.0 },
+            { "min": 800, "max": 1599, "bonus": 0.1 },
+            { "min": 1600, "max": 3199, "bonus": 0.25 },
+            { "min": 3200, "max": null, "bonus": 0.5 }
+          ]
+        },
+        {
+          "level": 10,
+          "duration_minutes": 30,
+          "happiness_thresholds": [
+            { "min": 0, "max": 959, "bonus": 0.0 },
+            { "min": 960, "max": 1919, "bonus": 0.1 },
+            { "min": 1920, "max": 3839, "bonus": 0.25 },
+            { "min": 3840, "max": null, "bonus": 0.5 }
+          ]
+        },
+        {
+          "level": 11,
+          "duration_minutes": 30,
+          "happiness_thresholds": [
+            { "min": 0, "max": 1159, "bonus": 0.0 },
+            { "min": 1160, "max": 2319, "bonus": 0.1 },
+            { "min": 2320, "max": 4639, "bonus": 0.25 },
+            { "min": 4640, "max": null, "bonus": 0.5 }
+          ]
+        },
+        {
+          "level": 12,
+          "duration_minutes": 30,
+          "happiness_thresholds": [
+            { "min": 0, "max": 1399, "bonus": 0.0 },
+            { "min": 1400, "max": 2799, "bonus": 0.1 },
+            { "min": 2800, "max": 5599, "bonus": 0.25 },
+            { "min": 5600, "max": null, "bonus": 0.5 }
+          ]
+        },
+        {
+          "level": 13,
+          "duration_minutes": 30,
+          "happiness_thresholds": [
+            { "min": 0, "max": 1679, "bonus": 0.0 },
+            { "min": 1680, "max": 3359, "bonus": 0.1 },
+            { "min": 3360, "max": 6719, "bonus": 0.25 },
+            { "min": 6720, "max": null, "bonus": 0.5 }
+          ]
+        },
+        {
+          "level": 14,
+          "duration_minutes": 30,
+          "happiness_thresholds": [
+            { "min": 0, "max": 1999, "bonus": 0.0 },
+            { "min": 2000, "max": 3999, "bonus": 0.1 },
+            { "min": 4000, "max": 7999, "bonus": 0.25 },
+            { "min": 8000, "max": null, "bonus": 0.5 }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "heavy_infantry_barracks",
+      "name": "Heavy Infantry Barracks",
+      "type": "military",
+      "size": { "w": 5, "h": 5 },
+      "levels": [
+        {
+          "level": 4,
+          "duration_minutes": 45,
+          "happiness_thresholds": [
+            { "min": 0, "max": 399, "bonus": 0.0 },
+            { "min": 400, "max": 799, "bonus": 0.1 },
+            { "min": 800, "max": 1599, "bonus": 0.25 },
+            { "min": 1600, "max": null, "bonus": 0.5 }
+          ]
+        },
+        {
+          "level": 5,
+          "duration_minutes": 45,
+          "happiness_thresholds": [
+            { "min": 0, "max": 499, "bonus": 0.0 },
+            { "min": 500, "max": 999, "bonus": 0.1 },
+            { "min": 1000, "max": 1999, "bonus": 0.25 },
+            { "min": 2000, "max": null, "bonus": 0.5 }
+          ]
+        },
+        {
+          "level": 6,
+          "duration_minutes": 45,
+          "happiness_thresholds": [
+            { "min": 0, "max": 599, "bonus": 0.0 },
+            { "min": 600, "max": 1199, "bonus": 0.1 },
+            { "min": 1200, "max": 2399, "bonus": 0.25 },
+            { "min": 2400, "max": null, "bonus": 0.5 }
+          ]
+        },
+        {
+          "level": 7,
+          "duration_minutes": 45,
+          "happiness_thresholds": [
+            { "min": 0, "max": 699, "bonus": 0.0 },
+            { "min": 700, "max": 1399, "bonus": 0.1 },
+            { "min": 1400, "max": 2799, "bonus": 0.25 },
+            { "min": 2800, "max": null, "bonus": 0.5 }
+          ]
+        },
+        {
+          "level": 8,
+          "duration_minutes": 45,
+          "happiness_thresholds": [
+            { "min": 0, "max": 849, "bonus": 0.0 },
+            { "min": 850, "max": 1699, "bonus": 0.1 },
+            { "min": 1700, "max": 3399, "bonus": 0.25 },
+            { "min": 3400, "max": null, "bonus": 0.5 }
+          ]
+        },
+        {
+          "level": 9,
+          "duration_minutes": 45,
+          "happiness_thresholds": [
+            { "min": 0, "max": 999, "bonus": 0.0 },
+            { "min": 1000, "max": 1999, "bonus": 0.1 },
+            { "min": 2000, "max": 3999, "bonus": 0.25 },
+            { "min": 4000, "max": null, "bonus": 0.5 }
+          ]
+        },
+        {
+          "level": 10,
+          "duration_minutes": 45,
+          "happiness_thresholds": [
+            { "min": 0, "max": 1199, "bonus": 0.0 },
+            { "min": 1200, "max": 2399, "bonus": 0.1 },
+            { "min": 2400, "max": 4799, "bonus": 0.25 },
+            { "min": 4800, "max": null, "bonus": 0.5 }
+          ]
+        },
+        {
+          "level": 11,
+          "duration_minutes": 45,
+          "happiness_thresholds": [
+            { "min": 0, "max": 1449, "bonus": 0.0 },
+            { "min": 1450, "max": 2899, "bonus": 0.1 },
+            { "min": 2900, "max": 5799, "bonus": 0.25 },
+            { "min": 5800, "max": null, "bonus": 0.5 }
+          ]
+        },
+        {
+          "level": 12,
+          "duration_minutes": 45,
+          "happiness_thresholds": [
+            { "min": 0, "max": 1749, "bonus": 0.0 },
+            { "min": 1750, "max": 3499, "bonus": 0.1 },
+            { "min": 3500, "max": 6999, "bonus": 0.25 },
+            { "min": 7000, "max": null, "bonus": 0.5 }
+          ]
+        },
+        {
+          "level": 13,
+          "duration_minutes": 45,
+          "happiness_thresholds": [
+            { "min": 0, "max": 2099, "bonus": 0.0 },
+            { "min": 2100, "max": 4199, "bonus": 0.1 },
+            { "min": 4200, "max": 8399, "bonus": 0.25 },
+            { "min": 8400, "max": null, "bonus": 0.5 }
+          ]
+        },
+        {
+          "level": 14,
+          "duration_minutes": 45,
+          "happiness_thresholds": [
+            { "min": 0, "max": 2499, "bonus": 0.0 },
+            { "min": 2500, "max": 4999, "bonus": 0.1 },
+            { "min": 5000, "max": 9999, "bonus": 0.25 },
+            { "min": 10000, "max": null, "bonus": 0.5 }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "siege_barracks",
+      "name": "Siege Barracks",
+      "type": "military",
+      "size": { "w": 5, "h": 6 },
+      "levels": [
+        {
+          "level": 6,
+          "duration_minutes": 90,
+          "happiness_thresholds": [
+            { "min": 0, "max": 719, "bonus": 0.0 },
+            { "min": 720, "max": 1439, "bonus": 0.1 },
+            { "min": 1440, "max": 2879, "bonus": 0.25 },
+            { "min": 2880, "max": null, "bonus": 0.5 }
+          ]
+        },
+        {
+          "level": 7,
+          "duration_minutes": 90,
+          "happiness_thresholds": [
+            { "min": 0, "max": 839, "bonus": 0.0 },
+            { "min": 840, "max": 1679, "bonus": 0.1 },
+            { "min": 1680, "max": 3359, "bonus": 0.25 },
+            { "min": 3360, "max": null, "bonus": 0.5 }
+          ]
+        },
+        {
+          "level": 8,
+          "duration_minutes": 90,
+          "happiness_thresholds": [
+            { "min": 0, "max": 1019, "bonus": 0.0 },
+            { "min": 1020, "max": 2039, "bonus": 0.1 },
+            { "min": 2040, "max": 4079, "bonus": 0.25 },
+            { "min": 4080, "max": null, "bonus": 0.5 }
+          ]
+        },
+        {
+          "level": 9,
+          "duration_minutes": 90,
+          "happiness_thresholds": [
+            { "min": 0, "max": 1199, "bonus": 0.0 },
+            { "min": 1200, "max": 2399, "bonus": 0.1 },
+            { "min": 2400, "max": 4799, "bonus": 0.25 },
+            { "min": 4800, "max": null, "bonus": 0.5 }
+          ]
+        },
+        {
+          "level": 10,
+          "duration_minutes": 90,
+          "happiness_thresholds": [
+            { "min": 0, "max": 1439, "bonus": 0.0 },
+            { "min": 1440, "max": 2879, "bonus": 0.1 },
+            { "min": 2880, "max": 5759, "bonus": 0.25 },
+            { "min": 5760, "max": null, "bonus": 0.5 }
+          ]
+        },
+        {
+          "level": 11,
+          "duration_minutes": 90,
+          "happiness_thresholds": [
+            { "min": 0, "max": 1739, "bonus": 0.0 },
+            { "min": 1740, "max": 3479, "bonus": 0.1 },
+            { "min": 3480, "max": 6959, "bonus": 0.25 },
+            { "min": 6960, "max": null, "bonus": 0.5 }
+          ]
+        },
+        {
+          "level": 12,
+          "duration_minutes": 90,
+          "happiness_thresholds": [
+            { "min": 0, "max": 2099, "bonus": 0.0 },
+            { "min": 2100, "max": 4199, "bonus": 0.1 },
+            { "min": 4200, "max": 8399, "bonus": 0.25 },
+            { "min": 8400, "max": null, "bonus": 0.5 }
+          ]
+        },
+        {
+          "level": 13,
+          "duration_minutes": 90,
+          "happiness_thresholds": [
+            { "min": 0, "max": 2519, "bonus": 0.0 },
+            { "min": 2520, "max": 5039, "bonus": 0.1 },
+            { "min": 5040, "max": 10099, "bonus": 0.25 },
+            { "min": 10100, "max": null, "bonus": 0.5 }
+          ]
+        },
+        {
+          "level": 14,
+          "duration_minutes": 90,
+          "happiness_thresholds": [
+            { "min": 0, "max": 2999, "bonus": 0.0 },
+            { "min": 3000, "max": 5999, "bonus": 0.1 },
+            { "min": 6000, "max": 11999, "bonus": 0.25 },
+            { "min": 12000, "max": null, "bonus": 0.5 }
+          ]
+        }
+      ]
     },
     {
       "id": "metal_workshop",
@@ -583,6 +3060,36 @@
             { "min": 180, "max": 359, "bonus": 0.25 },
             { "min": 360, "max": 719, "bonus": 0.5 },
             { "min": 720, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 3,
+          "harvests": [{ "duration_minutes": 60, "amount": 60 }],
+          "happiness_thresholds": [
+            { "min": 0, "max": 239, "bonus": 0.0 },
+            { "min": 240, "max": 479, "bonus": 0.25 },
+            { "min": 480, "max": 959, "bonus": 0.5 },
+            { "min": 960, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 4,
+          "harvests": [{ "duration_minutes": 90, "amount": 90 }],
+          "happiness_thresholds": [
+            { "min": 0, "max": 299, "bonus": 0.0 },
+            { "min": 300, "max": 599, "bonus": 0.25 },
+            { "min": 600, "max": 1199, "bonus": 0.5 },
+            { "min": 1200, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 5,
+          "harvests": [{ "duration_minutes": 120, "amount": 120 }],
+          "happiness_thresholds": [
+            { "min": 0, "max": 359, "bonus": 0.0 },
+            { "min": 360, "max": 719, "bonus": 0.25 },
+            { "min": 720, "max": 1439, "bonus": 0.5 },
+            { "min": 1440, "max": null, "bonus": 1.0 }
           ]
         }
       ]
@@ -614,6 +3121,36 @@
             { "min": 360, "max": 719, "bonus": 0.5 },
             { "min": 720, "max": null, "bonus": 1.0 }
           ]
+        },
+        {
+          "level": 3,
+          "harvests": [{ "duration_minutes": 60, "amount": 60 }],
+          "happiness_thresholds": [
+            { "min": 0, "max": 239, "bonus": 0.0 },
+            { "min": 240, "max": 479, "bonus": 0.25 },
+            { "min": 480, "max": 959, "bonus": 0.5 },
+            { "min": 960, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 4,
+          "harvests": [{ "duration_minutes": 90, "amount": 90 }],
+          "happiness_thresholds": [
+            { "min": 0, "max": 299, "bonus": 0.0 },
+            { "min": 300, "max": 599, "bonus": 0.25 },
+            { "min": 600, "max": 1199, "bonus": 0.5 },
+            { "min": 1200, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 5,
+          "harvests": [{ "duration_minutes": 120, "amount": 120 }],
+          "happiness_thresholds": [
+            { "min": 0, "max": 359, "bonus": 0.0 },
+            { "min": 360, "max": 719, "bonus": 0.25 },
+            { "min": 720, "max": 1439, "bonus": 0.5 },
+            { "min": 1440, "max": null, "bonus": 1.0 }
+          ]
         }
       ]
     },
@@ -644,6 +3181,336 @@
             { "min": 360, "max": 719, "bonus": 0.5 },
             { "min": 720, "max": null, "bonus": 1.0 }
           ]
+        },
+        {
+          "level": 3,
+          "harvests": [{ "duration_minutes": 60, "amount": 60 }],
+          "happiness_thresholds": [
+            { "min": 0, "max": 239, "bonus": 0.0 },
+            { "min": 240, "max": 479, "bonus": 0.25 },
+            { "min": 480, "max": 959, "bonus": 0.5 },
+            { "min": 960, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 4,
+          "harvests": [{ "duration_minutes": 90, "amount": 90 }],
+          "happiness_thresholds": [
+            { "min": 0, "max": 299, "bonus": 0.0 },
+            { "min": 300, "max": 599, "bonus": 0.25 },
+            { "min": 600, "max": 1199, "bonus": 0.5 },
+            { "min": 1200, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 5,
+          "harvests": [{ "duration_minutes": 120, "amount": 120 }],
+          "happiness_thresholds": [
+            { "min": 0, "max": 359, "bonus": 0.0 },
+            { "min": 360, "max": 719, "bonus": 0.25 },
+            { "min": 720, "max": 1439, "bonus": 0.5 },
+            { "min": 1440, "max": null, "bonus": 1.0 }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "paper_workshop",
+      "name": "Scribe",
+      "type": "production",
+      "resource": "goods",
+      "category": "goods",
+      "size": { "w": 4, "h": 3 },
+      "levels": [
+        {
+          "level": 1,
+          "harvests": [{ "duration_minutes": 120, "amount": 120 }],
+          "happiness_thresholds": [
+            { "min": 0, "max": 419, "bonus": 0.0 },
+            { "min": 420, "max": 839, "bonus": 0.25 },
+            { "min": 840, "max": 1679, "bonus": 0.5 },
+            { "min": 1680, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 2,
+          "harvests": [{ "duration_minutes": 120, "amount": 120 }],
+          "happiness_thresholds": [
+            { "min": 0, "max": 509, "bonus": 0.0 },
+            { "min": 510, "max": 1019, "bonus": 0.25 },
+            { "min": 1020, "max": 2039, "bonus": 0.5 },
+            { "min": 2040, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 3,
+          "harvests": [{ "duration_minutes": 120, "amount": 120 }],
+          "happiness_thresholds": [
+            { "min": 0, "max": 599, "bonus": 0.0 },
+            { "min": 600, "max": 1199, "bonus": 0.25 },
+            { "min": 1200, "max": 2399, "bonus": 0.5 },
+            { "min": 2400, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 4,
+          "harvests": [{ "duration_minutes": 120, "amount": 120 }],
+          "happiness_thresholds": [
+            { "min": 0, "max": 719, "bonus": 0.0 },
+            { "min": 720, "max": 1439, "bonus": 0.25 },
+            { "min": 1440, "max": 2879, "bonus": 0.5 },
+            { "min": 2880, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 5,
+          "harvests": [{ "duration_minutes": 120, "amount": 120 }],
+          "happiness_thresholds": [
+            { "min": 0, "max": 869, "bonus": 0.0 },
+            { "min": 870, "max": 1739, "bonus": 0.25 },
+            { "min": 1740, "max": 3479, "bonus": 0.5 },
+            { "min": 3480, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 6,
+          "harvests": [{ "duration_minutes": 120, "amount": 120 }],
+          "happiness_thresholds": [
+            { "min": 0, "max": 1049, "bonus": 0.0 },
+            { "min": 1050, "max": 2099, "bonus": 0.25 },
+            { "min": 2100, "max": 4199, "bonus": 0.5 },
+            { "min": 4200, "max": null, "bonus": 1.0 }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "wood_workshop",
+      "name": "Carpenter",
+      "type": "production",
+      "resource": "goods",
+      "category": "goods",
+      "size": { "w": 4, "h": 3 },
+      "levels": [
+        {
+          "level": 1,
+          "harvests": [{ "duration_minutes": 120, "amount": 120 }],
+          "happiness_thresholds": [
+            { "min": 0, "max": 419, "bonus": 0.0 },
+            { "min": 420, "max": 839, "bonus": 0.25 },
+            { "min": 840, "max": 1679, "bonus": 0.5 },
+            { "min": 1680, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 2,
+          "harvests": [{ "duration_minutes": 120, "amount": 120 }],
+          "happiness_thresholds": [
+            { "min": 0, "max": 509, "bonus": 0.0 },
+            { "min": 510, "max": 1019, "bonus": 0.25 },
+            { "min": 1020, "max": 2039, "bonus": 0.5 },
+            { "min": 2040, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 3,
+          "harvests": [{ "duration_minutes": 120, "amount": 120 }],
+          "happiness_thresholds": [
+            { "min": 0, "max": 599, "bonus": 0.0 },
+            { "min": 600, "max": 1199, "bonus": 0.25 },
+            { "min": 1200, "max": 2399, "bonus": 0.5 },
+            { "min": 2400, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 4,
+          "harvests": [{ "duration_minutes": 120, "amount": 120 }],
+          "happiness_thresholds": [
+            { "min": 0, "max": 719, "bonus": 0.0 },
+            { "min": 720, "max": 1439, "bonus": 0.25 },
+            { "min": 1440, "max": 2879, "bonus": 0.5 },
+            { "min": 2880, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 5,
+          "harvests": [{ "duration_minutes": 120, "amount": 120 }],
+          "happiness_thresholds": [
+            { "min": 0, "max": 869, "bonus": 0.0 },
+            { "min": 870, "max": 1739, "bonus": 0.25 },
+            { "min": 1740, "max": 3479, "bonus": 0.5 },
+            { "min": 3480, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 6,
+          "harvests": [{ "duration_minutes": 120, "amount": 120 }],
+          "happiness_thresholds": [
+            { "min": 0, "max": 1049, "bonus": 0.0 },
+            { "min": 1050, "max": 2099, "bonus": 0.25 },
+            { "min": 2100, "max": 4199, "bonus": 0.5 },
+            { "min": 4200, "max": null, "bonus": 1.0 }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spice_workshop",
+      "name": "Spice Merchant",
+      "type": "production",
+      "resource": "goods",
+      "category": "goods",
+      "size": { "w": 4, "h": 3 },
+      "levels": [
+        {
+          "level": 1,
+          "harvests": [{ "duration_minutes": 120, "amount": 120 }],
+          "happiness_thresholds": [
+            { "min": 0, "max": 419, "bonus": 0.0 },
+            { "min": 420, "max": 839, "bonus": 0.25 },
+            { "min": 840, "max": 1679, "bonus": 0.5 },
+            { "min": 1680, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 2,
+          "harvests": [{ "duration_minutes": 120, "amount": 120 }],
+          "happiness_thresholds": [
+            { "min": 0, "max": 509, "bonus": 0.0 },
+            { "min": 510, "max": 1019, "bonus": 0.25 },
+            { "min": 1020, "max": 2039, "bonus": 0.5 },
+            { "min": 2040, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 3,
+          "harvests": [{ "duration_minutes": 120, "amount": 120 }],
+          "happiness_thresholds": [
+            { "min": 0, "max": 599, "bonus": 0.0 },
+            { "min": 600, "max": 1199, "bonus": 0.25 },
+            { "min": 1200, "max": 2399, "bonus": 0.5 },
+            { "min": 2400, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 4,
+          "harvests": [{ "duration_minutes": 120, "amount": 120 }],
+          "happiness_thresholds": [
+            { "min": 0, "max": 719, "bonus": 0.0 },
+            { "min": 720, "max": 1439, "bonus": 0.25 },
+            { "min": 1440, "max": 2879, "bonus": 0.5 },
+            { "min": 2880, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 5,
+          "harvests": [{ "duration_minutes": 120, "amount": 120 }],
+          "happiness_thresholds": [
+            { "min": 0, "max": 869, "bonus": 0.0 },
+            { "min": 870, "max": 1739, "bonus": 0.25 },
+            { "min": 1740, "max": 3479, "bonus": 0.5 },
+            { "min": 3480, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 6,
+          "harvests": [{ "duration_minutes": 120, "amount": 120 }],
+          "happiness_thresholds": [
+            { "min": 0, "max": 1049, "bonus": 0.0 },
+            { "min": 1050, "max": 2099, "bonus": 0.25 },
+            { "min": 2100, "max": 4199, "bonus": 0.5 },
+            { "min": 4200, "max": null, "bonus": 1.0 }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "jewelry_workshop",
+      "name": "Jeweler",
+      "type": "production",
+      "resource": "goods",
+      "category": "goods",
+      "size": { "w": 4, "h": 3 },
+      "levels": [
+        {
+          "level": 1,
+          "harvests": [{ "duration_minutes": 120, "amount": 120 }],
+          "happiness_thresholds": [
+            { "min": 0, "max": 1259, "bonus": 0.0 },
+            { "min": 1260, "max": 2519, "bonus": 0.25 },
+            { "min": 2520, "max": 5039, "bonus": 0.5 },
+            { "min": 5040, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 2,
+          "harvests": [{ "duration_minutes": 120, "amount": 120 }],
+          "happiness_thresholds": [
+            { "min": 0, "max": 1499, "bonus": 0.0 },
+            { "min": 1500, "max": 2999, "bonus": 0.25 },
+            { "min": 3000, "max": 5999, "bonus": 0.5 },
+            { "min": 6000, "max": null, "bonus": 1.0 }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "alchemy_workshop",
+      "name": "Alchemist",
+      "type": "production",
+      "resource": "goods",
+      "category": "goods",
+      "size": { "w": 4, "h": 3 },
+      "levels": [
+        {
+          "level": 1,
+          "harvests": [{ "duration_minutes": 120, "amount": 120 }],
+          "happiness_thresholds": [
+            { "min": 0, "max": 1259, "bonus": 0.0 },
+            { "min": 1260, "max": 2519, "bonus": 0.25 },
+            { "min": 2520, "max": 5039, "bonus": 0.5 },
+            { "min": 5040, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 2,
+          "harvests": [{ "duration_minutes": 120, "amount": 120 }],
+          "happiness_thresholds": [
+            { "min": 0, "max": 1499, "bonus": 0.0 },
+            { "min": 1500, "max": 2999, "bonus": 0.25 },
+            { "min": 3000, "max": 5999, "bonus": 0.5 },
+            { "min": 6000, "max": null, "bonus": 1.0 }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "glass_workshop",
+      "name": "Glassblower",
+      "type": "production",
+      "resource": "goods",
+      "category": "goods",
+      "size": { "w": 4, "h": 3 },
+      "levels": [
+        {
+          "level": 1,
+          "harvests": [{ "duration_minutes": 120, "amount": 120 }],
+          "happiness_thresholds": [
+            { "min": 0, "max": 1259, "bonus": 0.0 },
+            { "min": 1260, "max": 2519, "bonus": 0.25 },
+            { "min": 2520, "max": 5039, "bonus": 0.5 },
+            { "min": 5040, "max": null, "bonus": 1.0 }
+          ]
+        },
+        {
+          "level": 2,
+          "harvests": [{ "duration_minutes": 120, "amount": 120 }],
+          "happiness_thresholds": [
+            { "min": 0, "max": 1499, "bonus": 0.0 },
+            { "min": 1500, "max": 2999, "bonus": 0.25 },
+            { "min": 3000, "max": 5999, "bonus": 0.5 },
+            { "min": 6000, "max": null, "bonus": 1.0 }
+          ]
         }
       ]
     },
@@ -656,14 +3523,19 @@
       "size": { "w": 1, "h": 1 },
       "radius": 1,
       "levels": [
-        {
-          "level": 2,
-          "happiness_given": 70
-        },
-        {
-          "level": 3,
-          "happiness_given": 80
-        }
+        { "level": 2, "happiness_given": 70 },
+        { "level": 3, "happiness_given": 80 },
+        { "level": 4, "happiness_given": 90 },
+        { "level": 5, "happiness_given": 100 },
+        { "level": 6, "happiness_given": 120 },
+        { "level": 7, "happiness_given": 140 },
+        { "level": 8, "happiness_given": 160 },
+        { "level": 9, "happiness_given": 190 },
+        { "level": 10, "happiness_given": 220 },
+        { "level": 11, "happiness_given": 260 },
+        { "level": 12, "happiness_given": 310 },
+        { "level": 13, "happiness_given": 350 },
+        { "level": 14, "happiness_given": 390 }
       ]
     },
     {
@@ -675,18 +3547,20 @@
       "size": { "w": 2, "h": 1 },
       "radius": 1,
       "levels": [
-        {
-          "level": 1,
-          "happiness_given": 100
-        },
-        {
-          "level": 2,
-          "happiness_given": 120
-        },
-        {
-          "level": 3,
-          "happiness_given": 140
-        }
+        { "level": 1, "happiness_given": 100 },
+        { "level": 2, "happiness_given": 120 },
+        { "level": 3, "happiness_given": 140 },
+        { "level": 4, "happiness_given": 160 },
+        { "level": 5, "happiness_given": 180 },
+        { "level": 6, "happiness_given": 220 },
+        { "level": 7, "happiness_given": 260 },
+        { "level": 8, "happiness_given": 300 },
+        { "level": 9, "happiness_given": 360 },
+        { "level": 10, "happiness_given": 420 },
+        { "level": 11, "happiness_given": 500 },
+        { "level": 12, "happiness_given": 600 },
+        { "level": 13, "happiness_given": 700 },
+        { "level": 14, "happiness_given": 800 }
       ]
     },
     {
@@ -698,18 +3572,42 @@
       "size": { "w": 2, "h": 2 },
       "radius": 2,
       "levels": [
-        {
-          "level": 1,
-          "happiness_given": 160
-        },
-        {
-          "level": 2,
-          "happiness_given": 200
-        },
-        {
-          "level": 3,
-          "happiness_given": 240
-        }
+        { "level": 1, "happiness_given": 160 },
+        { "level": 2, "happiness_given": 200 },
+        { "level": 3, "happiness_given": 240 },
+        { "level": 4, "happiness_given": 280 },
+        { "level": 5, "happiness_given": 320 },
+        { "level": 6, "happiness_given": 400 },
+        { "level": 7, "happiness_given": 480 },
+        { "level": 8, "happiness_given": 560 },
+        { "level": 9, "happiness_given": 680 },
+        { "level": 10, "happiness_given": 800 },
+        { "level": 11, "happiness_given": 960 },
+        { "level": 12, "happiness_given": 1160 },
+        { "level": 13, "happiness_given": 1300 },
+        { "level": 14, "happiness_given": 1440 }
+      ]
+    },
+    {
+      "id": "large_culture_site",
+      "name": "Large Culture Site",
+      "type": "culture",
+      "resource": null,
+      "category": null,
+      "size": { "w": 4, "h": 3 },
+      "radius": 3,
+      "levels": [
+        { "level": 4, "happiness_given": 750 },
+        { "level": 5, "happiness_given": 860 },
+        { "level": 6, "happiness_given": 1070 },
+        { "level": 7, "happiness_given": 1290 },
+        { "level": 8, "happiness_given": 1500 },
+        { "level": 9, "happiness_given": 1820 },
+        { "level": 10, "happiness_given": 2140 },
+        { "level": 11, "happiness_given": 2570 },
+        { "level": 12, "happiness_given": 3110 },
+        { "level": 13, "happiness_given": 3500 },
+        { "level": 14, "happiness_given": 3890 }
       ]
     },
     {
@@ -721,18 +3619,20 @@
       "size": { "w": 3, "h": 2 },
       "radius": 2,
       "levels": [
-        {
-          "level": 1,
-          "happiness_given": 360
-        },
-        {
-          "level": 2,
-          "happiness_given": 420
-        },
-        {
-          "level": 3,
-          "happiness_given": 480
-        }
+        { "level": 1, "happiness_given": 360 },
+        { "level": 2, "happiness_given": 420 },
+        { "level": 3, "happiness_given": 480 },
+        { "level": 4, "happiness_given": 600 },
+        { "level": 5, "happiness_given": 720 },
+        { "level": 6, "happiness_given": 840 },
+        { "level": 7, "happiness_given": 1020 },
+        { "level": 8, "happiness_given": 1200 },
+        { "level": 9, "happiness_given": 1440 },
+        { "level": 10, "happiness_given": 1740 },
+        { "level": 11, "happiness_given": 2100 },
+        { "level": 12, "happiness_given": 2520 },
+        { "level": 13, "happiness_given": 2800 },
+        { "level": 14, "happiness_given": 3080 }
       ]
     }
   ]

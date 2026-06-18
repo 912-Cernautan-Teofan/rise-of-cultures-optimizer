@@ -64,8 +64,8 @@ Built with vanilla HTML, CSS, and JavaScript — no frameworks, no build tools, 
 - 🟢 Consistent dark medieval visual theme
 - 🟢 Deployed on GitHub Pages
 - ⚪ Wonders and event buildings
-- ⚪ Buildings beyond Minoan Era
-- ⚪ Account building auto-import (under investigation)
+- 🟢 Buildings beyond Minoan Era
+- ⚪ Account buildings auto-import (under investigation)
 
 ### 📦 Building Database (JSON)
 - 🟢 Farms (fast and slow variants, luxurious farm)

@@ -1,0 +1,749 @@
+{
+  "wonders": [
+    {
+      "id": "stonehenge",
+      "name": "Stonehenge",
+      "group": "Ancient World",
+      "location": "Capital",
+      "type": ["Temple", "Statue"],
+      "rarity": "Rare",
+      "max_level": 30,
+      "bonuses": [
+        {
+          "id": "coins_production_boost",
+          "description": "Boosts the output of all Coins productions in Capital City",
+          "unit": "percent",
+          "levels": [
+            { "level": 1,  "value": 10.0 },
+            { "level": 2,  "value": 13.0 },
+            { "level": 3,  "value": 15.0 },
+            { "level": 4,  "value": 16.5 },
+            { "level": 5,  "value": 18.0 },
+            { "level": 6,  "value": 19.5 },
+            { "level": 7,  "value": 20.5 },
+            { "level": 8,  "value": 22.0 },
+            { "level": 9,  "value": 23.5 },
+            { "level": 10, "value": 24.0 },
+            { "level": 11, "value": 24.5 },
+            { "level": 12, "value": 25.5 },
+            { "level": 13, "value": 26.5 },
+            { "level": 14, "value": 27.0 },
+            { "level": 15, "value": 28.0 },
+            { "level": 16, "value": 28.5 },
+            { "level": 17, "value": 29.0 },
+            { "level": 18, "value": 30.0 },
+            { "level": 19, "value": 30.5 },
+            { "level": 20, "value": 31.0 },
+            { "level": 21, "value": 31.5 },
+            { "level": 22, "value": 32.5 },
+            { "level": 23, "value": 33.0 },
+            { "level": 24, "value": 33.5 },
+            { "level": 25, "value": 34.0 },
+            { "level": 26, "value": 34.5 },
+            { "level": 27, "value": 35.0 },
+            { "level": 28, "value": 35.5 },
+            { "level": 29, "value": 36.0 },
+            { "level": 30, "value": 36.5 }
+          ]
+        },
+        {
+          "id": "research_points_daily",
+          "description": "Produces Research Point(s) in 1d",
+          "unit": "rp_per_day",
+          "levels": [
+            { "level": 1,  "value": 1 },
+            { "level": 10, "value": 2 },
+            { "level": 20, "value": 3 },
+            { "level": 30, "value": 4 }
+          ]
+        }
+      ],
+      "synergy_bonuses": [
+        {
+          "id": "temple_rp_bonus",
+          "description": "+1 RP per day per other Temple type wonder placed",
+          "requires_type": "Temple",
+          "unit": "flat_per_wonder",
+          "value": 1
+        }
+      ]
+    },
+    {
+        "id": "hanging_gardens",
+        "name": "Hanging Gardens",
+        "group": "Ancient World",
+        "location": "Capital",
+        "type": ["Nature", "Palace"],
+        "rarity": "Rare",
+        "max_level": 30,
+        "bonuses": [
+            {
+                "id": "food_production_boost",
+                "description": "Boosts the output of all Food productions in Capital City",
+                "unit": "percent",
+                "levels": [
+                    { "level": 1,  "value": 10.0 },
+                    { "level": 2,  "value": 13.0 },
+                    { "level": 3,  "value": 15.0 },
+                    { "level": 4,  "value": 16.5 },
+                    { "level": 5,  "value": 18.0 },
+                    { "level": 6,  "value": 19.5 },
+                    { "level": 7,  "value": 20.5 },
+                    { "level": 8,  "value": 22.0 },
+                    { "level": 9,  "value": 23.0 },
+                    { "level": 10, "value": 24.0 },
+                    { "level": 11, "value": 24.5 },
+                    { "level": 12, "value": 25.5 },
+                    { "level": 13, "value": 26.5 },
+                    { "level": 14, "value": 27.0 },
+                    { "level": 15, "value": 28.0 },
+                    { "level": 16, "value": 28.5 },
+                    { "level": 17, "value": 29.0 },
+                    { "level": 18, "value": 30.0 },
+                    { "level": 19, "value": 30.5 },
+                    { "level": 20, "value": 31.0 },
+                    { "level": 21, "value": 31.5 },
+                    { "level": 22, "value": 32.5 },
+                    { "level": 23, "value": 33.0 },
+                    { "level": 24, "value": 33.5 },
+                    { "level": 25, "value": 34.0 },
+                    { "level": 26, "value": 34.5 },
+                    { "level": 27, "value": 35.0 },
+                    { "level": 28, "value": 35.5 },
+                    { "level": 29, "value": 36.0 },
+                    { "level": 30, "value": 36.5 }
+                ]
+            },
+            {
+                "id": "additional_workers",
+                "description": "Grants worker(s)",
+                "unit": "workers",
+                "levels": [
+                    { "level": 1,  "value": 1 },
+                    { "level": 15, "value": 2 },
+                    { "level": 30, "value": 3 }
+                ]
+            }
+        ],
+        "synergy_bonuses": [
+            {
+                "id": "palace_food_bonus",
+                "description": "Boosts the output of all Food productions in Capital City by 8.0% extra per every other active Palace",
+                "requires_type": "Palace",
+                "unit": "percent_per_wonder",
+                "value": 8.0
+            }
+        ]
+    },
+    {
+        "id": "statue_of_zeus",
+        "name": "Statue of Zeus",
+        "group": "Ancient World",
+        "location": "Capital",
+        "type": ["Statue"],
+        "rarity": "Rare",
+        "max_level": 30,
+        "bonuses": [
+            {
+                "id": "infantry_attack_boost",
+                "description": "Boosts the damage of all Infantry Units",
+                "unit": "percent",
+                "levels":[
+                    { "level": 1, "value": 5.0 },
+                    { "level": 2, "value": 6.4 },
+                    { "level": 3, "value": 7.5 },
+                    { "level": 4, "value": 8.4 },
+                    { "level": 5, "value": 9.1 },
+                    { "level": 6, "value": 9.8 },
+                    { "level": 7, "value": 10.4 },
+                    { "level": 8, "value": 10.9 },
+                    { "level": 9, "value": 11.4 },
+                    { "level": 10, "value": 11.9 },
+                    { "level": 11, "value": 12.3 },
+                    { "level": 12, "value": 12.8 },
+                    { "level": 13, "value": 13.2 },
+                    { "level": 14, "value": 13.5 },
+                    { "level": 15, "value": 13.9 },
+                    { "level": 16, "value": 14.3 },
+                    { "level": 17, "value": 14.6 },
+                    { "level": 18, "value": 14.9 },
+                    { "level": 19, "value": 15.3 },
+                    { "level": 20, "value": 15.6 },
+                    { "level": 21, "value": 15.9 },
+                    { "level": 22, "value": 16.2 },
+                    { "level": 23, "value": 16.5 },
+                    { "level": 24, "value": 16.7 },
+                    { "level": 25, "value": 17.0 },
+                    { "level": 26, "value": 17.3 },
+                    { "level": 27, "value": 17.5 },
+                    { "level": 28, "value": 17.8 },
+                    { "level": 29, "value": 18.0 },
+                    { "level": 30, "value": 18.3 }    
+                ]
+            }
+        ],
+        "synergy_bonuses": [
+            {
+                "id": "statue_infantry_bonus",
+                "description": "Boosts the damage of all Infantry Units by 4.0% extra per every other active Statue",
+                "requires_type": "Statue",
+                "unit": "percent_per_wonder",
+                "value": 4.0
+             }
+         ]
+    },
+    {
+        "id": "temple_of_artemis",
+        "name": "Temple of Artemis",
+        "group": "Ancient World",
+        "location": "Capital",
+        "type": ["Temple"],
+        "rarity": "Legendary",
+        "max_level": 30,
+        "bonuses": [
+            {
+                "id": "ranged_attack_boost",
+                "description": "Boosts the damage of all Ranged Units",
+                "unit": "percent",
+                "levels":[
+                    { "level": 1, "value": 5.0 },
+                    { "level": 2, "value": 6.4 },
+                    { "level": 3, "value": 7.5 },
+                    { "level": 4, "value": 8.4 },
+                    { "level": 5, "value": 9.1 },
+                    { "level": 6, "value": 9.8 },
+                    { "level": 7, "value": 10.4 },
+                    { "level": 8, "value": 10.9 },
+                    { "level": 9, "value": 11.4 },
+                    { "level": 10, "value": 11.9 },
+                    { "level": 11, "value": 12.3 },
+                    { "level": 12, "value": 12.8 },
+                    { "level": 13, "value": 13.2 },
+                    { "level": 14, "value": 13.5 },
+                    { "level": 15, "value": 13.9 },
+                    { "level": 16, "value": 14.3 },
+                    { "level": 17, "value": 14.6 },
+                    { "level": 18, "value": 14.9 },
+                    { "level": 19, "value": 15.3 },
+                    { "level": 20, "value": 15.6 },
+                    { "level": 21, "value": 15.9 },
+                    { "level": 22, "value": 16.2 },
+                    { "level": 23, "value": 16.5 },
+                    { "level": 24, "value": 16.7 },
+                    { "level": 25, "value": 17.0 },
+                    { "level": 26, "value": 17.3 },
+                    { "level": 27, "value": 17.5 },
+                    { "level": 28, "value": 17.8 },
+                    { "level": 29, "value": 18.0 },
+                    { "level": 30, "value": 18.3 }
+                ]
+            },
+            {
+                "id": "additional_workers",
+                "description": "Grants worker(s)",
+                "unit": "workers",
+                "levels": [
+                    { "level": 1,  "value": 2 },
+                    { "level": 15, "value": 3 },
+                    { "level": 30, "value": 4 }
+                ]
+            }
+        ],
+        "synergy_bonuses": [
+            {
+                "id": "temple_ranged_bonus",
+                "description": "Boosts the damage of all Ranged Units by 4.0% extra per every other active Statue",
+                "requires_type": "Statue",
+                "unit": "percent_per_wonder",
+                "value": 4.0
+            }
+        ]
+    },
+    {
+        "id": "cheops_pyramid",
+        "name": "Cheops Pyramid",
+        "group": "Ancient World",
+        "location": "Egypt",
+        "type": ["Temple"],
+        "rarity": "Rare",
+        "max_level": 30,
+        "bonuses": [
+            {
+                "id": "goods_production_boost",
+                "description": "Boosts the output of all Goods productions in Egypt",
+                "unit": "percent",
+                "levels": [
+                    { "level": 1,  "value": 10.0 },
+                    { "level": 2,  "value": 13.0 },
+                    { "level": 3,  "value": 15.0 },
+                    { "level": 4,  "value": 16.5 },
+                    { "level": 5,  "value": 18.0 },
+                    { "level": 6,  "value": 19.5 },
+                    { "level": 7,  "value": 20.5 },
+                    { "level": 8,  "value": 22.0 },
+                    { "level": 9,  "value": 23.0 },
+                    { "level": 10, "value": 24.0 },
+                    { "level": 11, "value": 24.5 },
+                    { "level": 12, "value": 25.5 },
+                    { "level": 13, "value": 26.5 },
+                    { "level": 14, "value": 27.0 },
+                    { "level": 15, "value": 28.0 },
+                    { "level": 16, "value": 28.5 },
+                    { "level": 17, "value": 29.0 },
+                    { "level": 18, "value": 30.0 },
+                    { "level": 19, "value": 30.5 },
+                    { "level": 20, "value": 31.0 },
+                    { "level": 21, "value": 31.5 },
+                    { "level": 22, "value": 32.5 },
+                    { "level": 23, "value": 33.0 },
+                    { "level": 24, "value": 33.5 },
+                    { "level": 25, "value": 34.0 },
+                    { "level": 26, "value": 34.5 },
+                    { "level": 27, "value": 35.0 },
+                    { "level": 28, "value": 35.5 },
+                    { "level": 29, "value": 36.0 },
+                    { "level": 30, "value": 36.5 }
+                ]
+            },
+            {
+                "id": "goods_daily",
+                "description": "Produces an amount of each previous era Good in 1d",
+                "unit": "goods",
+                "levels": [
+                    { "level": 1,  "value": 100 },
+                    { "level": 2,  "value": 110 },
+                    { "level": 3,  "value": 120 },
+                    { "level": 4,  "value": 130 },
+                    { "level": 5,  "value": 140 },
+                    { "level": 6,  "value": 150 },
+                    { "level": 7,  "value": 160 },
+                    { "level": 8,  "value": 170 },
+                    { "level": 9,  "value": 180 },
+                    { "level": 10, "value": 190 },
+                    { "level": 11, "value": 200 },
+                    { "level": 12, "value": 210 },
+                    { "level": 13, "value": 220 },
+                    { "level": 14, "value": 230 },
+                    { "level": 15, "value": 240 },
+                    { "level": 16, "value": 250 },
+                    { "level": 17, "value": 260 },
+                    { "level": 18, "value": 270 },
+                    { "level": 19, "value": 280 },
+                    { "level": 20, "value": 290 },
+                    { "level": 21, "value": 300 },
+                    { "level": 22, "value": 310 },
+                    { "level": 23, "value": 320 },
+                    { "level": 24, "value": 330 },
+                    { "level": 25, "value": 340 },
+                    { "level": 26, "value": 350 },
+                    { "level": 27, "value": 360 },
+                    { "level": 28, "value": 370 },
+                    { "level": 29, "value": 380 },
+                    { "level": 30, "value": 390 }
+                ]
+            }
+        ],
+        "synergy_bonuses": [
+            {
+                "id": "temple_goods_bonus",
+                "description": "Produces 60 of each previous era Good extra per every other active Temple in 1d",
+                "requires_type": "Temple",
+                "unit": "flat_per_wonder",
+                "value": 60
+            }
+        ]
+    },
+    {
+        "id": "great_sphinx",
+        "name": "Great Sphinx",
+        "group": "Ancient World",
+        "location": "Egypt",
+        "type": ["Statue"],
+        "rarity": "Rare",
+        "max_level": 30,
+        "bonuses": [
+            {
+                "id": "cavalry_attack_boost",
+                "description": "Boosts the damage of all Cavalry Units",
+                "unit": "percent",
+                "levels":[
+                    { "level": 1, "value": 5.0 },
+                    { "level": 2, "value": 6.4 },
+                    { "level": 3, "value": 7.5 },
+                    { "level": 4, "value": 8.4 },
+                    { "level": 5, "value": 9.1 },
+                    { "level": 6, "value": 9.8 },
+                    { "level": 7, "value": 10.4 },
+                    { "level": 8, "value": 10.9 },
+                    { "level": 9, "value": 11.4 },
+                    { "level": 10, "value": 11.9 },
+                    { "level": 11, "value": 12.3 },
+                    { "level": 12, "value": 12.8 },
+                    { "level": 13, "value": 13.2 },
+                    { "level": 14, "value": 13.5 },
+                    { "level": 15, "value": 13.9 },
+                    { "level": 16, "value": 14.3 },
+                    { "level": 17, "value": 14.6 },
+                    { "level": 18, "value": 14.9 },
+                    { "level": 19, "value": 15.3 },
+                    { "level": 20, "value": 15.6 },
+                    { "level": 21, "value": 15.9 },
+                    { "level": 22, "value": 16.2 },
+                    { "level": 23, "value": 16.5 },
+                    { "level": 24, "value": 16.7 },
+                    { "level": 25, "value": 17.0 },
+                    { "level": 26, "value": 17.3 },
+                    { "level": 27, "value": 17.5 },
+                    { "level": 28, "value": 17.8 },
+                    { "level": 29, "value": 18.0 },
+                    { "level": 30, "value": 18.3 }
+                ]
+            },
+            {
+                "id": "mystery_chest_daily",
+                "description": "Produces a Mystery Chest which can include the Mercenary Commander Menes in 1d",
+                "unit": "percent",
+                "levels":[
+                    { "level": 1, "value": 20.0 },
+                    { "level": 2, "value": 23.0 },
+                    { "level": 3, "value": 25.0 },
+                    { "level": 4, "value": 26.5 },
+                    { "level": 5, "value": 28.0 },
+                    { "level": 6, "value": 29.5 },
+                    { "level": 7, "value": 30.5 },
+                    { "level": 8, "value": 32.0 },
+                    { "level": 9, "value": 33.0 },
+                    { "level": 10, "value": 34.0 },
+                    { "level": 11, "value": 34.5 },
+                    { "level": 12, "value": 35.5 },
+                    { "level": 13, "value": 36.5 },
+                    { "level": 14, "value": 37.0 },
+                    { "level": 15, "value": 38.0 },
+                    { "level": 16, "value": 38.5 },
+                    { "level": 17, "value": 39.0 },
+                    { "level": 18, "value": 40.0 },
+                    { "level": 19, "value": 40.5 },
+                    { "level": 20, "value": 41.0 },
+                    { "level": 21, "value": 41.5 },
+                    { "level": 22, "value": 42.5 },
+                    { "level": 23, "value": 43.0 },
+                    { "level": 24, "value": 43.5 },
+                    { "level": 25, "value": 44.0 },
+                    { "level": 26, "value": 44.5 },
+                    { "level": 27, "value": 45.0 },
+                    { "level": 28, "value": 45.5 },
+                    { "level": 29, "value": 46.0 },
+                    { "level": 30, "value": 46.5 }
+                ]
+            }
+        ],
+        "synergy_bonuses": [
+            {
+                "id": "statue_cavalry_bonus",
+                "description": "Boosts the damage of all Cavalry Units by 4.0% extra per every other active Statue",
+                "requires_type": "Statue",
+                "unit": "percent_per_wonder",
+                "value": 4.0
+            }
+        ]
+    },
+    {
+        "id": "abu_simbel",
+        "name": "Abu Simbel",
+        "group": "Ancient World",
+        "location": "Egypt",
+        "type": ["Palace"],
+        "rarity": "Legendary",
+        "max_level": 30,
+        "bonuses": [
+            {
+                "id": "attack_boost",
+                "description": "Boosts the damage of all of your Units",
+                "unit": "percent",
+                "levels":[
+                    { "level": 1, "value": 5.0 },
+                    { "level": 2, "value": 6.4 },
+                    { "level": 3, "value": 7.5 },
+                    { "level": 4, "value": 8.4 },
+                    { "level": 5, "value": 9.1 },
+                    { "level": 6, "value": 9.8 },
+                    { "level": 7, "value": 10.4 },
+                    { "level": 8, "value": 10.9 },
+                    { "level": 9, "value": 11.4 },
+                    { "level": 10, "value": 11.9 },
+                    { "level": 11, "value": 12.3 },
+                    { "level": 12, "value": 12.8 },
+                    { "level": 13, "value": 13.2 },
+                    { "level": 14, "value": 13.5 },
+                    { "level": 15, "value": 13.9 },
+                    { "level": 16, "value": 14.3 },
+                    { "level": 17, "value": 14.6 },
+                    { "level": 18, "value": 14.9 },
+                    { "level": 19, "value": 15.3 },
+                    { "level": 20, "value": 15.6 },
+                    { "level": 21, "value": 15.9 },
+                    { "level": 22, "value": 16.2 },
+                    { "level": 23, "value": 16.5 },
+                    { "level": 24, "value": 16.7 },
+                    { "level": 25, "value": 17.0 },
+                    { "level": 26, "value": 17.3 },
+                    { "level": 27, "value": 17.5 },
+                    { "level": 28, "value": 17.8 },
+                    { "level": 19, "value": 18.0 },
+                    { "level": 30, "value": 18.3 }
+                ]
+            },
+            {
+                "id": "research_points_daily",
+                "description": "Produces Research Point(s) in 1d",
+                "unit": "rp_per_day",
+                "levels":[
+                    { "level": 1,  "value": 1 },
+                    { "level": 10, "value": 2 },
+                    { "level": 20, "value": 3 },
+                    { "level": 30, "value": 4 }
+                ]
+            }
+        ],
+        "synergy_bonuses": [
+             {
+                 "id": "statue_rp_bonus",
+                 "description": "Produces 1 Research Point extra per every other active Statue in 1d",
+                 "requires_type": "Statue",
+                 "unit": "flat_per_wonder",
+                 "value": 1
+             }
+         ]
+    },
+    {
+        "id": "tomb_of_mausolus",
+        "name": "Tomb of Mausolus",
+        "group": "Ancient World",
+        "location": "Capital",
+        "type": ["Temple"],
+        "rarity": "Rare",
+        "max_level": 30,
+        "bonuses": [
+            {
+                "id": "quest_mystery_chest",
+                "description": "Grants you a Mystery Chest which can include Research Points whenever you Complete any quest or task, up to 5 times a day",
+                "unit": "percent",
+                "daily_cap": 5,
+                "levels":[
+                    { "level": 1, "rp1_chance": 40.0, "rp2_chance": 5.0 , "rp3_chance": 0.0 },
+                    { "level": 2, "rp1_chance": 40.0, "rp2_chance": 8.0 , "rp3_chance": 0.0 },
+                    { "level": 3, "rp1_chance": 40.0, "rp2_chance": 11.0 , "rp3_chance": 0.0 },
+                    { "level": 4, "rp1_chance": 40.0, "rp2_chance": 13.0 , "rp3_chance": 0.0 },
+                    { "level": 5, "rp1_chance": 35.0, "rp2_chance": 18.0 , "rp3_chance": 0.0 },
+                    { "level": 6, "rp1_chance": 35.0, "rp2_chance": 20.0 , "rp3_chance": 0.0 },
+                    { "level": 7, "rp1_chance": 35.0, "rp2_chance": 22.0 , "rp3_chance": 0.0 },
+                    { "level": 8, "rp1_chance": 35.0, "rp2_chance": 24.0 , "rp3_chance": 0.0 },
+                    { "level": 9, "rp1_chance": 35.0, "rp2_chance": 26.0 , "rp3_chance": 0.0 },
+                    { "level": 10,"rp1_chance": 30.0, "rp2_chance": 30.0 , "rp3_chance": 0.0 },
+                    { "level": 11,"rp1_chance": 30.0, "rp2_chance": 26.0 , "rp3_chance": 4.0 },
+                    { "level": 12,"rp1_chance": 26.0, "rp2_chance": 27.0 , "rp3_chance": 6.0 },
+                    { "level": 13,"rp1_chance": 25.0, "rp2_chance": 27.0 , "rp3_chance": 7.0 },
+                    { "level": 14,"rp1_chance": 25.0, "rp2_chance": 29.0 , "rp3_chance": 7.0 },
+                    { "level": 15,"rp1_chance": 25.0, "rp2_chance": 30.0 , "rp3_chance": 7.0 },
+                    { "level": 16,"rp1_chance": 25.0, "rp2_chance": 30.0 , "rp3_chance": 8.0 },
+                    { "level": 17,"rp1_chance": 25.0, "rp2_chance": 30.0 , "rp3_chance": 9.0 },
+                    { "level": 18,"rp1_chance": 25.0, "rp2_chance": 32.0 , "rp3_chance": 9.0 },
+                    { "level": 19,"rp1_chance": 25.0, "rp2_chance": 32.0 , "rp3_chance": 10.0 },
+                    { "level": 20,"rp1_chance": 25.0, "rp2_chance": 33.0 , "rp3_chance": 10.0 },
+                    { "level": 21,"rp1_chance": 25.0, "rp2_chance": 34.0 , "rp3_chance": 10.0 },
+                    { "level": 22,"rp1_chance": 25.0, "rp2_chance": 36.0 , "rp3_chance": 10.0 },
+                    { "level": 23,"rp1_chance": 25.0, "rp2_chance": 36.0 , "rp3_chance": 11.0 },
+                    { "level": 24,"rp1_chance": 25.0, "rp2_chance": 36.0 , "rp3_chance": 12.0 },
+                    { "level": 25,"rp1_chance": 25.0, "rp2_chance": 37.0 , "rp3_chance": 12.0 },
+                    { "level": 26,"rp1_chance": 25.0, "rp2_chance": 37.0 , "rp3_chance": 13.0 },
+                    { "level": 27,"rp1_chance": 25.0, "rp2_chance": 38.0 , "rp3_chance": 13.0 },
+                    { "level": 28,"rp1_chance": 25.0, "rp2_chance": 38.0 , "rp3_chance": 14.0 },
+                    { "level": 29,"rp1_chance": 25.0, "rp2_chance": 39.0 , "rp3_chance": 14.0 },
+                    { "level": 30,"rp1_chance": 25.0, "rp2_chance": 39.0 , "rp3_chance": 15.0 }
+                ]
+            },
+            {
+                "id": "goods_daily",
+                "description": "Produces an amount of Primary current era Good in 1d",
+                "unit": "goods",
+                "levels": [
+                    { "level": 1, "value": 300 },
+                    { "level": 2, "value": 330 },
+                    { "level": 3, "value": 360 },
+                    { "level": 4, "value": 390 },
+                    { "level": 5, "value": 420 },
+                    { "level": 6, "value": 450 },
+                    { "level": 7, "value": 480 },
+                    { "level": 8, "value": 510 },
+                    { "level": 9, "value": 540 },
+                    { "level": 10, "value": 570 },
+                    { "level": 11, "value": 600 },
+                    { "level": 12, "value": 630 },
+                    { "level": 13, "value": 660 },
+                    { "level": 14, "value": 690 },
+                    { "level": 15, "value": 720 },
+                    { "level": 16, "value": 750 },
+                    { "level": 17, "value": 780 },
+                    { "level": 18, "value": 810 },
+                    { "level": 19, "value": 840 },
+                    { "level": 20, "value": 870 },
+                    { "level": 21, "value": 900 },
+                    { "level": 22, "value": 930 },
+                    { "level": 23, "value": 960 },
+                    { "level": 24, "value": 990 },
+                    { "level": 25, "value": 1020 },
+                    { "level": 26, "value": 1050 },
+                    { "level": 27, "value": 1080 },
+                    { "level": 28, "value": 1110 },
+                    { "level": 29, "value": 1140 },
+                    { "level":30 , "value": 1170 }
+                ]
+            }
+        ],
+        "synergy_bonuses": [
+            {
+                "id": "temple_goods_bonus",
+                "description": "Produces 100 current era primary goods extra per every other active Temple in 1d",
+                "requires_type": "Temple",
+                "unit": "flat_per_wonder",
+                "value": 100
+            }
+        ]
+    },
+    {
+        "id": "lighthouse_of_alexandria",
+        "name": "Lighthouse of Alexandria",
+        "group": "Ancient World",
+        "location": "Capital",
+        "type": ["Naval", "Temple"],
+        "rarity": "Rare",
+        "max_level": 30,
+        "bonuses": [
+            {
+                "id": "goods_production_boost",
+                "description": "Get more goods from trade offers",
+                "unit": "percent",
+                "levels": [
+                    { "level": 1, "value": 5.0 },
+                    { "level": 2, "value": 7.0 },
+                    { "level": 3, "value": 8.3 },
+                    { "level": 4, "value": 9.4 },
+                    { "level": 5, "value": 10.3 },
+                    { "level": 6, "value": 11.1 },
+                    { "level": 7, "value": 11.8 },
+                    { "level": 8, "value": 12.4 },
+                    { "level": 9, "value": 12.9 },
+                    { "level": 10, "value": 13.5 },
+                    { "level": 11, "value": 14.0 },
+                    { "level": 12, "value": 14.4 },
+                    { "level": 13, "value": 14.8 },
+                    { "level": 14, "value": 15.2 },
+                    { "level": 15, "value": 15.6 },
+                    { "level": 16, "value": 16.0 },
+                    { "level": 17, "value": 16.4 },
+                    { "level": 18, "value": 16.7 },
+                    { "level": 19, "value": 17.0 },
+                    { "level": 20, "value": 17.3 },
+                    { "level": 21, "value": 17.6 },
+                    { "level": 22, "value": 17.9 },
+                    { "level": 23, "value": 18.2 },
+                    { "level": 24, "value": 18.5 },
+                    { "level": 25, "value": 18.7 },
+                    { "level": 26, "value": 19.0 },
+                    { "level": 27, "value": 19.3 },
+                    { "level": 28, "value": 19.5 },
+                    { "level": 29, "value": 19.7 },
+                    { "level":30 , "value": 20.0 }
+                ]
+            },
+            {
+                "id": "additional_traders",
+                "description": "Grants Trade Worker(s)",
+                "unit": "traders",
+                "levels": [
+                    { "level": 1,  "value": 1 },
+                    { "level": 15, "value": 2 },
+                    { "level": 30, "value": 3 }
+                ]
+            }
+        ],
+        "synergy_bonuses": [
+            {
+                "id": "naval_trade_bonus",
+                "description": "Get 5.0% more goods from trade offers extra per other active Naval",
+                "requires_type": "Naval",
+                "unit": "percent_per_wonder",
+                "value": 5.0
+            }
+        ]
+    },
+    {
+        "id": "colossus_of_rhodes",
+        "name": "Colossus of Rhodes",
+        "group": "Ancient World",
+        "location": "Capital",
+        "type": ["Naval", "Statue"],
+        "rarity": "Legendary",
+        "max_level": 30,
+        "bonuses": [
+            {
+                "id": "gears_donation_boost",
+                "description": "Get more Gears for donations to other player's wonders",
+                "unit": "percent",
+                "levels": [
+                    { "level": 1,  "value": 5.0 },
+                    { "level": 2,  "value": 9.0 },
+                    { "level": 3,  "value": 12.0 },
+                    { "level": 4,  "value": 15.0 },
+                    { "level": 5,  "value": 17.0 },
+                    { "level": 6,  "value": 18.0 },
+                    { "level": 7,  "value": 19.0 },
+                    { "level": 8,  "value": 20.0 },
+                    { "level": 9,  "value": 21.0 },
+                    { "level": 10, "value": 22.0 },
+                    { "level": 11, "value": 23.0 },
+                    { "level": 12, "value": 24.0 },
+                    { "level": 13, "value": 25.0 },
+                    { "level": 14, "value": 26.0 },
+                    { "level": 15, "value": 27.0 },
+                    { "level": 16, "value": 28.0 },
+                    { "level": 17, "value": 29.0 },
+                    { "level": 18, "value": 30.0 },
+                    { "level": 19, "value": 31.0 },
+                    { "level": 20, "value": 32.0 },
+                    { "level": 21, "value": 33.0 },
+                    { "level": 22, "value": 34.0 },
+                    { "level": 23, "value": 35.0 },
+                    { "level": 24, "value": 36.0 },
+                    { "level": 25, "value": 37.0 },
+                    { "level": 26, "value": 38.0 },
+                    { "level": 27, "value": 39.0 },
+                    { "level": 28, "value": 40.0 },
+                    { "level": 29, "value": 41.0 },
+                    { "level": 30, "value": 42.0 }
+                ]
+            },
+            {
+                "id": "treasure_hunt_daily",
+                "description": "Produce Treasure Hunt Attempts In 1d",
+                "unit": "Attempts",
+                "levels": [
+                    { "level": 1,  "value": 1 },
+                    { "level": 10, "value": 2 },
+                    { "level": 20, "value": 3 },
+                    { "level": 30, "value": 4 }
+                ]
+            }
+        ],
+        "synergy_bonuses": [
+            {
+                "id": "naval_gears_bonus",
+                "description": "Get 5% more Gears for donations to other player's wonders extra per every other active Naval",
+                "requires_type": "Naval",
+                "unit": "percent_per_wonder",
+                "value": 5.0
+            }
+        ]
+    }
+  ]
+}

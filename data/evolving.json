@@ -1,0 +1,21 @@
+{
+  "evolving": [
+        {
+            "id": "fountain_of_youth",
+            "name": "Fountain Of Youth",
+            "tag": "Player Encounters",
+            "type": "collectable",
+            "size": { "w": 3, "h": 3 },
+            "incomplete": true,
+            "configurable": true,
+            "configurable_fields": [
+                { "field": "happiness_given", "label": "Culture Points" },
+                { "field": "radius", "label": "Range", "min": 1, "max": 4 },
+                { "field": "rp_per_day", "label": "RP / Day" },
+                { "field": "heavy_hp_bonus_pct", "label": "Heavy Infantry HP %" }
+            ]
+        },
+        {
+        }
+    ]
+}

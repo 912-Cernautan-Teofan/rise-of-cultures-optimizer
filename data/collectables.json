@@ -1,0 +1,373 @@
+{
+    "collectables": [
+        {
+            "id": "school",
+            "name": "School",
+            "type": "production",
+            "resource": "rp",
+            "size": { "w": 3, "h": 3 },
+            "levels": [{ "level": 1, "harvest": 1 }],
+            "incomplete": true
+        },
+        {
+            "id": "minoan_watchtower",
+            "name": "Minoan Watchtower",
+            "type": "culture",
+            "resource": null,
+            "size": { "w": 2, "h": 2 },
+            "radius": 3,
+            "levels": [
+                { "level": 1, "happiness_given": 300 },
+                { "level": 2, "happiness_given": 350 },
+                { "level": 3, "happiness_given": 400 },
+                { "level": 4, "happiness_given": 450 },
+                { "level": 5, "happiness_given": 500 },
+                { "level": 6, "happiness_given": 550 },
+                { "level": 7, "happiness_given": 600 },
+                { "level": 8, "happiness_given": 650 },
+                { "level": 9, "happiness_given": 700 },
+                { "level": 10, "happiness_given": 750 },
+                { "level": 11, "happiness_given": 850 },
+                { "level": 12, "happiness_given": 950 },
+                { "level": 13, "happiness_given": 1050 },
+                { "level": 14, "happiness_given": 1150 },
+                { "level": 15, "happiness_given": 1250 },
+                { "level": 16, "happiness_given": 1350 },
+                { "level": 17, "happiness_given": 1450 },
+                { "level": 18, "happiness_given": 1550 },
+                { "level": 19, "happiness_given": 1650 },
+                { "level": 20, "happiness_given": 1750 },
+                { "level": 21, "happiness_given": 1850 },
+                { "level": 22, "happiness_given": 1950 },
+                { "level": 23, "happiness_given": 2050 },
+                { "level": 24, "happiness_given": 2150 },
+                { "level": 25, "happiness_given": 2250 },
+                { "level": 26, "happiness_given": 2350 },
+                { "level": 27, "happiness_given": 2450 },
+                { "level": 28, "happiness_given": 2550 },
+                { "level": 29, "happiness_given": 2650 },
+                { "level": 30, "happiness_given": 2750 },
+                { "level": 31, "happiness_given": 2850 },
+                { "level": 32, "happiness_given": 2950 },
+                { "level": 33, "happiness_given": 3050 },
+                { "level": 34, "happiness_given": 3150 },
+                { "level": 35, "happiness_given": 3250 },
+                { "level": 36, "happiness_given": 3350 },
+                { "level": 37, "happiness_given": 3450 },
+                { "level": 38, "happiness_given": 3550 },
+                { "level": 39, "happiness_given": 3650 },
+                { "level": 40, "happiness_given": 3750 }
+            ],
+            "incomplete": false
+        },
+        {
+            "id": "architects_studio",
+            "name": "Architects Studio",
+            "type": "production",
+            "resource": "gears",
+            "size": { "w": 2, "h": 3 },
+            "levels": [{ "level": 1, "harvevst": 25 }],
+            "incomplete": true
+        },
+        {
+            "id": "amphitheatre",
+            "name": "Amphitheatre",
+            "type": "culture",
+            "resource": null,
+            "size": { "w": 5, "h": 4 },
+            "radius": 4,
+            "levels": [
+                { "level": 1, "happiness_given": 400 },
+                { "level": 2, "happiness_given": 550 },
+                { "level": 3, "happiness_given": 750 },
+                { "level": 4, "happiness_given": 1000 },
+                { "level": 5, "happiness_given": 1300 }
+            ],
+            "incomplete": false
+        },
+        {
+            "id": "quintennial_monument",
+            "name": "Quintennial Monument",
+            "type": "culture",
+            "resource": null,
+            "size": { "w": 2, "h": 2 },
+            "radius": 3,
+            "levels": { "level": 1, "happiness_given": 500 },
+            "incomplete": false
+        },
+        {
+            "id": "commander_tower",
+            "name": "Commander Tower",
+            "type": "production",
+            "resource": "mystery",
+            "size": { "w": 3, "h": 3 },
+            "levels": [
+                { "level": 1, "harvest": 1 }
+            ],
+            "incomplete": true
+        },
+        {
+            "id": "bird_house",
+            "name": "Bird House",
+            "type": "production",
+            "resource": "mystery",
+            "size": { "w": 3, "h": 2 },
+            "levels": [
+                { "level": 1, "harvest": 1 }
+            ],
+            "incomplete": true
+        },
+        {
+            "id": "woodhenge",
+            "name": "Woodhenge",
+            "type": ["culture", "production"],
+            "resource": "goods",
+            "size": { "w": 3, "h": 3 },
+            "radius": 2,
+            "levels": [
+                { "level": 1, "happiness_given": 200 , "harvest": 60 },
+                { "level": 2, "happiness_given": 250 },
+                { "level": 3, "happiness_given": 300 },
+                { "level": 4, "happiness_given": 350 },
+                { "level": 5, "happiness_given": 400 },
+                { "level": 6, "happiness_given": 450 },
+                { "level": 7, "happiness_given": 500 },
+                { "level": 8, "happiness_given": 550 },
+                { "level": 9, "happiness_given": 600 },
+                { "level": 10, "happiness_given": 650 },
+                { "level": 11, "happiness_given": 700 },
+                { "level": 12, "happiness_given": 750 },
+                { "level": 13, "happiness_given": 800 },
+                { "level": 14, "happiness_given": 850 },
+                { "level": 15, "happiness_given": 900 },
+                { "level": 16, "happiness_given": 950 },
+                { "level": 17, "happiness_given": 1000 },
+                { "level": 18, "happiness_given": 1050 },
+                { "level": 19, "happiness_given": 1100 },
+                { "level": 20, "happiness_given": 1150 },
+                { "level": 21, "happiness_given": 1200 },
+                { "level": 22, "happiness_given": 1250 },
+                { "level": 23, "happiness_given": 1300 },
+                { "level": 24, "happiness_given": 1350 },
+                { "level": 25, "happiness_given": 1400 },
+                { "level": 26, "happiness_given": 1450 },
+                { "level": 27, "happiness_given": 1500 },
+                { "level": 28, "happiness_given": 1550 },
+                { "level": 29, "happiness_given": 1600 },
+                { "level": 30, "happiness_given": 1650 },
+                { "level": 31, "happiness_given": 1700 },
+                { "level": 32, "happiness_given": 1750 },
+                { "level": 33, "happiness_given": 1800 },
+                { "level": 34, "happiness_given": 1850 },
+                { "level": 35, "happiness_given": 1900 },
+                { "level": 36, "happiness_given": 1950 },
+                { "level": 37, "happiness_given": 2000 },
+                { "level": 38, "happiness_given": 2050 },
+                { "level": 39, "happiness_given": 2100 },
+                { "level": 40, "happiness_given": 2150 }
+            ],
+            "incomplete": true
+        },
+        {
+            "id": "mongolian_saddler",
+            "name": "Mongolian Saddler",
+            "type": "production",
+            "resource": "refill",
+            "size": { "w": 3, "h": 2 },
+            "levels": [
+                { "level": 1, "harvest": 1 }
+            ],
+            "incomplete": true
+        },
+        {
+            "id": "astronomer",
+            "name": "Astronomer",
+            "type": ["culture", "production"],
+            "resource": "rp",
+            "size": { "w": 3, "h": 2 },
+            "radius": 3,
+            "levels": [
+                { "level": 1, "happiness_given": 100 , "harvest": 1 },
+                { "level": 2, "happiness_given": 125 },
+                { "level": 3, "happiness_given": 150 },
+                { "level": 4, "happiness_given": 175 },
+                { "level": 5, "happiness_given": 200 },
+                { "level": 6, "happiness_given": 225 },
+                { "level": 7, "happiness_given": 250 },
+                { "level": 8, "happiness_given": 275 },
+                { "level": 9, "happiness_given": 300 },
+                { "level": 10, "happiness_given": 325 },
+                { "level": 11, "happiness_given": 350 },
+                { "level": 12, "happiness_given": 375 },
+                { "level": 13, "happiness_given": 400 },
+                { "level": 14, "happiness_given": 425 },
+                { "level": 15, "happiness_given": 450 },
+                { "level": 16, "happiness_given": 475 },
+                { "level": 17, "happiness_given": 500 },
+                { "level": 18, "happiness_given": 525 },
+                { "level": 19, "happiness_given": 550 },
+                { "level": 20, "happiness_given": 575 },
+                { "level": 21, "happiness_given": 600 },
+                { "level": 22, "happiness_given": 625 },
+                { "level": 23, "happiness_given": 650 },
+                { "level": 24, "happiness_given": 675 },
+                { "level": 25, "happiness_given": 700 },
+                { "level": 26, "happiness_given": 725 },
+                { "level": 27, "happiness_given": 750 },
+                { "level": 28, "happiness_given": 775 },
+                { "level": 29, "happiness_given": 800 },
+                { "level": 30, "happiness_given": 825 },
+                { "level": 31, "happiness_given": 850 },
+                { "level": 32, "happiness_given": 875 },
+                { "level": 33, "happiness_given": 900 },
+                { "level": 34, "happiness_given": 925 },
+                { "level": 35, "happiness_given": 950 },
+                { "level": 36, "happiness_given": 975 },
+                { "level": 37, "happiness_given": 1000 },
+                { "level": 38, "happiness_given": 1025 },
+                { "level": 39, "happiness_given": 1050 },
+                { "level": 40, "happiness_given": 1075 }
+            ],
+            "incomplete": true
+        },
+        {
+            "id": "arc_gate",
+            "name": "Arc Gate",
+            "type": ["culture", "production"],
+            "resource": "rp",
+            "size": { "w": 3, "h": 2 },
+            "radius": 2,
+            "levels": [
+                { "level": 1, "happiness_given": 80, "harvest": 1 },
+                { "level": 2, "happiness_given": 120 },
+                { "level": 3, "happiness_given": 160 },
+                { "level": 4, "happiness_given": 200 },
+                { "level": 5, "happiness_given": 240 },
+                { "level": 6, "happiness_given": 280 },
+                { "level": 7, "happiness_given": 320 },
+                { "level": 8, "happiness_given": 360 },
+                { "level": 9, "happiness_given": 400 },
+                { "level": 10, "happiness_given": 440 },
+                { "level": 11, "happiness_given": 480 },
+                { "level": 12, "happiness_given": 520 },
+                { "level": 13, "happiness_given": 560 },
+                { "level": 14, "happiness_given": 600 },
+                { "level": 15, "happiness_given": 640 },
+                { "level": 16, "happiness_given": 680 },
+                { "level": 17, "happiness_given": 720 },
+                { "level": 18, "happiness_given": 760 },
+                { "level": 19, "happiness_given": 800 },
+                { "level": 20, "happiness_given": 840 },
+                { "level": 21, "happiness_given": 880 },
+                { "level": 22, "happiness_given": 920 },
+                { "level": 23, "happiness_given": 960 },
+                { "level": 24, "happiness_given": 1000 },
+                { "level": 25, "happiness_given": 1040 },
+                { "level": 26, "happiness_given": 1080 },
+                { "level": 27, "happiness_given": 1120 },
+                { "level": 28, "happiness_given": 1160 },
+                { "level": 29, "happiness_given": 1200 },
+                { "level": 30, "happiness_given": 1240 },
+                { "level": 31, "happiness_given": 1280 },
+                { "level": 32, "happiness_given": 1320 },
+                { "level": 33, "happiness_given": 1360 },
+                { "level": 34, "happiness_given": 1400 },
+                { "level": 35, "happiness_given": 1440 },
+                { "level": 36, "happiness_given": 1480 },
+                { "level": 37, "happiness_given": 1520 },
+                { "level": 38, "happiness_given": 1560 },
+                { "level": 39, "happiness_given": 1600 },
+                { "level": 40, "happiness_given": 1640 }
+            ],
+            "incomplete": true
+        },
+        {
+            "id": "tiki_statue",
+            "name": "Tiki Statue",
+            "type": "production",
+            "resource": "goods",
+            "size": { "w": 2, "h": 2 },
+            "levels": [
+                { "level": 1, "harvest": 150 }
+            ],
+            "incomplete": true
+        },
+        {
+            "id": "lake_pagoda",
+            "name": "Lake Pagoda",
+            "type": "production",
+            "resource": "mystery",
+            "size": { "w": 2, "h": 2 },
+            "levels": [
+                { "level": 1, "harvest": 1 }
+            ],
+            "incomplete": true
+        },
+        {
+            "id": "basket_drying_rack",
+            "name": "Basket Drying Rack",
+            "type": "production",
+            "resource": "mystery",
+            "size": { "w": 3, "h": 2 },
+            "levels": [
+                { "level": 1, "harvest": 1 }
+            ],
+            "incomplete": true
+        },
+        {
+            "id": "airship_exhibit",
+            "name": "Airship Exhibit",
+            "type": "production",
+            "resource": "mystery",
+            "size": { "w": 3, "h": 2 },
+            "levels": [
+                { "level": 1, "harvest": 1 }
+            ],
+            "incomplete": true
+        },
+        {
+            "id": "temple_gate",
+            "name": "Temple Gate",
+            "type": "production",
+            "resource": "wonder_help",
+            "size": { "w": 3, "h": 2 },
+            "levels": [
+                { "level": 1, "harvest": 1 }
+            ],
+            "incomplete": true
+        },
+        {
+            "id": "midnight_clock",
+            "name": "Midnight Clock",
+            "type": "production",
+            "resource": "puzzle",
+            "size": { "w": 3, "h": 2 },
+            "levels": [
+                { "level": 1, "harvest": 1 }
+            ],
+            "incomplete": true
+        },
+        {
+            "id": "banyan_tree",
+            "name": "Banyan Tree",
+            "type": "production",
+            "resource": "goods",
+            "size": { "w": 3, "h": 3 },
+            "levels": [
+                { "level": 1, "harvest": 150 }
+            ],
+            "incomplete": true
+        },
+        {
+            "id": "winter_pavilion",
+            "name": "Winter Pavilion",
+            "type": "production",
+            "resource": "wonder_help_request",
+            "size": { "w": 3, "h": 2 },
+            "levels":[
+                { "level": 1, "harvest": 1 }
+            ],
+            "incomplete": true
+        }
+    ]
+}
